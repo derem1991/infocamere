@@ -18,13 +18,11 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', function () {return redirect()->route('home'); });
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+ 
 
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RoleController::class);
