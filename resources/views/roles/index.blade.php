@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-@include('layouts.headers.navigation',['title'=>'Ruoli','breadcrumb'=> $breadcrumb ?? null] )
+@include('layouts.headers.navigation',['title'=>'Ruoli','breadcrumb'=> $breadcrumb ?? null,'routeCreate' => 'roles.create'])
 <div class="container-fluid mt--6">
    <div class="row">
       <div class="col">
