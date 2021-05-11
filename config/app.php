@@ -55,7 +55,7 @@ return [
     'url' => env('APP_URL', 'http://localhost'),
 
     'asset_url' => env('ASSET_URL', '/assets'),
-
+    'logo_url' => env('LOGO_URL', '/assets/img/logo.png'),
     /*
     |--------------------------------------------------------------------------
     | Application Timezone

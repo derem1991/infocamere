@@ -67,7 +67,7 @@
                             <div class="row my-4">
                                 <div class="col-12">
                                     <div class="custom-control custom-control-alternative custom-checkbox">
-                                        <input class="custom-control-input" id="customCheckRegister" type="checkbox">
+                                        <input class="custom-control-input" required id="customCheckRegister" type="checkbox">
                                         <label class="custom-control-label" for="customCheckRegister">
                                             <span class="text-muted">Io accetto la <a href="#!">Privacy Policy</a></span>
                                         </label>

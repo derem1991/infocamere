@@ -15,10 +15,13 @@
         <!-- Extra details for Live View on GitHub Pages -->
 
         <!-- Icons -->
-        <link href="{{ config('app.asset_url')}}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+        <link href="{{ config('app.asset_url')}}/css/jquery.dataTables.min.css" rel="stylesheet">
+        <link href="{{ config('app.asset_url')}}/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+         <link href="{{ config('app.asset_url')}}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
         <link href="{{ config('app.asset_url')}}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-        <!-- Argon CSS -->
-        <link type="text/css" href="{{ config('app.asset_url')}}/css/app.min.css?v=1.0.0" rel="stylesheet">
+        <link type="text/css" href="{{ config('app.asset_url')}}/css/app.css" rel="stylesheet">
+ 
+         
     </head>
     <body class="{{ $class ?? '' }}">
         @auth()
@@ -37,11 +40,14 @@
             @include('layouts.footers.guest')
         @endguest
 
-        <script src="{{ config('app.asset_url')}}/vendor/jquery/dist/jquery.min.js"></script>
-        <script src="{{ config('app.asset_url')}}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        
+       
         @stack('js')
-        
+        <script   src="{{ config('app.asset_url')}}/vendor/jquery/dist/jquery.min.js"></script>
+        <script   src="{{ config('app.asset_url')}}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script   src="{{ config('app.asset_url')}}/js/jquery.dataTables.min.js"></script>
+         
         <script src="{{ config('app.asset_url')}}/js/app.js?v=1.0.0"></script>
+        
+        @yield('scriptjs')
     </body>
 </html>
