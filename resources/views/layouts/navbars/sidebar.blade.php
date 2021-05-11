@@ -115,12 +115,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('users.index') }}">
+                    <a class="nav-link" href="{{ route('roles.index') }}">
                         <i class="ni ni-palette"></i> Ruoli
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('users.index') }}">
+                    <a class="nav-link" href="{{ route('permissions.index') }}">
                         <i class="ni ni-ui-04"></i> Permessi
                     </a>
                 </li>
