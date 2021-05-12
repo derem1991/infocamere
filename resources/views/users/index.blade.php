@@ -49,8 +49,8 @@
                                            <i class="fas fa-ellipsis-v"></i>
                                          </a>
                                          <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                           <a class="dropdown-item" href="#">Modifica</a>
-                                           <a class="dropdown-item" href="#">Cancella</a>
+                                           <a class="dropdown-item" href="{{route('users.edit', ['user' =>$user->id])}}">Modifica</a>
+                                           <a class="dropdown-item" href="{{route('users.destroy', ['user' =>$user->id])}}">Cancella</a>
                                          </div>
                                        </div>
                                      </td>

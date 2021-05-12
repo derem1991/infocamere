@@ -72,34 +72,7 @@
                         <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
-                        <i class="fab fa-laravel" style="color: #f4645f;"></i>
-                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Laravel Examples') }}</span>
-                    </a>
-
-                    <div class="collapse show" id="navbar-examples">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href=" ">
-                                    {{ __('User profile') }}
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href=" ">
-                                    {{ __('User Management') }}
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
- 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="ni ni-circle-08 text-pink"></i> {{ __('Register') }}
-                    </a>
-                </li>
-               
+             
             </ul>
             <!-- Divider -->
             <hr class="my-3">
@@ -109,19 +82,19 @@
             @endcan
             <!-- Navigation -->
             <ul class="navbar-nav mb-md-3">
-                <li class="nav-item">
+                <li class="nav-item @if(Route::currentRouteName() == 'users.index') active @endif">
                     <a class="nav-link" href="{{ route('users.index') }}">
-                        <i class="ni ni-spaceship"></i> Utenti
+                        <i class="ni ni-single-02"></i> Utenti
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item @if(Route::currentRouteName() == 'roles.index') active @endif">
                     <a class="nav-link" href="{{ route('roles.index') }}">
-                        <i class="ni ni-palette"></i> Ruoli
+                        <i class="ni ni-trophy"></i> Ruoli
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item @if(Route::currentRouteName() == 'permissions.index') active @endif">
                     <a class="nav-link" href="{{ route('permissions.index') }}">
-                        <i class="ni ni-ui-04"></i> Permessi
+                        <i class="ni ni-lock-circle-open"></i> Permessi
                     </a>
                 </li>
             </ul>

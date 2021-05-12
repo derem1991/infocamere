@@ -17,6 +17,14 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    function __construct()
+    {
+         $this->middleware('permission:user-list|user-create|user-edit|user-delete', ['only' => ['index','store']]);
+         $this->middleware('permission:user-create', ['only' => ['create','store']]);
+         $this->middleware('permission:user-edit', ['only' => ['edit','update']]);
+         $this->middleware('permission:user-delete', ['only' => ['destroy']]);
+    }
+
     public function index(Request $request)
     {
         $users = User::orderBy('id','DESC')->get();
@@ -34,8 +42,14 @@ class UserController extends Controller
      */
     public function create()
     {
+        $breadcrumb[0]['route']='users.index';
+        $breadcrumb[0]['title']='Utenti';
+        $breadcrumb[1]['route']='users.create';
+        $breadcrumb[1]['title']='Creazione utente';
+
         $roles = Role::pluck('name','name')->all();
-        return view('users.create',compact('roles'));
+        
+        return view('users.create',compact('roles','breadcrumb'));
     }
     
     /**
@@ -59,8 +73,7 @@ class UserController extends Controller
         $user = User::create($input);
         $user->assignRole($request->input('roles'));
     
-        return redirect()->route('users.index')
-                        ->with('success','User created successfully');
+        return redirect()->route('users.index')->with('success','User created successfully');
     }
     
     /**
@@ -72,6 +85,7 @@ class UserController extends Controller
     public function show($id)
     {
         $user = User::find($id);
+        
         return view('users.show',compact('user'));
     }
     
@@ -83,11 +97,17 @@ class UserController extends Controller
      */
     public function edit($id)
     {
+        
+        $breadcrumb[0]['route']='users.index';
+        $breadcrumb[0]['title']='Utenti';
+        $breadcrumb[1]['route']='users.edit';
+        $breadcrumb[1]['title']='Modifica utente';
+
         $user = User::find($id);
+         
         $roles = Role::pluck('name','name')->all();
-        $userRole = $user->roles->pluck('name','name')->all();
-    
-        return view('users.edit',compact('user','roles','userRole'));
+     
+        return view('users.create',compact('user','roles'));
     }
     
     /**
@@ -101,12 +121,12 @@ class UserController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
-            'email' => 'required|email|unique:users,email,'.$id,
-            'password' => 'same:confirm-password',
+            'email' => 'required|email|',
             'roles' => 'required'
         ]);
     
         $input = $request->all();
+        dd($input);
         if(!empty($input['password'])){ 
             $input['password'] = Hash::make($input['password']);
         }else{
