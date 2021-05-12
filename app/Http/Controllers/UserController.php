@@ -44,12 +44,11 @@ class UserController extends Controller
     {
         $breadcrumb[0]['route']='users.index';
         $breadcrumb[0]['title']='Utenti';
-        $breadcrumb[1]['route']='users.create';
         $breadcrumb[1]['title']='Creazione utente';
 
         $roles = Role::pluck('name','name')->all();
         
-        return view('users.create',compact('roles','breadcrumb'));
+        return view('users.createOrUpdate',compact('roles','breadcrumb'));
     }
     
     /**
@@ -100,14 +99,13 @@ class UserController extends Controller
         
         $breadcrumb[0]['route']='users.index';
         $breadcrumb[0]['title']='Utenti';
-        $breadcrumb[1]['route']='users.edit';
         $breadcrumb[1]['title']='Modifica utente';
 
         $user = User::find($id);
          
         $roles = Role::pluck('name','name')->all();
      
-        return view('users.create',compact('user','roles'));
+        return view('users.createOrUpdate',compact('user','roles','breadcrumb'));
     }
     
     /**
@@ -122,16 +120,17 @@ class UserController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email|',
-            'roles' => 'required'
+            'roles' => 'required',
+            'password' => 'same:confirm-password',
         ]);
     
         $input = $request->all();
         
-        if(!empty($input['password'])){ 
-            $input['password'] = Hash::make($input['password']);
-        }else{
-            $input = Arr::except($input,array('password'));    
-        }
+        if(!empty($input['password']))
+          $input['password'] = Hash::make($input['password']);
+        else
+          $input = Arr::except($input,array('password'));    
+        
     
         $user = User::find($id);
         $user->update($input);
@@ -139,8 +138,7 @@ class UserController extends Controller
     
         $user->assignRole($request->input('roles'));
     
-        return redirect()->route('users.index')
-                        ->with('success','User updated successfully');
+        return redirect()->route('users.index')->with('success','User updated successfully');
     }
     
     /**

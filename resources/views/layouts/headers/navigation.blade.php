@@ -10,7 +10,11 @@
                 @if(isset($breadcrumb))
                     @foreach($breadcrumb as $bread)
                         <li class="breadcrumb-item @if($loop->last) active @endif" @if($loop->last) aria-current="page" @endif>
-                            <a href="{{route(''.$bread['route'].'')}}">{{$bread['title']}}</a>
+                            @if($loop->last)
+                              <span>{{$bread['title']}} </span>
+                            @else
+                             <a href="{{route(''.$bread['route'].'')}}">{{$bread['title']}}</a>
+                            @endif
                         </li>
                     @endforeach
                 @endif

@@ -48,7 +48,11 @@
                                          </a>
                                          <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                             <a class="dropdown-item" href="{{route('roles.edit', ['role' =>$role->id])}}">Modifica</a>
-                                            <a class="dropdown-item" href="{{route('roles.edit', ['role' =>$role->id])}}">Cancella</a>
+                                            <form action="{{ route('roles.destroy' ,$role->id)}}" method="POST">
+                                             @csrf
+                                             <button type="submit" class="dropdown-item" >Cancella</button>
+                                             @method("DELETE")
+                                            </form>
                                           </div>
                                        </div>
                                      </td>
