@@ -5,7 +5,7 @@
        <div class="header-body">
           <div class="row align-items-center py-4">
             @include('layouts.headers.navigation',['title'=>'Ruoli','breadcrumb'=> $breadcrumb ?? null])
-            @can('role-list')
+            @can('role-create')
             <div class="col-lg-6 col-5 text-right">
                <a href="{{route('roles.create')}}" class="btn btn-sm btn-neutral">Nuovo</a>
             </div>
@@ -95,7 +95,12 @@
 <script async>
    $(document).ready( function () {
       $('#datatable-basic').DataTable({
-      
+         "language": {
+            "paginate": {
+               "previous": "<",
+               "next": ">"
+            }
+         }  
     });
    } );
 </script>

@@ -46,8 +46,12 @@ class RoleController extends Controller
      */
     public function create()
     {
+        $breadcrumb[0]['route']='roles.index';
+        $breadcrumb[0]['title']='Ruoli';
+        $breadcrumb[1]['title']='Creazione ruolo';
+
         $permissions = Permission::get();
-        return view('roles.createOrUpdate',compact('permissions'));
+        return view('roles.createOrUpdate',compact('permissions','breadcrumb'));
     }
     
     /**
@@ -95,13 +99,13 @@ class RoleController extends Controller
     {
         $role = Role::find($id);
         $permissions = Permission::get();
-
-        $rolePermissions = DB::table("role_has_permissions")
-                            ->where("role_has_permissions.role_id",$id)
-                            ->pluck('role_has_permissions.permission_id','role_has_permissions.permission_id')
-                            ->all();
+         
+        $breadcrumb[0]['route']='roles.index';
+        $breadcrumb[0]['title']='Ruoli';
+        $breadcrumb[1]['title']='Modifica ruolo';
+ 
       
-        return view('roles.createOrUpdate',compact('role','permissions','rolePermissions'));
+        return view('roles.createOrUpdate',compact('role','permissions','breadcrumb'));
     }
     
     /**

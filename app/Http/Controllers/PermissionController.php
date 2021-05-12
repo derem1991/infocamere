@@ -46,7 +46,12 @@ class PermissionController extends Controller
      */
     public function create()
     {
-      return view('permissions.createOrUpdate');
+    
+      $breadcrumb[0]['route']='permissions.index';
+      $breadcrumb[0]['title']='Permessi';
+      $breadcrumb[1]['title']='Creazione permessi';
+ 
+      return view('permissions.createOrUpdate',compact('breadcrumb'));
     }
     
     /**
@@ -79,8 +84,12 @@ class PermissionController extends Controller
      */
     public function edit($id)
     {
+        $breadcrumb[0]['route']='permissions.index';
+        $breadcrumb[0]['title']='Permessi';
+        $breadcrumb[1]['title']='Modifica permesso';
+ 
         $permission = Permission::find($id);
-        return view('permissions.createOrUpdate',compact('permission'));
+        return view('permissions.createOrUpdate',compact('permission','breadcrumb'));
     }
     
     /**

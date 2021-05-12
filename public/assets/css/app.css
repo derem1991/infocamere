@@ -21928,26 +21928,24 @@ div.dataTables_wrapper div.dataTables_filter input {
     outline-offset: -2px;
     -webkit-appearance: none;
 }
-div.dataTables_wrapper div.dataTables_paginate {
-    margin: 0;
-    white-space: nowrap;
-    text-align: right;
+ 
+.dataTables_wrapper .dataTables_paginate .paginate_button 
+{
+    border-radius: 50%!important;
+    width: 36px;
+    height: 36px;
+    font-size: .875rem;
+    padding: .5rem .75rem;
+    margin-left:3px;
+    margin-right:3px;
+    line-height: 1.25;
+    color: #8898aa!important;
+    background-color: #fff;
+    border: 1px solid #dee2e6!important;
 }
 
-.dataTables_filter, .dataTables_paginate {
-    padding-right: 1.5rem;
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover
+{
+    background:#5e72e4!important;
+    color: #fff!important;
 }
-
-div.dataTables_wrapper div.dataTables_paginate ul.pagination {
-    margin: 2px 0;
-    white-space: nowrap;
-    justify-content: flex-end;
-}
-
-.pagination {
-    display: flex;
-    padding-left: 0;
-    list-style: none;
-    border-radius: .375rem;
-}
-
