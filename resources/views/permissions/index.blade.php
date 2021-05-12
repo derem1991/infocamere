@@ -53,8 +53,16 @@
                                            <i class="fas fa-ellipsis-v"></i>
                                          </a>
                                          <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                            @can('permission-edit')
                                             <a class="dropdown-item" href="{{route('permissions.edit', ['permission' =>$permission->id])}}">Modifica</a>
-                                            <a class="dropdown-item" href="{{route('permissions.destroy', ['permission' =>$permission->id])}}">Cancella</a>
+                                            @endcan
+                                            @can('permission-delete')
+                                            <form action="{{ route('permissions.destroy' ,$permission->id)}}" method="POST">
+                                             @csrf
+                                             <button type="submit" class="dropdown-item" >Cancella</button>
+                                             @method("DELETE")
+                                            </form>
+                                            @endcan
                                           </div>  
                                        </div>
                                      </td>

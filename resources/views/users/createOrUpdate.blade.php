@@ -70,7 +70,7 @@
                            <strong>{{ $errors->first('password') }}</strong>
                            </span>
                            @endif
-                           @if($user)
+                           @if(isset($user))
                            <small>Inserendo una nuova password verrà sostituita la vecchia </small>
                            @endif
                         </div>

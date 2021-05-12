@@ -79,8 +79,7 @@
             <!-- Heading -->
             @can('role-list')
             <h6 class="navbar-heading text-muted">ADMIN</h6>
-            @endcan
-            <!-- Navigation -->
+             <!-- Navigation -->
             <ul class="navbar-nav mb-md-3">
                 <li class="nav-item @if(Route::currentRouteName() == 'users.index') active @endif">
                     <a class="nav-link" href="{{ route('users.index') }}">
@@ -98,6 +97,7 @@
                     </a>
                 </li>
             </ul>
+            @endcan
         </div>
     </div>
 </nav>

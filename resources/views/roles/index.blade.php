@@ -47,12 +47,16 @@
                                            <i class="fas fa-ellipsis-v"></i>
                                          </a>
                                          <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                            @can('role-edit')
                                             <a class="dropdown-item" href="{{route('roles.edit', ['role' =>$role->id])}}">Modifica</a>
+                                            @endcan
+                                            @can('role-delete')
                                             <form action="{{ route('roles.destroy' ,$role->id)}}" method="POST">
                                              @csrf
                                              <button type="submit" class="dropdown-item" >Cancella</button>
                                              @method("DELETE")
                                             </form>
+                                            @endcan
                                           </div>
                                        </div>
                                      </td>
