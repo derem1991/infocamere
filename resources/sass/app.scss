@@ -14999,7 +14999,7 @@ button.bg-lighter:focus
 
 .bg-gradient-primary
 {
-    background: linear-gradient(87deg, $primary 0, #825ee4 100%) !important;
+    background: linear-gradient(87deg, $primary 0, $bluegrad 100%) !important;
 }
 
 .bg-gradient-secondary
@@ -15059,7 +15059,7 @@ button.bg-lighter:focus
 
 .bg-gradient-blue
 {
-    background: linear-gradient(87deg, $blue 0, #825ee4 100%) !important;
+    background: linear-gradient(87deg, $blue 0, $bluegrad 100%) !important;
 }
 
 .bg-gradient-indigo
@@ -15355,7 +15355,7 @@ button.section-darker:focus
 
 .bg-gradient-primary
 {
-    background: linear-gradient(87deg, $primary 0, #825ee4 100%) !important;
+    background: linear-gradient(87deg, $primary 0, $bluegrad 100%) !important;
 }
 
 .bg-gradient-secondary
