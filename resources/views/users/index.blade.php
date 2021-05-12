@@ -50,12 +50,16 @@
                                          </a>
                                          <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                            <a class="dropdown-item" href="{{route('users.edit', ['user' =>$user->id])}}">Modifica</a>
-                                           <a class="dropdown-item" href="{{route('users.destroy', ['user' =>$user->id])}}">Cancella</a>
+                                           <form action="{{ route('users.destroy' ,$user->id)}}" method="POST">
+                                             @csrf
+                                             <button type="submit" class="dropdown-item"  >Cancella</button>
+                                             @method("DELETE")
+                                           </form>
+                                             
                                          </div>
                                        </div>
                                      </td>
-                                 </tr>
-                                 
+                                 </tr> 
                                  @endforeach
                               @endif
                             </tbody>
