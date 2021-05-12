@@ -22,9 +22,9 @@
                     <div class=" dropdown-header noti-title">
                         <h6 class="text-overflow m-0">Benvenuto!</h6>
                     </div>
-                    <a href="" class="dropdown-item">
+                    <a href="{{ route('users.myProfile') }}" class="dropdown-item">
                         <i class="ni ni-single-02"></i>
-                        <span>My Wallet</span>
+                        <span>Mio profilo</span>
                     </a>
                    
                     <div class="dropdown-divider"></div>
@@ -72,7 +72,11 @@
                         <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
-             
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('users.myProfile') }}">
+                        <i class="ni ni-single-02 text-primary"></i>Mio profilo
+                    </a>
+                </li>
             </ul>
             <!-- Divider -->
             <hr class="my-3">

@@ -20,9 +20,9 @@
                     <div class=" dropdown-header noti-title">
                         <h6 class="text-overflow m-0">Benvenuto</h6>
                     </div>
-                    <a href="#" class="dropdown-item">
+                    <a href="{{ route('users.myProfile') }}" class="dropdown-item">
                         <i class="ni ni-single-02"></i>
-                        <span>My Wallet</span>
+                        <span>Mio profilo</span>
                     </a>
                     <div class="dropdown-divider"></div>
                     <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
