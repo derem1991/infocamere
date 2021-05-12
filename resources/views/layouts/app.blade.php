@@ -19,7 +19,7 @@
         <link href="{{ config('app.asset_url')}}/css/dataTables.bootstrap4.min.css" rel="stylesheet">
          <link href="{{ config('app.asset_url')}}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
         <link href="{{ config('app.asset_url')}}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-        <link type="text/css" href="{{ config('app.asset_url')}}/css/app.css" rel="stylesheet">
+        <link type="text/css" href="{{ config('app.asset_url')}}/css/app.min.css" rel="stylesheet">
  
          
     </head>
@@ -46,7 +46,7 @@
         <script   src="{{ config('app.asset_url')}}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script   src="{{ config('app.asset_url')}}/js/jquery.dataTables.min.js"></script>
          
-        <script src="{{ config('app.asset_url')}}/js/app.js?v=1.0.0"></script>
+        <script src="{{ config('app.asset_url')}}/js/default.min.js?v=1.0.0"></script>
         
         @yield('scriptjs')
     </body>
