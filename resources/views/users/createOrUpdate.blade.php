@@ -47,16 +47,16 @@
                         </div>
                      </div>
                      <div class="col-12 col-md-4">
-                        <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }} mb-3">
-                           <label class="form-control-label" for="email">Ruolo </label>
+                        <div class="form-group{{ $errors->has('roles') ? ' has-danger' : '' }} mb-3">
+                           <label class="form-control-label" for="roles">Ruolo </label>
                            <select id="roles" class="form-control" name="roles" value="{{ old('roles') }}" required > 
                               @foreach($roles as $role)
                                 <option value="{{$role}}" @if(isset($user) && $user->getRoleNames()->first() == $role) selected @endif> {{$role}} </option>
                               @endforeach
                            </select>
-                           @if ($errors->has('email'))
+                           @if ($errors->has('roles'))
                            <span class="invalid-feedback" style="display: block;" role="alert">
-                           <strong>{{ $errors->first('email') }}</strong>
+                           <strong>{{ $errors->first('roles') }}</strong>
                            </span>
                            @endif
                         </div>
