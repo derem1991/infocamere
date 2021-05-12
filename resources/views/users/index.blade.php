@@ -106,7 +106,5 @@
     });
    } );
 </script>
-<style>
-
-</style>
+ 
 @endsection

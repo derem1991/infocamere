@@ -9,7 +9,7 @@ use Spatie\Permission\Models\Role;
 use DB;
 use Hash;
 use Illuminate\Support\Arr;
-    
+use Auth;
 class UserController extends Controller
 {
     /**
@@ -34,7 +34,12 @@ class UserController extends Controller
 
         return view('users.index',compact('users','breadcrumb'));
     }
-    
+    public function myProfile()
+    {
+        $user = Auth::user();
+ 
+        return view('users.myProfile',compact('user'));
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -120,12 +125,12 @@ class UserController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email|',
-            'roles' => 'required',
+            'roles' => 'required_without_all:userProfile',  
             'password' => 'same:confirm-password',
         ]);
     
         $input = $request->all();
-        
+         
         if(!empty($input['password']))
           $input['password'] = Hash::make($input['password']);
         else
@@ -134,11 +139,17 @@ class UserController extends Controller
     
         $user = User::find($id);
         $user->update($input);
-        DB::table('model_has_roles')->where('model_id',$id)->delete();
+
+        if(!isset($input['userProfile'])) 
+        {
+          DB::table('model_has_roles')->where('model_id',$id)->delete();
+          $user->assignRole($request->input('roles'));
+          $route = 'users.index';
+        }
+        else // quando il cliente modifica i dati dal suo profilo personale
+         $route = 'users.myProfile';
     
-        $user->assignRole($request->input('roles'));
-    
-        return redirect()->route('users.index')->with('success','User updated successfully');
+        return redirect()->route($route)->with('success','User updated successfully');
     }
     
     /**
