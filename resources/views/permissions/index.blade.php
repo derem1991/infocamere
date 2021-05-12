@@ -1,7 +1,20 @@
 @extends('layouts.app')
 @section('content')
-@include('layouts.headers.navigation',['title'=>'Permessi','breadcrumb'=> $breadcrumb ?? null,'routeCreate' => 'permissions.create'])
-<div class="container-fluid mt--6">
+<div class="header bg-primary pb-6">
+   <div class="container-fluid">
+       <div class="header-body">
+          <div class="row align-items-center py-4">
+            @include('layouts.headers.navigation',['title'=>'Permessi','breadcrumb'=> $breadcrumb ?? null])
+            @can('permission-list')
+            <div class="col-lg-6 col-5 text-right">
+               <a href="{{route('permissions.create')}}" class="btn btn-sm btn-neutral">Nuovo</a>
+            </div>
+            @endcan
+           </div> 
+       </div>
+   </div>
+</div>
+ <div class="container-fluid mt--6">
    <div class="row">
       <div class="col">
          <div class="card">
