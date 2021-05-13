@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/documento/codicefiscale/xml?codiceFiscale=RSSRRT66P24H501H&documento=VSTOR]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWXCKGC971DF20129AE</IdRichiesta>
+        <DtEstrazione>2021-05-13</DtEstrazione>
+        <OraEstrazione>15:32:50</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMFX2V2DWXPRVRM       NRD1617820  NGIDI                                           CNT000000001                                                            AWWXCKGC971DF20129AE0001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>RM/1617820</IdentificativoPosizione>
+        <OutputRestituiti>VSTORAL+/+SUL+ALB+STO+APE+IDI</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="AL" descrizione-tipo-impresa="Altra forma" dt-iscrizione-ri="07/01/2021" dt-ultimo-protocollo="11/03/2021"
+ dt-mod-ultimo-protocollo-evaso="11/03/2021" denominazione="ROBERTO ROSSI" c-fiscale="RSSRRT66P24H501H" partita-iva="15843101005" c-cciaa-competente="RM" cciaa-competente="ROMA" cciaa="RM" n-rea="1617820">
+          <stato-attivita c="A">attiva</stato-attivita>
+          <forma-giuridica c="DI">IMPRESA INDIVIDUALE</forma-giuridica>
+          <indirizzo-localizzazione c-comune="091" comune="ROMA" provincia="RM" c-toponimo="VIA" toponimo="VIA" via="LIVIO SALINATORE" n-civico="22" cap="00181"/>
+          <indirizzo-posta-certificata>ROBERTOROSSI66@PEC.IT</indirizzo-posta-certificata>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="ROSSI" nome="ROBERTO" f-titolare="S"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita f-albi-ruoli-licenze="S" dt-inizio="17/12/2020">
+          <attivita-prevalente-r>ENOTECA WIN BAR CON SOMMINISTRAZIONE</attivita-prevalente-r>
+          <classificazione-ateco c-attivita="56.3" c-nace="56.3"/>
+        </sintesi-attivita>
+        <sintesi-cifre-impresa n-localizzazioni="0" n-titolari-cariche="1" dt-addetti="31/12/2020" n-addetti="1" n-trasferimenti-sede="0">
+          <pratiche-anno dt-inizio="13/05/2020" n="3"/>
+        </sintesi-cifre-impresa>
+        <info-sede>
+          <indirizzo-posta-certificata>ROBERTOROSSI66@PEC.IT</indirizzo-posta-certificata>
+          <dati-iscrizione-rea-rd n-rea="1617820"/>
+          <partita-iva>15843101005</partita-iva>
+        </info-sede>
+        <info-attivita dt-inizio-attivita-impresa="17/12/2020">
+          <attivita-esercitata>ENOTECA WINE BAR CON SOMMINISTRAZIONE</attivita-esercitata>
+          <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+            <classificazione-ateco c-attivita="56.3" attivita="Bar e altri esercizi simili senza cucina" c-importanza="I" importanza="prevalente svolta dall'impresa" c-fonte="AE" fonte="Agenzia delle Entrate"/>
+            <classificazione-ateco c-attivita="56.3" attivita="Bar e altri esercizi simili senza cucina" c-importanza="P" importanza="primaria Registro Imprese" c-fonte="AE" fonte="Agenzia delle Entrate"/>
+          </classificazioni-ateco>
+          <attivita-prevalente>ENOTECA WIN BAR CON SOMMINISTRAZIONE</attivita-prevalente>
+          <addetti-impresa c-tipo-informazione="R" tipo-informazione="RILEVATI" anno="2020" dt-rilevazione="31/12/2020">
+            <info-mesi>
+              <info-mese c-mese="12" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+            </info-mesi>
+          </addetti-impresa>
+          <addetti-comuni>
+            <addetti-comune c-comune="091" comune="ROMA" provincia="RM">
+              <pro-localizzazioni>
+                <pro-localizzazione>0</pro-localizzazione>
+              </pro-localizzazioni>
+              <info-mesi>
+                <info-mese c-mese="12" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+              </info-mesi>
+            </addetti-comune>
+          </addetti-comuni>
+        </info-attivita>
+        <storia-addetti>
+          <addetti-impresa c-tipo-informazione="R" tipo-informazione="RILEVATI" anno="2020" dt-rilevazione="31/12/2020">
+            <info-mesi>
+              <info-mese c-mese="12" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+            </info-mesi>
+          </addetti-impresa>
+        </storia-addetti>
+        <albi-ruoli-licenze>
+          <licenze>
+            <licenza p-licenza="1">
+              <licenza-autorizzazione c-autorita-rilascio="AC" autorita-rilascio="COMUNE" n="188694" dt-iscrizione="17/12/2020" tipo="SCIA DI SOMMINISTRAZIONE"/>
+            </licenza>
+          </licenze>
+        </albi-ruoli-licenze>
+        <persone-sede>
+          <persona progressivo="1">
+            <persona-fisica cognome="ROSSI" nome="ROBERTO" c-fiscale="RSSRRT66P24H501H" sesso="M">
+              <estremi-nascita dt="24/09/1966" c-comune="091" comune="ROMA" provincia="RM"/>
+            </persona-fisica>
+            <indirizzo c-comune="091" comune="ROMA" provincia="RM" c-toponimo="VIA" toponimo="VIA" via="DELLE CAVE" n-civico="42" cap="00181"/>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="TIT">TITOLARE FIRMATARIO</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+          </persona>
+        </persone-sede>
+        <mad>
+          <sessioni-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="15/01/2021">
+              <modifiche>
+                <modifica p-modifica="1" dt-effetto="17/12/2020" c-modifica="C7" descrizione-c-modifica="VARIAZIONE DELL' ATTIVITA' PREVALENTE DELL' IMPRESA">VALORE PRECEDENTE: ENOTECA CON SOMMINISTRAZIONE</modifica>
+                <modifica p-modifica="2" c-modifica="CG" descrizione-c-modifica="VARIAZIONE STATO ATTIVITA'">VALORI PRECEDENTI: DATA INIZIO ATTIVITA': (ASSENTE) STATO: INATTIVA</modifica>
+                <modifica p-modifica="3" c-modifica="C0" descrizione-c-modifica="RILASCIO DI LICENZE O AUTORIZZAZIONI"/>
+                <modifica p-modifica="4" c-modifica="C1" descrizione-c-modifica="INIZIO ATTIVITA'">ENOTECA WINE BAR CON SOMMINISTRAZIONE</modifica>
+                <modifica p-modifica="5" c-modifica="CE" descrizione-c-modifica="VARIAZIONE ATTIVITA' PRIMARIA">VALORE PRECEDENTE: (ASSENTE)</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+          </sessioni-rd-rea>
+        </mad>
+        <trascrizioni>
+          <protocolli-ri>
+            <protocollo-ri n-protocollo="80068" anno="2021" dt-protocollo="11/03/2021">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="U2">COMUNICAZIONE DA SUAP NON CONTESTUALE AL R.I.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="12635" anno="2021" dt-protocollo="15/01/2021">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                  <modello c="I2">MOD. E CANC. IMPR. INDIV. O SOGG. INDIV. ISCRITTO R.E.A.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="305917" anno="2020" dt-protocollo="17/09/2020">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C4">COM. UNICA PRESENTATA AI FINI R.I. E AGENZIA DELLE ENTRATE</modello>
+                  <modello c="I1">ISCR. IMPR. INDIV. NEL RI - DENUNCIA INIZIO ATT. AL R.E.A.</modello>
+                </modelli>
+                <trascrizioni-ri>
+                  <trascrizione-ri p-trascrizione="200030591700001">
+                    <tipo-trascrizione c-tipo-trascrizione="020">ISCRIZIONE CON LA QUALIFICA DI PICCOLO IMPRENDITORE (SEZ. SPECIALE)</tipo-trascrizione>
+                    <iscrizione-modifica dt-iscrizione="07/01/2021"/>
+                  </trascrizione-ri>
+                </trascrizioni-ri>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+          </protocolli-ri>
+        </trascrizioni>
+        <iscrizione-ri n-iscrizione-ri="RSSRRT66P24H501H" provincia-ri="RM" cciaa-competente="ROMA" dt-iscrizione="07/01/2021">
+          <sezioni>
+            <sezione c="P" descrizione="Iscritta con la qualifica di PICCOLO IMPRENDITORE (sezione speciale)" dt-iscrizione="07/01/2021"/>
+          </sezioni>
+        </iscrizione-ri>
+        <info-statuto dt-comunicazione-unica="17/09/2020"/>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>
