@@ -24,6 +24,7 @@
             <h3 class="d-block px-4 pt-4">Visura ordinaria </h3>
             <p class="d-block text-sm px-4 pb-0 mb-0 ">Con il primo metodo si scarica l'xml relativo alla visura ordinaria ed eventualmente si può creare un pdf custom sul xml ottenuto</p>
             <p class="d-block text-sm px-4 pb-0 mb-0 ">Con il secondo metodo si ottiene il pdf creato direttamente dal portale</p>
+            <p class="d-block text-sm px-4 pb-0 mb-0 ">Le stesse visure possono essere scaricate nel formato PDF o XML conoscendo Numero rea e CCIAA ( chiamata: /rest/registroimprese/output/impresa/visura/storica/nrea/pdf | /rest/registroimprese/output/impresa/visura/storica/nrea/xml)</p>
             <div class="col-12  p-2 m-0 row">
                <div class="col-md-4 col-12 my-2"  >
                   <div class="card col-12"style="border:1px solid black;" >
@@ -151,6 +152,7 @@
             <h3 class="d-block px-4 pt-4">Visura storica </h3>
             <p class="d-block text-sm px-4 pb-0 mb-0 ">Con il primo metodo si scarica l'xml relativo alla visura storica ed eventualmente si può creare un pdf custom sul xml ottenuto</p>
             <p class="d-block text-sm px-4 pb-0 mb-0 ">Con il secondo metodo si ottiene il pdf creato direttamente dal portale</p>
+            <p class="d-block text-sm px-4 pb-0 mb-0 ">Le stesse visure possono essere scaricate nel formato PDF o XML conoscendo Numero rea e CCIAA ( chiamata: /rest/registroimprese/output/impresa/visura/storica/nrea/pdf | /rest/registroimprese/output/impresa/visura/storica/nrea/xml)</p>
             <div class="col-12  p-2 m-0 row">
                <div class="col-md-4 col-12 my-2"  >
                   <div class="card col-12"style="border:1px solid black;" >
@@ -269,6 +271,25 @@
                               <h4 class="mt-0 mb-1"> /rest/storage/download (download pdf)</h4>
                            </div>
                         </div>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-12 my-2"  >
+                  <div class="card col-12"style="border:1px solid black;" >
+                     <div class="card-header">
+                        <h5 class="h3 mb-0">Visura storica delle modifiche </h5>
+                        <small class="d-block"> (INPUT: 03514840101 ) </small>
+                        <small  class="d-block">l'input puo essere solo CF o PIVA di 11 0 16 caratteri </small>
+                     </div>
+                     <div class="card-body p-0">
+                        <div class="list-group list-group-flush">
+                           <div class="list-group-item   flex-column align-items-start p-4">
+                              <div class="d-block w-100 justify-content-between">
+                                 <h5 class="mb-1 d-block">La Visura storica delle modifiche può essere recuperata dal pdf o dall'xml delle rispettive visure storiche. Da verificare se si può recuperare solo questo blocco</h5>
+                              </div>                              
+                           </div>
+                        </div>
+                        
                      </div>
                   </div>
                </div>
