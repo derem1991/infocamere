@@ -24,7 +24,7 @@
              <div class="col-12 p-0 p-4 m-0 prow">
                <div class="card col-md-6 col-12" style="border:1px solid black;">
                   <div class="card-header">
-                      <h5 class="h3 mb-0">visura ordinara impresa (es. RSSRRT66P24H501H ) </h5>
+                      <h5 class="h3 mb-0">visura ordinara impresa (INPUT: RSSRRT66P24H501H ) </h5>
                   </div>
                   <div class="card-body p-0">
                       <div class="list-group list-group-flush">
