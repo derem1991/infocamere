@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/documento/codicefiscale/xml?codiceFiscale=03514840101&documento=VATTU]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWXCHVSBK2D91028A2B</IdRichiesta>
+        <DtEstrazione>2021-05-13</DtEstrazione>
+        <OraEstrazione>15:08:13</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMPX2V1DWXPRVGE       NRD351067   NGISN                                           CNT000000001                                                            AWWXCHVSBK2D91028A2B0001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>GE/351067</IdentificativoPosizione>
+        <OutputRestituiti>VATTUSP+/+SUL+ALB+PER+PT8+IPA+TFS</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SP" descrizione-tipo-impresa="Societa' di persone" dt-iscrizione-rea="17/05/1995" dt-atto-costituzione="21/04/1995" dt-ultimo-protocollo="02/02/2018"
+ dt-mod-ultimo-protocollo-evaso="02/02/2018" denominazione="MATTONI ROSSI - S.N.C. DI VALENTI GUGLIELMO E C." c-fiscale="03514840101" partita-iva="03514840101" c-cciaa-competente="GE" cciaa-competente="GENOVA" cciaa="GE" n-rea="351067">
+          <stato-attivita c="A">attiva</stato-attivita>
+          <forma-giuridica c="SN">SOCIETA' IN NOME COLLETTIVO</forma-giuridica>
+          <indirizzo-localizzazione c-comune="025" comune="GENOVA" provincia="GE" c-toponimo="VIA" toponimo="VIA" via="CORSICA" n-civico="5 R." cap="16128" c-stradario="19160"/>
+          <indirizzo-posta-certificata>MATTONIROSSI@PECIMPRESE.IT</indirizzo-posta-certificata>
+          <telefono prefisso="010" n="5701973"/>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="VALENTI" nome="GUGLIELMO" carica="SOCIO"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita dt-inizio="10/10/1995">
+          <attivita-esercitata-r>ESERCIZIO BAR TAVOLA CALDA</attivita-esercitata-r>
+          <classificazione-ateco c-attivita="56.3" c-nace="56.3"/>
+        </sintesi-attivita>
+        <sintesi-cifre-impresa n-localizzazioni="1" n-titolari-cariche="3" dt-addetti="30/06/2018" n-addetti="1" n-trasferimenti-sede="0">
+          <pratiche-anno dt-inizio="13/05/2020" n="0"/>
+          <valore-nominale-conferimenti c-valuta="EU" valuta="EURO" ammontare="5.164,57"/>
+        </sintesi-cifre-impresa>
+        <doc-consultabili n-altri-atti="11"/>
+        <info-sede>
+          <telefono prefisso="010" n="5701973"/>
+          <indirizzo-posta-certificata>MATTONIROSSI@PECIMPRESE.IT</indirizzo-posta-certificata>
+          <dati-iscrizione-rea-rd n-rea="351067" dt-iscrizione="17/05/1995"/>
+          <partita-iva>03514840101</partita-iva>
+        </info-sede>
+        <info-attivita dt-inizio-attivita-impresa="10/10/1995">
+          <attivita-esercitata>ESERCIZIO BAR TAVOLA CALDA</attivita-esercitata>
+          <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+            <classificazione-ateco c-attivita="56.3" attivita="Bar e altri esercizi simili senza cucina" c-importanza="P" importanza="primaria Registro Imprese" dt-inizio="09/10/1995"/>
+            <classificazione-ateco c-attivita="56.10.11" attivita="Ristorazione con somministrazione" c-importanza="S" importanza="secondaria Registro Imprese" dt-inizio="09/10/1958"/>
+          </classificazioni-ateco>
+          <addetti-impresa c-tipo-informazione="R" tipo-informazione="RILEVATI" anno="2018" dt-rilevazione="30/06/2018">
+            <info-mesi>
+              <info-mese c-mese="03" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+              <info-mese c-mese="06" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+            </info-mesi>
+            <valori-medi valore-medio-dipendenti="0" valore-medio-indipendenti="1" valore-medio-totale="1"/>
+          </addetti-impresa>
+          <addetti-comuni>
+            <addetti-comune c-comune="025" comune="GENOVA" provincia="GE">
+              <pro-localizzazioni>
+                <pro-localizzazione>0</pro-localizzazione>
+                <pro-localizzazione>2</pro-localizzazione>
+              </pro-localizzazioni>
+              <info-mesi>
+                <info-mese c-mese="03" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+                <info-mese c-mese="06" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+              </info-mesi>
+              <valori-medi valore-medio-dipendenti="0" valore-medio-indipendenti="1" valore-medio-totale="1"/>
+            </addetti-comune>
+          </addetti-comuni>
+        </info-attivita>
+        <persone-sede>
+          <persona progressivo="1" f-rappresentante-ri="S">
+            <persona-fisica cognome="VALENTI" nome="GUGLIELMO" c-fiscale="VLNGLL58T15D969G" sesso="M">
+              <estremi-nascita dt="15/12/1958" c-comune="025" comune="GENOVA" provincia="GE"/>
+            </persona-fisica>
+            <indirizzo c-comune="025" comune="GENOVA" provincia="GE" c-toponimo="VIA" toponimo="VIA" via="AMENDOLA GIOVANNI" n-civico="9/9" cap="16145" altre-indicazioni="(IVI DAL 04/11/2002)"/>
+            <quota c-valuta="EU" valuta="EURO" valore="4.906,35"/>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche>
+                <proprieta-quota p-proprieta="0">TIPO DIRITTO: PROPRIETA'
+***
+CON DECRETO DEL GIUDICE PER LE INDAGINI PRELIMINARI DEL TRIBUNALE DI GENOVA
+IN DATA 07/09/2017 E' STATO DISPOSTO IL SEQUESTRO DELLA QUOTA DEL SOCIO
+VALENTI GUGLIELMO</proprieta-quota>
+              </atto-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="COM">SOCIO</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+          </persona>
+          <persona progressivo="4">
+            <persona-fisica cognome="TRIGLIA" nome="FABIO" c-fiscale="TRGFBA75P22F158I" sesso="M">
+              <estremi-nascita dt="22/09/1975" comune="MESSINA" provincia="ME"/>
+              <domicilio-fiscale c-comune="028" comune="LAVAGNA" provincia="GE" c-toponimo="CSO" toponimo="CORSO" via="MATTEOTTI" n-civico="13/29" cap="16033"/>
+            </persona-fisica>
+            <quota c-valuta="EU" valuta="EURO" valore="258,22"/>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche>
+                <proprieta-quota p-proprieta="0">TIPO DIRITTO: PROPRIETA'</proprieta-quota>
+              </atto-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="COM" dt-iscrizione="23/08/2017" dt-atto-nomina="31/07/2017">SOCIO</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+          </persona>
+          <persona progressivo="3">
+            <persona-fisica cognome="BROGI" nome="CARLO" c-fiscale="BRGCRL48R06D969O" sesso="M">
+              <estremi-nascita dt="06/10/1948" c-comune="025" comune="GENOVA" provincia="GE"/>
+            </persona-fisica>
+            <indirizzo c-comune="025" comune="GENOVA" provincia="GE" c-toponimo="VIA" toponimo="VIA" via="VAL TREBBIA" n-civico="70/7" cap="16141"/>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="DL2" dt-nomina="18/05/1998">DELEGATO DI CUI ART. 2 LEGGE 25/8/91 N.287</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+          </persona>
+        </persone-sede>
+        <localizzazioni>
+          <localizzazione progressivo="2" c-tipo="UL" tipo="UNITA' LOCALE" dt-apertura="01/06/2000" f-cessazione="N">
+            <sotto-tipi>
+              <sotto-tipo c="MA">MAGAZZINO</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="025" comune="GENOVA" provincia="GE" c-toponimo="VIA" toponimo="VIA" via="CORSICA" n-civico="11 R." cap="16128" c-stradario="19160"/>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="56.3" attivita="Bar e altri esercizi simili senza cucina" c-importanza="I" importanza="prevalente svolta dall'impresa"/>
+            </classificazioni-ateco>
+          </localizzazione>
+        </localizzazioni>
+        <iscrizione-ri n-iscrizione-ri="03514840101" provincia-ri="GE" cciaa-competente="GENOVA" c-n-iscrizione-ri-old="GE025-61581" dt-iscrizione="19/02/1996">
+          <sezioni>
+            <sezione c="O" descrizione="Iscritta nella sezione ORDINARIA" dt-iscrizione="19/02/1996"/>
+          </sezioni>
+        </iscrizione-ri>
+        <info-statuto dt-atto-costituzione="21/04/1995">
+          <durata-societa dt-termine="31/12/2050"/>
+          <iscrizione-rs dt-iscrizione="19/05/1995"/>
+          <oggetto-sociale>L'ATTIVITA' DI RISTORAZIONE, PIZZERIA, TRATTORIA, TAVOLE CALDE E FREDDE, BAR,
+GELATERIA, PASTICCERIA, LATTERIA, ALBERGO, CAMPEGGIO, COMPLESSI TURISTICI,
+DISCOTECHE E SALE DA BALLO.</oggetto-sociale>
+          <poteri>
+            <poteri-patti-sociali>ARTICOLO 7) AMMINISTRAZIONE
+L'AMMINISTRAZIONE SIA ORDINARIA CHE STRAORDINARIA NONCHE' LA RAPPRESENTANZA
+DELLA SOCIETA' SPETTANO AL SOLO SOCIO SIGNOR VALENTI GUGLIELMO LUCIANO.</poteri-patti-sociali>
+          </poteri>
+        </info-statuto>
+        <info-patrimoniali-finanziarie>
+          <valore-nominale-conferimenti c-valuta="EU" valuta="EURO" ammontare="5.164,57"/>
+        </info-patrimoniali-finanziarie>
+        <ta-fusioni-scissioni-subentri>
+          <trasferimenti-azienda>
+            <trasferimento-azienda>
+              <estremi-pratica dt-atto="29/12/1997" cciaa="GE" anno="1998" n="2241" dt-protocollo="20/01/1998" dt-deposito="20/01/1998"/>
+              <informazioni-atto c-oggetto="01" oggetto="COMPRAVENDITA">
+                <titolari>
+                  <titolare c-tipo="CD" tipo="Cedente">
+                    <anagrafica-titolare c-tipo="P" tipo="PERSONA" c-fiscale="CMPLRI74P49D969R" denominazione="CAMPANELLA ILARIA" cognome="CAMPANELLA" nome="ILARIA"/>
+                  </titolare>
+                  <titolare c-tipo="CS" tipo="Cessionario">
+                    <anagrafica-titolare c-tipo="I" tipo="IMPRESA" c-fiscale="03514840101" denominazione="MATTONI ROSSI - S.N.C. DI VALENTI GUGLIELMO E C."/>
+                  </titolare>
+                </titolari>
+              </informazioni-atto>
+            </trasferimento-azienda>
+            <trasferimento-azienda>
+              <estremi-pratica dt-atto="28/10/1999" cciaa="GE" anno="1999" n="40401" dt-protocollo="18/11/1999" dt-deposito="18/11/1999"/>
+              <informazioni-atto n-repertorio="35123" notaio="GRIFFO BENIAMINO" c-oggetto="01" oggetto="COMPRAVENDITA">
+                <titolari>
+                  <titolare c-tipo="CD" tipo="Cedente">
+                    <anagrafica-titolare c-tipo="I" tipo="IMPRESA" c-fiscale="03514840101" denominazione="MATTONI ROSSI - S.N.C. DI VALENTI GUGLIELMO E C."/>
+                  </titolare>
+                  <titolare c-tipo="CS" tipo="Cessionario">
+                    <anagrafica-titolare c-tipo="I" tipo="IMPRESA" c-fiscale="03747880106" denominazione="&quot;ROCK CAFE' SAS DI GIUSEPPE PALAZZOTTO &amp; C. &quot;" denominazione-denunciata="ROCK CAFE'  S.R.L."/>
+                  </titolare>
+                </titolari>
+              </informazioni-atto>
+            </trasferimento-azienda>
+            <trasferimento-azienda>
+              <estremi-pratica dt-atto="31/07/2017" cciaa="GE" anno="2017" n="36510" dt-protocollo="31/07/2017" dt-deposito="31/07/2017"/>
+              <informazioni-atto n-repertorio="3344" notaio="TINIT-FGRGNR70P2" c-oggetto="04" oggetto="AFFITTO/COMODATO">
+                <titolari>
+                  <titolare c-tipo="CD" tipo="Cedente">
+                    <anagrafica-titolare c-tipo="I" tipo="IMPRESA" c-fiscale="03514840101" denominazione="MATTONI ROSSI - S.N.C. DI VALENTI GUGLIELMO E C."/>
+                  </titolare>
+                  <titolare c-tipo="CS" tipo="Cessionario">
+                    <anagrafica-titolare c-tipo="A" tipo="ALTRO" c-fiscale="00247540099" denominazione="SBOCCIA S.A.S. DI ROBERTO E THOMAS VALENTI &amp; C."/>
+                  </titolare>
+                </titolari>
+              </informazioni-atto>
+            </trasferimento-azienda>
+          </trasferimenti-azienda>
+        </ta-fusioni-scissioni-subentri>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>

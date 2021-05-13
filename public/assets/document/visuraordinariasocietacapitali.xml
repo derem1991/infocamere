@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/documento/codicefiscale/xml?codiceFiscale=03257950364&documento=VATTU]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWXCHQ4P64D5704CF61</IdRichiesta>
+        <DtEstrazione>2021-05-13</DtEstrazione>
+        <OraEstrazione>15:05:55</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMCX2V1DWXPRVMO       NRD371974   NGISR                                           CNT000000001                                                            AWWXCHQ4P64D5704CF610001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>MO/371974</IdentificativoPosizione>
+        <OutputRestituiti>VATTUSC+/+SUL+PCO+ALB+AMM+SOC+IS8+CAP+TFS</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SC" descrizione-tipo-impresa="Societa' di capitale" stato-impresa="CANCELLATA" dt-iscrizione-ri="10/03/2009" dt-cancellazione="04/03/2020" dt-atto-costituzione="05/03/2009" dt-ultimo-protocollo="03/03/2020"
+ dt-mod-ultimo-protocollo-evaso="04/03/2020" denominazione="GECO SRL" c-fiscale="03257950364" partita-iva="03257950364" c-cciaa-competente="MO" cciaa-competente="MODENA" cciaa="MO" n-rea="371974">
+          <forma-giuridica c="SR">SOCIETA' A RESPONSABILITA' LIMITATA</forma-giuridica>
+          <indirizzo-localizzazione c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO" c-toponimo="VIA" toponimo="VIA" via="MANZONI" n-civico="1" cap="41013"/>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="CASALINI" nome="SILVIA" carica="AMMINISTRATRICE UNICA" f-rappresentante-ri="S"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita dt-inizio="08/04/2009">
+          <attivita-prevalente-r>COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ARTICOLI E ACCESSORI DI ABBIGLIAMENTO IN GENERE.</attivita-prevalente-r>
+          <classificazione-ateco c-attivita="47.71.2" c-nace="47.71"/>
+        </sintesi-attivita>
+        <sintesi-cifre-impresa n-localizzazioni="5" n-amministratori="1" n-sindaci="0" n-titolari-cariche="0" n-soci="2" dt-addetti="31/03/2020" n-addetti="1" n-trasferimenti-sede="0" n-trasferimenti-quote="0">
+          <pratiche-anno dt-inizio="13/05/2020" n="0"/>
+          <capitale-sociale c-valuta="EU" valuta="EURO">
+            <deliberato ammontare="12.000,00"/>
+          </capitale-sociale>
+        </sintesi-cifre-impresa>
+        <doc-consultabili f-esiste-statuto="S" n-altri-atti="13">
+          <bilanci>
+            <bilancio anno="2013"/>
+            <bilancio anno="2012"/>
+            <bilancio anno="2011"/>
+            <bilancio anno="2010"/>
+            <bilancio anno="2009"/>
+          </bilanci>
+        </doc-consultabili>
+        <info-sede>
+          <dati-iscrizione-rea-rd n-rea="371974"/>
+          <partita-iva>03257950364</partita-iva>
+        </info-sede>
+        <cancellazione-trasferimento>
+          <cancellazione dt-cancellazione="04/03/2020" dt-domanda="03/03/2020" c-causale="CF" causale="CHIUSURA DEL FALLIMENTO"/>
+        </cancellazione-trasferimento>
+        <info-attivita dt-inizio-attivita-impresa="08/04/2009">
+          <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+            <classificazione-ateco c-attivita="47.71.2" attivita="Commercio al dettaglio di confezioni per bambini e neonati" c-importanza="I" importanza="prevalente svolta dall'impresa"/>
+          </classificazioni-ateco>
+          <attivita-prevalente>COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ARTICOLI E ACCESSORI DI ABBIGLIAMENTO IN GENERE.</attivita-prevalente>
+          <addetti-impresa c-tipo-informazione="R" tipo-informazione="RILEVATI" anno="2020" dt-rilevazione="31/03/2020">
+            <info-mesi>
+              <info-mese c-mese="03" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+            </info-mesi>
+          </addetti-impresa>
+          <addetti-comuni>
+            <addetti-comune c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO">
+              <pro-localizzazioni>
+                <pro-localizzazione>0</pro-localizzazione>
+                <pro-localizzazione>7</pro-localizzazione>
+              </pro-localizzazioni>
+              <info-mesi>
+                <info-mese c-mese="03" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+              </info-mesi>
+            </addetti-comune>
+          </addetti-comuni>
+        </info-attivita>
+        <persone-sede>
+          <persona progressivo="1" f-rappresentante-ri="S" f-amministratore="S" f-sindaco="N">
+            <persona-fisica cognome="CASALINI" nome="SILVIA" c-fiscale="CSLSLV70L57C107C" sesso="F">
+              <estremi-nascita dt="17/07/1970" c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO"/>
+            </persona-fisica>
+            <indirizzo c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO" c-toponimo="VIA" toponimo="VIA" via="DEI CANTASTORIE" n-civico="4" cap="41013"/>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="AUN" dt-iscrizione="10/03/2009" dt-atto-nomina="05/03/2009" c-durata="RE" descrizione-durata="FINO ALLA REVOCA" dt-presentazione="06/03/2009">AMMINISTRATRICE UNICA</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+          </persona>
+        </persone-sede>
+        <localizzazioni>
+          <localizzazione progressivo="6" c-tipo="UL" tipo="UNITA' LOCALE" dt-apertura="06/03/2010" f-cessazione="N">
+            <sotto-tipi>
+              <sotto-tipo c="NEG">NEGOZIO</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="046" comune="VIGNOLA" provincia="MO" c-toponimo="VIA" toponimo="VIA" via="MAZZINI" n-civico="8" cap="41058"/>
+            <attivita-esercitata>COMMERCIO AL MINUTO DI ARTICOLI DI ABBIGLIAMENTO PER BAMBINI E ACCESSORI VARI</attivita-esercitata>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="47.71.2" attivita="Commercio al dettaglio di confezioni per bambini e neonati" c-importanza="P" importanza="primaria Registro Imprese" dt-inizio="06/03/2010"/>
+            </classificazioni-ateco>
+            <albi-ruoli-licenze>
+              <denunce-inizio-attivita>
+                <denuncia-inizio-attivita c-tipo="DC" tipo="Denuncia inizio attivit&#224; o comunicazione" dt-denuncia="29/01/2010" c-ente-rilascio="AC" ente-rilascio="COMUNE"/>
+              </denunce-inizio-attivita>
+              <commercio-dettaglio dt-dichiarazione="06/03/2010" superficie-vendita="72" c-settore-merceologico="N" settore-merceologico="NON ALIMENTARE">
+                <integrazione-informazioni c-tipo-domanda="CA" tipo-domanda="comunicazione di apertura " dt-presentazione="29/01/2010" c-comune-presentazione="046" comune-presentazione="VIGNOLA" provincia-presentazione="MO" dt-decorrenza="06/03/2010" c-struttura-esercizio="V" struttura-esercizio="Esercizio di commercio al dettaglio di VICINATO " mq-vendita-non-alimentare="72" mq-esercizio="82"/>
+              </commercio-dettaglio>
+            </albi-ruoli-licenze>
+          </localizzazione>
+          <localizzazione progressivo="7" c-tipo="UL" tipo="UNITA' LOCALE" dt-apertura="20/12/2010" f-cessazione="N">
+            <sotto-tipi>
+              <sotto-tipo c="DEP">DEPOSITO</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO" c-toponimo="VIA" toponimo="VIA" via="DEGLI ARROTINI" n-civico="26" cap="41013"/>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="47.71.2" attivita="Commercio al dettaglio di confezioni per bambini e neonati" c-importanza="I" importanza="prevalente svolta dall'impresa"/>
+            </classificazioni-ateco>
+          </localizzazione>
+          <localizzazione progressivo="1" c-tipo="UL" tipo="UNITA' LOCALE" dt-apertura="08/04/2009" f-cessazione="N">
+            <sotto-tipi>
+              <sotto-tipo c="NEG">NEGOZIO</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="010" comune="FAENZA" provincia="RA" c-toponimo="VIA" toponimo="VIA" via="MENGOLINA" n-civico="9/21" cap="48018"/>
+            <sede-fuori-provincia n-rea="193106" cciaa="RA"/>
+            <attivita-esercitata>DAL 08/04/09 COMMERCIO AL DETTAGLIO DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ACCESSORI E ARTICOLI DI ABBIGLIAMENTO IN GENERE</attivita-esercitata>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="47.71.2" attivita="Commercio al dettaglio di confezioni per bambini e neonati" c-importanza="P" importanza="primaria Registro Imprese" dt-inizio="08/04/2009"/>
+              <classificazione-ateco c-attivita="47.71.5" attivita="Commercio al dettaglio di cappelli, ombrelli, guanti e cravatte" c-importanza="S" importanza="secondaria Registro Imprese" dt-inizio="08/04/2009"/>
+            </classificazioni-ateco>
+            <albi-ruoli-licenze>
+              <commercio-dettaglio dt-dichiarazione="16/06/2010" superficie-vendita="135" c-settore-merceologico="N" settore-merceologico="NON ALIMENTARE">
+                <integrazione-informazioni c-tipo-domanda="CV" tipo-domanda="comunicazione di variazione " dt-presentazione="16/06/2010" c-comune-presentazione="010" comune-presentazione="FAENZA" provincia-presentazione="MO" dt-decorrenza="16/06/2010" c-struttura-esercizio="V" struttura-esercizio="Esercizio di commercio al dettaglio di VICINATO " mq-vendita-non-alimentare="135" mq-esercizio="150"/>
+              </commercio-dettaglio>
+            </albi-ruoli-licenze>
+          </localizzazione>
+          <localizzazione progressivo="1" c-tipo="UL" tipo="UNITA' LOCALE" dt-apertura="25/10/2010" f-cessazione="N">
+            <sotto-tipi>
+              <sotto-tipo c="NEG">NEGOZIO</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="041" comune="TERAMO" provincia="TE" c-toponimo="VIA" toponimo="VIA" via="G. GALILEI" n-civico="48" cap="64020" frazione="SAN NICOLO' A TORDINO"/>
+            <sede-fuori-provincia n-rea="152715" cciaa="TE"/>
+            <attivita-esercitata>COMMERCIO AL DETTAGLIO DI ABBIGLIAMENTO PER BAMBINI ED ACCESSORI VARI.</attivita-esercitata>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="47.71.2" attivita="Commercio al dettaglio di confezioni per bambini e neonati" c-importanza="P" importanza="primaria Registro Imprese" dt-inizio="25/10/2010"/>
+              <classificazione-ateco c-attivita="47.71.5" attivita="Commercio al dettaglio di cappelli, ombrelli, guanti e cravatte" c-importanza="S" importanza="secondaria Registro Imprese" dt-inizio="25/10/2010"/>
+            </classificazioni-ateco>
+            <albi-ruoli-licenze>
+              <denunce-inizio-attivita>
+                <denuncia-inizio-attivita c-tipo="DC" tipo="Denuncia inizio attivit&#224; o comunicazione" dt-denuncia="25/10/2010" c-ente-rilascio="AC" ente-rilascio="COMUNE"/>
+              </denunce-inizio-attivita>
+              <commercio-dettaglio dt-dichiarazione="25/10/2010" superficie-vendita="105" c-settore-merceologico="N" settore-merceologico="NON ALIMENTARE"/>
+            </albi-ruoli-licenze>
+          </localizzazione>
+          <localizzazione progressivo="2" c-tipo="UL" tipo="UNITA' LOCALE" insegna="NEXT PEOPLE" dt-apertura="17/12/2011" f-cessazione="N">
+            <sotto-tipi>
+              <sotto-tipo c="NEG">NEGOZIO</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="037" comune="ROSETO DEGLI ABRUZZI" provincia="TE" c-toponimo="VIA" toponimo="VIA" via="MANZONI" n-civico="SNC" cap="64026"/>
+            <sede-fuori-provincia n-rea="152715" cciaa="TE"/>
+            <attivita-esercitata>COMMERCIO AL DETTAGLIO DI ABBIGLIAMENTO PER BAMBINI</attivita-esercitata>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="47.71.2" attivita="Commercio al dettaglio di confezioni per bambini e neonati" c-importanza="P" importanza="primaria Registro Imprese" dt-inizio="17/12/2011"/>
+            </classificazioni-ateco>
+            <albi-ruoli-licenze>
+              <denunce-inizio-attivita>
+                <denuncia-inizio-attivita c-tipo="DC" tipo="Denuncia inizio attivit&#224; o comunicazione" dt-denuncia="16/12/2011" c-ente-rilascio="AC" ente-rilascio="COMUNE"/>
+              </denunce-inizio-attivita>
+              <commercio-dettaglio dt-dichiarazione="17/12/2011" superficie-vendita="99" c-settore-merceologico="N" settore-merceologico="NON ALIMENTARE"/>
+            </albi-ruoli-licenze>
+          </localizzazione>
+        </localizzazioni>
+        <elenco-soci dt-soci-titolari-al="13/05/2021" f-ultimo-elenco-soci="S">
+          <estremi-pratica cciaa="MO" anno="2010" n="29900" dt-protocollo="15/06/2010" dt-deposito="15/06/2010"/>
+          <capitale-sociale c-valuta="EU" valuta="EURO" ammontare="12.000,00"/>
+          <riquadri>
+            <riquadro>
+              <composizione-quote c-valuta="EU" valuta="EURO" valore-nominale="11.640,00" valore-versato="11.640,00"/>
+              <titolari>
+                <titolare f-rappresentante="S">
+                  <anagrafica-titolare c-tipo="P" tipo="PERSONA" c-fiscale="MRNSFN68H10F257R" denominazione="MORANDI STEFANO" cognome="MORANDI" nome="STEFANO"/>
+                  <domicilio comune="CASTELFRANCO EMILIA" provincia="MO" via="VIA COSTITUZIONE" n-civico="1" cap="41013"/>
+                  <diritto-partecipazione c-tipo="01" tipo="PROPRIETA'"/>
+                </titolare>
+              </titolari>
+              <note>MORANDI STEFANO, DOMICILIATO A CASTELFRANCO EMILIA(MO), FRAZIONE PIUMAZZO, CAP 41013, VIA COSTITUZIONE N.1</note>
+            </riquadro>
+            <riquadro>
+              <composizione-quote c-valuta="EU" valuta="EURO" valore-nominale="360,00" valore-versato="360,00"/>
+              <titolari>
+                <titolare f-rappresentante="S">
+                  <anagrafica-titolare c-tipo="P" tipo="PERSONA" c-fiscale="CSLSLV70L57C107C" denominazione="CASALINI SILVIA" cognome="CASALINI" nome="SILVIA"/>
+                  <domicilio comune="CASTELFRANCO EMILIA" provincia="MO" via="VIA DEI CANTASTORIE" n-civico="4" cap="41013" frazione="CAVAZZONA"/>
+                  <diritto-partecipazione c-tipo="01" tipo="PROPRIETA'"/>
+                </titolare>
+              </titolari>
+              <note>CASALINI SILVIA, DOMICILIATA A CASTELFRANCO EMILIA (MO), FRAZIONE CAVAZZONA, VIA DEI CANTASTORIE N.4, CAP 41013</note>
+            </riquadro>
+          </riquadri>
+        </elenco-soci>
+        <tabella-elenco-soci>
+          <soci>
+            <socio>
+              <anagrafica-titolare c-tipo="P" c-fiscale="MRNSFN68H10F257R" denominazione="MORANDI STEFANO"/>
+              <quote-diritti>
+                <quota-diritto c-tipo-diritto="01" tipo-diritto="PROPRIETA'" valore-nominale="11.640" percentuale-capitale="97"/>
+              </quote-diritti>
+            </socio>
+            <socio>
+              <anagrafica-titolare c-tipo="P" c-fiscale="CSLSLV70L57C107C" denominazione="CASALINI SILVIA"/>
+              <quote-diritti>
+                <quota-diritto c-tipo-diritto="01" tipo-diritto="PROPRIETA'" valore-nominale="360" percentuale-capitale="3"/>
+              </quote-diritti>
+            </socio>
+          </soci>
+        </tabella-elenco-soci>
+        <iscrizione-ri n-iscrizione-ri="03257950364" provincia-ri="MO" cciaa-competente="MODENA" dt-iscrizione="10/03/2009">
+          <sezioni>
+            <sezione c="O" descrizione="Iscritta nella sezione ORDINARIA" dt-iscrizione="10/03/2009"/>
+          </sezioni>
+        </iscrizione-ri>
+        <info-statuto dt-atto-costituzione="05/03/2009">
+          <durata-societa dt-termine="31/12/2030">
+            <scadenza-esercizi dt-primo-esercizio="31/12/2009" giorni-proroga-bilancio="60"/>
+          </durata-societa>
+          <oggetto-sociale>LA SOCIETA' HA PER OGGETTO:- IL COMMERCIO SIA AL DETTAGLIO CHE ALL'INGROSSO DI
+PRODOTTI DI ABBIGLIAMENTO E CALZATURE IN GENERE, ARTICOLI DI MAGLIERIA,
+TESSUTI, TOVAGLIATO, ACCESSORI PER L'ABBIGLIAMENTO E BIANCHERIA PER UOMO, DONNA
+E BAMBINO,- LA FABBRICAZIONE E LO STOCCAGGIO DI PRODOTTI DI ABBIGLIAMENTO E
+CALZATUR E IN GENERE, MAGLIERIA, TESSUTI, TOVAGLIATO, ACCESSORI PER
+L'ABBIGLIAMENTO E BIA NCHERIA PER UOMO, DONNA E BAMBINO, SIA IN CONTO IN
+PROPRIO CHE PER CONTO TERZI, - LA GESTIONE DI CATENE DI NEGOZI IN FRANCHISING.
+LA SOCIETA' POTRA' ESERCITAR E ATTIVITA' DI CONSULENZA PER COMUNICAZIONE,
+SPONSORIZZAZIONE, PUBBLICITA' E MAR KETING ED OGNI ATTIVITA' DI CONSULENZA
+COMMERCIALE CONNESSA AL SETTORE DELL'ABBI GLIAMENTO, DELLE CALZATURE, DEI
+TESSUTI E DEL TOVAGLIATO.LA SOCIETA' POTRA' ES ERCITARE, ANCHE  PER CONTO DI
+TERZI, ATTIVITA' DI CONSULENZA E PROGETTAZIONE DI PIANI DI SVILUPPO
+COMMERCIALE, DI CONTRATTI DI FRANCHISING E DI OGNI ALTRA FORMA DI
+COLLABORAZIONE COMMERCIALE CONNESSA AL SETTORE DELL'ABBIGLIAMENTO, DELLE CAL
+ZATURE, DEI TESSUTI E DEL TOVAGLIATO. LA SOCIETA' POTRA' COMPIERE TUTTE LE OPER
+AZIONI COMMERCIALI, MOBILIARI, IMMOBILIARI E FINANZIARIE NECESSARIE O UTILI PER
+IL CONSEGUIMENTO DELL'OGGETTO SOCIALE; PRESTARE GARANZIE, AVALLI, FIDEIUSSIONI
+A NCHE A FAVORE DI TERZI, STIPULARE MUTUI, FIDI, APERTURE DI CONTI CORRENTI,
+OPERA ZIONI BANCARIE IN GENERE CON ISTITUTI DI CREDITO, RICEVERE CONFERIMENTI,
+STIPULA RE CONTRATTI DI ASSOCIAZIONE IN PARTECIPAZIONE, NONCHE' DI LOCAZIONE
+FINANZIARIA IN GENERE.E' COMUNQUE ESCLUSA OGNI ATTIVITA' DI SOLLECITAZIONE DEL
+PUBBLICO RISPARMIO, OGNI ATTIVITA' DI INTERMEDIAZIONE, NEGOZIAZIONE,
+COLLOCAMENTO O ALTRO SU STRUMENTI FINANZIARI, OGNI ATTIVITA' PROFESSIONALE
+RISERVATA, NONCHE' L'ESERCIZIO, NEI CONFRONTI DEL PUBBLICO DI ALCUNA DELLE
+ATTIVITA' DI CUI ALL'ART.106 DE L DECRETO LEGISLATIVO N.385 DEL 1 SETTEMBRE
+1993.</oggetto-sociale>
+          <poteri>
+            <poteri-statuto>L'ORGANO AMMINISTRATIVO, IN QUALUNQUE FORMA SIA NOMINATO, E' INVESTITO DI TUTTI
+I PIU' AMPI POTERI ATTINENTI ALL'AMMINISTRAZIONE DELLA SOCIETA', SIA ORDINARIA
+CHE STRAORDINARIA E PUO' COMPIERE TUTTE LE OPERAZIONI NECESSARIE OD UTILI PER
+IL CONSEGUIMENTO DELL'OGGETTO SOCIALE, AD ECCEZIONE DI QUANTO RISERVATO DALLA
+LEGGE O DALLO STATUTO ALLA COMPETENZA DEI SOCI. QUALORA VENGA NOMINATO UN
+CONSIGLIO DI AMMINISTRAZIONE, QUESTO, SE NON VI HANNO PROVVEDUTO I SOCI,
+NOMINERA' NEL SUO SENO UN PRESIDENTE ED EVENTUALMENTE ANCHE UN VICE-PRESIDENTE
+E UNO O PIU' AMMINISTRATORI DELEGATI. IL CONSIGLIO DI AMMINISTRAZIONE PUO'
+DELEGARE LE PROPRIE ATTRIBUZIONI AD UNO O PIU' DEI SUOI MEMBRI NEL RISPETTO DI
+QUANTO DISPOSTO DALL'ARTICOLO 2381 DEL CODICE CIVILE.  LA FIRMA E LA
+RAPPRESENTANZA LEGALE DELLA SOCIETA', DI FRONTE AI TERZI E IN OGNI SEDE
+AMMINISTRATIVA E GIUDIZIARIA, SPETTANO: A) ALL'AMMINISTRATORE UNICO; B) AL
+PRESIDENTE DEL CONSIGLIO DI AMMINISTRAZIONE O AL VICE PRESIDENTE IN CASO DI
+ASSENZA O IMPEDIMENTO DEL PRESIDENTE; C) ALL'AMMINISTRATORE DELEGATO OVE
+NOMINATO E NEI LIMITI DEI POTERI CONFERITIGLI; D) IN CASO DI AMMINISTRAZIONE
+PLURIPERSONALE NON COLLEGIALE, AI SINGOLI AMMINISTRATORI, IN VIA DISGIUNTA O
+CONGIUNTA, A SECONDA DI QUANTO STABILITO ALL'ATTO DELLA NOMINA PER I RELATIVI
+POTERI.</poteri-statuto>
+            <ripartizioni-utili-perdite>ARTICOLO 29) DELLO STATUTO SOCIALE.</ripartizioni-utili-perdite>
+          </poteri>
+          <riferimenti>
+            <clausole>
+              <recesso f-presenza-nello-statuto="S"/>
+              <gradimento f-presenza-nello-statuto="S"/>
+              <prelazione f-presenza-nello-statuto="S"/>
+              <compromissorie f-presenza-nello-statuto="S"/>
+            </clausole>
+          </riferimenti>
+        </info-statuto>
+        <amministrazione-controllo>
+          <sistema-amministrazione c="R1">AMMINISTRATORE UNICO</sistema-amministrazione>
+          <forme-amministrative>
+            <forma-amministrativa c="AU" f-in-carica="S" f-organo-controllo="N">AMMINISTRATORE UNICO</forma-amministrativa>
+          </forme-amministrative>
+          <forme-amministrative-in-carica>
+            <forma-amministrativa-in-carica c="AU" n-amministratori-in-carica="1">AMMINISTRATORE UNICO</forma-amministrativa-in-carica>
+          </forme-amministrative-in-carica>
+        </amministrazione-controllo>
+        <info-patrimoniali-finanziarie>
+          <capitale-sociale c-valuta="EU" valuta="EURO">
+            <deliberato ammontare="12.000,00"/>
+            <sottoscritto ammontare="12.000,00"/>
+            <versato ammontare="12.000,00"/>
+            <tipo-conferimenti c="D">DENARO</tipo-conferimenti>
+          </capitale-sociale>
+          <conferimenti-benefici f-presenza-nello-statuto="S"/>
+          <strumenti-finanziari>
+            <titoli-debito>ARTICOLO 8) DELLO STATUTO SOCIALE</titoli-debito>
+          </strumenti-finanziari>
+        </info-patrimoniali-finanziarie>
+        <ta-fusioni-scissioni-subentri>
+          <trasferimenti-azienda>
+            <trasferimento-azienda>
+              <estremi-pratica dt-atto="02/04/2009" cciaa="TE" anno="2009" n="9357" dt-protocollo="08/04/2009" dt-deposito="08/04/2009"/>
+              <informazioni-atto n-repertorio="36838" notaio="BRBLDA54R15F257C" c-oggetto="04" oggetto="AFFITTO/COMODATO">
+                <titolari>
+                  <titolare c-tipo="CD" tipo="Cedente">
+                    <anagrafica-titolare c-tipo="I" tipo="IMPRESA" c-fiscale="00751390675" denominazione="MODENA MARKET S.R.L. IN LIQUIDAZIONE" denominazione-denunciata="MODENA MARKET S.P.A."/>
+                  </titolare>
+                  <titolare c-tipo="CS" tipo="Cessionario">
+                    <anagrafica-titolare c-tipo="A" tipo="ALTRO" c-fiscale="03257950364" denominazione="GECO SRL"/>
+                  </titolare>
+                </titolari>
+              </informazioni-atto>
+            </trasferimento-azienda>
+          </trasferimenti-azienda>
+        </ta-fusioni-scissioni-subentri>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>
