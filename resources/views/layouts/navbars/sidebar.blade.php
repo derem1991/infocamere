@@ -77,6 +77,11 @@
                         <i class="ni ni-single-02 text-primary"></i>Mio profilo
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('documents.index') }}">
+                        <i class="fa fa-file text-primary"></i>Documenti
+                    </a>
+                </li>
             </ul>
             <!-- Divider -->
             <hr class="my-3">
