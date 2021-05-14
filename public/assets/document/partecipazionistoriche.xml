@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputPersonaRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/assettiproprietari/partecipazioni/storica/codicefiscale/xml?codiceFiscale=02624130601]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWXGN782C3DB0037466</IdRichiesta>
+        <DtEstrazione>2021-05-14</DtEstrazione>
+        <OraEstrazione>16:06:57</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMNX2BGDWX                                                                        CNT000000001                                                            AWWXGN782C3DB00374660001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>02624130601</IdentificativoPosizione>
+        <OutputRestituiti>PAS+/+PAS</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-persona>
+        <dati-identificativi c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SP" descrizione-tipo-impresa="Societa' di persone" dt-iscrizione-ri="08/02/2010" dt-atto-costituzione="09/01/2010" dt-ultimo-protocollo="02/02/2021" denominazione="P.B.S. DI BERI PEDRO &amp; C. - S.N.C. - IN FALLIMENTO" c-fiscale="02624130601" partita-iva="02624130601" cciaa="FR" n-rea="165514">
+          <tipi-procedure-concorsuali>
+            <tipo-procedura-concorsuale c-tipo="FL">FALLIMENTO</tipo-procedura-concorsuale>
+          </tipi-procedure-concorsuali>
+          <forma-giuridica c="SN">SOCIETA' IN NOME COLLETTIVO</forma-giuridica>
+          <indirizzo-localizzazione c-comune="026" comune="CERVARO" provincia="FR" c-toponimo="VIA" toponimo="VIA" via="ISOLA TOCCA" n-civico="S.N.C." cap="03044"/>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="MONTANELLI" nome="ERMINIO" carica="CURATORE FALLIMENTARE"/>
+            <persona-rappresentante cognome="BERI" nome="PEDRO" carica="SOCIO AMMINISTRATORE" f-rappresentante-ri="S"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <partecipazioni-societa>
+          <anagrafica-titolare c-tipo="I" tipo="IMPRESA" c-fiscale="02624130601" denominazione="P.B.S. DI BERI PEDRO &amp; C. - S.N.C. - IN FALLIMENTO"/>
+          <partecipazioni>
+            <partecipazione f-paragrafo-attuale="S">
+              <estremi-pratica c-pratica="ES" c-tipo-adempimento="U" tipo-adempimento="ULTIMO ADEMPIMENTO" cciaa="PR" anno="2020" n="31663" dt-protocollo="01/10/2020" dt-deposito="01/10/2020"/>
+              <f-ultimo-elenco-soci>S</f-ultimo-elenco-soci>
+              <estremi-impresa c-fiscale="02689090344" denominazione="CONSORZIO PARMENSE CARBURANTI (C.P.C.) SOCIETA' CONSORTILE A RESPONSABILITA' LIMITATA">
+                <forma-giuridica c="SL">SOCIETA' CONSORTILE A RESPONSABILITA' LIMITATA</forma-giuridica>
+              </estremi-impresa>
+              <capitale-sociale c-valuta="EU" valuta="EURO" ammontare="10.000,00"/>
+              <riquadri>
+                <riquadro>
+                  <composizione-quote c-valuta="EU" valuta="EURO" valore-nominale="1,00"/>
+                  <diritti-partecipazione>
+                    <diritto-partecipazione c-tipo="01" tipo="PROPRIETA'"/>
+                  </diritti-partecipazione>
+                </riquadro>
+              </riquadri>
+            </partecipazione>
+            <partecipazione f-paragrafo-attuale="S">
+              <estremi-pratica c-pratica="TR" c-tipo-adempimento="A" tipo-adempimento="ADEMPIMENTO DI AMMISSIONE" dt-atto="28/07/2016" cciaa="PR" anno="2016" n="24867" dt-protocollo="03/08/2016" dt-deposito="03/08/2016"/>
+              <estremi-impresa c-fiscale="02689090344" denominazione="CONSORZIO PARMENSE CARBURANTI (C.P.C.) SOCIETA' CONSORTILE A RESPONSABILITA' LIMITATA">
+                <forma-giuridica c="SL">SOCIETA' CONSORTILE A RESPONSABILITA' LIMITATA</forma-giuridica>
+              </estremi-impresa>
+              <capitale-sociale c-valuta="EU" valuta="EURO" ammontare="10.000,00"/>
+              <riquadri>
+                <riquadro>
+                  <tipo-atto c="03">COMPRAVENDITA</tipo-atto>
+                  <composizione-quote c-valuta="EU" valuta="EURO" valore-nominale="1,00"/>
+                  <diritti-partecipazione>
+                    <diritto-partecipazione c-tipo="01" tipo="PROPRIETA'">
+                      <ruolo-partecipazione c="AV">ACQUIRENTE</ruolo-partecipazione>
+                    </diritto-partecipazione>
+                  </diritti-partecipazione>
+                </riquadro>
+              </riquadri>
+            </partecipazione>
+          </partecipazioni>
+        </partecipazioni-societa>
+        <tabella-partecipate-impresa c-tipo-partecipate="A" tipo-partecipate="attuali">
+          <partecipata c-fiscale="02689090344" denominazione="CONSORZIO PARMENSE CARBURANTI (C.P.C.) SOCIETA' CONSORTILE A RESPONSABILITA' LIMITATA" dt-inizio-partecipazione="03/08/2016">
+            <quote-diritti-impresa>
+              <quota-diritto-impresa c-tipo-diritto="01" tipo-diritto="PROPRIETA'" valore-nominale="1" percentuale-capitale="0,01"/>
+            </quote-diritti-impresa>
+          </partecipata>
+        </tabella-partecipate-impresa>
+        <info-blocco-attuale n-partecipazioni="1"/>
+        <info-blocco-storico n-partecipazioni="0"/>
+      </blocchi-persona>
+    </dati>
+  </Risposta>

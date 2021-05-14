@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/procedureincorso/blocco/codicefiscale/xml?codiceFiscale=01807670847]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWXGM8L8G1DF2015063</IdRichiesta>
+        <DtEstrazione>2021-05-14</DtEstrazione>
+        <OraEstrazione>15:52:13</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 PCOR1X2E1DWXPRVAG       NRD127278   NGISR                                           CNT000000001                                                            AWWXGM8L8G1DF20150630001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>AG/127278</IdentificativoPosizione>
+        <OutputRestituiti>PCO/PCO</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SC" descrizione-tipo-impresa="Societa' di capitale" dt-iscrizione-rea="18/12/1991" dt-atto-costituzione="25/09/1991" dt-ultimo-protocollo="27/02/2020"
+ dt-mod-ultimo-protocollo-evaso="05/03/2020" denominazione="ESTRO S.R.L. IN LIQUIDAZIONE" c-fiscale="01807670847" partita-iva="01807670847" c-lei="81560014335876CE9A82" c-cciaa-competente="AG" cciaa-competente="AGRIGENTO" cciaa="AG" n-rea="127278">
+          <tipi-procedure-concorsuali>
+            <tipo-procedura-concorsuale c-tipo="SL">SCIOGLIMENTO E LIQUIDAZIONE</tipo-procedura-concorsuale>
+            <tipo-procedura-concorsuale c-tipo="FL">FALLIMENTO</tipo-procedura-concorsuale>
+          </tipi-procedure-concorsuali>
+          <stato-attivita c="A">attiva</stato-attivita>
+          <forma-giuridica c="SR">SOCIETA' A RESPONSABILITA' LIMITATA</forma-giuridica>
+          <indirizzo-localizzazione c-comune="011" comune="CANICATTI'" provincia="AG" c-toponimo="CNT" toponimo="CONTRADA" via="ANDOLINA SS. 122" n-civico="SNC" cap="92024"/>
+          <indirizzo-posta-certificata>ESTROSPA@REGISTERPEC.IT</indirizzo-posta-certificata>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="RAMPELLO" nome="VINCENZO" carica="LIQUIDATORE" f-rappresentante-ri="S"/>
+            <persona-rappresentante cognome="GUAGLIARDO" nome="CALOGERO DOMENICO" carica="CURATORE FALLIMENTARE"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita f-albi-ruoli-licenze="S" dt-inizio="25/02/1993">
+          <attivita-prevalente-r>COMMERCIO ALL'INGROSSO DI CALZATURE.</attivita-prevalente-r>
+          <classificazione-ateco c-attivita="46.42.4" c-nace="46.42"/>
+        </sintesi-attivita>
+        <procedure-concorsuali f-presenza-info="S">
+          <procedura-concorsuale c-tipo="SL" tipo="SCIOGLIMENTO E LIQUIDAZIONE" dt-iscrizione-procedura="20/11/2019">
+            <estremi-atto c-tipo="PB" tipo="PUBBLICO, REDATTO DA NOTAIO" notaio="CRISCIMANNO GIUSEPPE" n-registrazione="3497" dt-registrazione="31/10/2019" localita-ufficio-registro="CANICATTI'" provincia-ufficio-registro="AG"/>
+          </procedura-concorsuale>
+          <procedura-concorsuale c-tipo="FL" tipo="FALLIMENTO" dt-iscrizione-procedura="21/02/2020" dt-provvedimento="20/02/2020">
+            <estremi-atto c-tipo="AG" tipo="PROVVEDIMENTO AUTORITA' GIUDIZIARIA" tribunale="TRIBUNALE DI AGRIGENTO" n-registrazione="5/2020" dt-registrazione="20/02/2020" localita-ufficio-registro="AGRIGENTO" provincia-ufficio-registro="AG"/>
+            <comunicazioni-curatore>
+              <comunicazione-curatore tribunale="AGRIGENTO" n-provvedimento="5" dt-provvedimento="20/02/2020" nome-giudice="SILVIA" cognome-giudice="CAPITANO">
+                <estremi-udienza dt-udienza="25/06/2020" dt-termine="26/05/2020" luogo="TRIBUNALE DI AGRIGENTO INNANZI GIUDICE DELEGATO"/>
+              </comunicazione-curatore>
+            </comunicazioni-curatore>
+          </procedura-concorsuale>
+          <informazioni-curatore>L'ESAME DELLO STATO PASSIVO AVVERRA' IL GIORNO 25/06/2020 ALLE ORE 10.30,
+PRESSO IL TRIBUNALE DI AGRIGENTO AVANTI IL PREDETTO GIUDICE DELEGATO.
+L'INDIRIZZO "PEC" CUI I CREDITORI DOVRANNO FAR PERVENIRE LE DOMANDE DI
+AMMISSIONE E': AGF52020@PROCEDUREPEC.IT</informazioni-curatore>
+          <persone-pco>
+            <persona progressivo="1" f-rappresentante-ri="S" f-amministratore="S" f-sindaco="N">
+              <persona-fisica cognome="RAMPELLO" nome="VINCENZO" c-fiscale="RMPVCN44C15H159X" sesso="M">
+                <estremi-nascita dt="15/03/1944" c-comune="030" comune="RAFFADALI" provincia="AG"/>
+              </persona-fisica>
+              <indirizzo c-comune="011" comune="CANICATTI'" provincia="AG" c-toponimo="VLE" toponimo="VIALE" via="REGINA MARGHERITA" n-civico="127" cap="92024"/>
+              <atti-conferimento-cariche>
+                <atto-conferimento-cariche p-gruppo-cariche="0">
+                  <cariche>
+                    <carica p-carica="1" c-carica="LI" dt-iscrizione="20/11/2019" dt-atto-nomina="31/10/2019" dt-presentazione="04/11/2019">LIQUIDATORE</carica>
+                  </cariche>
+                </atto-conferimento-cariche>
+              </atti-conferimento-cariche>
+            </persona>
+            <persona progressivo="2" f-rappresentante-ri="S" f-amministratore="S" f-sindaco="N">
+              <persona-fisica cognome="GUAGLIARDO" nome="CALOGERO DOMENICO" c-fiscale="GGLCGR76R05G273Y" sesso="M">
+                <estremi-nascita dt="05/10/1976" comune="PALERMO" provincia="PA"/>
+                <domicilio-fiscale c-comune="004" comune="CALTANISSETTA" provincia="CL" c-toponimo="VLE" toponimo="VIALE" via="TRIESTE" n-civico="131/H" cap="93100"/>
+              </persona-fisica>
+              <indirizzo-posta-certificata>AGF52020@PROCEDUREPEC.IT</indirizzo-posta-certificata>
+              <atti-conferimento-cariche>
+                <atto-conferimento-cariche p-gruppo-cariche="0">
+                  <cariche>
+                    <carica p-carica="1" c-carica="CUF" dt-iscrizione="21/02/2020" dt-atto-nomina="20/02/2020">CURATORE FALLIMENTARE</carica>
+                  </cariche>
+                </atto-conferimento-cariche>
+              </atti-conferimento-cariche>
+            </persona>
+          </persone-pco>
+        </procedure-concorsuali>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>
