@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ListaBilanciUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/bilanci/ricerca/codicefiscale?codiceFiscale=03257950364]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWXG6RCGX2D9102DD5B</IdRichiesta>
+        <DtEstrazione>2021-05-14</DtEstrazione>
+        <OraEstrazione>12:39:27</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 BOND1X111DWX                                                                        CNT000000001                                                            AWWXG6RCGX2D9102DD5B0001</RecordAccount>
+    </Testata>
+    <ListaBilanci>
+      <Societa>
+        <AnagraficaSocieta>
+          <ProgressivoSocieta>1</ProgressivoSocieta>
+          <Cciaa>MO</Cciaa>
+          <DescCciaa>MODENA</DescCciaa>
+          <NRea>371974</NRea>
+          <Denominazione>GECO SRL</Denominazione>
+          <CodFisc>03257950364</CodFisc>
+          <NatGiu>SR</NatGiu>
+          <DescNatGiu>SOCIETA' A RESPONSABILITA' LIMITATA</DescNatGiu>
+          <CodComSede>MO006</CodComSede>
+          <DescComSede>CASTELFRANCO EMILIA</DescComSede>
+        </AnagraficaSocieta>
+        <Bilancio>
+          <ProgressivoBilancio>1</ProgressivoBilancio>
+          <KDocFisico>151175329</KDocFisico>
+          <DtChiusura>2009-12-31</DtChiusura>
+          <CodAtto>712</CodAtto>
+          <DescCodAtto>BILANCIO ABBREVIATO D'ESERCIZIO</DescCodAtto>
+          <NPagine>22</NPagine>
+          <OrigineDoc>T</OrigineDoc>
+          <DescOrigineDoc>Digitale</DescOrigineDoc>
+          <ICE>Y</ICE>
+          <DescICE>Eseguiti con esito positivo</DescICE>
+        </Bilancio>
+        <Bilancio>
+          <ProgressivoBilancio>2</ProgressivoBilancio>
+          <KDocFisico>191098491</KDocFisico>
+          <DtChiusura>2010-12-31</DtChiusura>
+          <CodAtto>712</CodAtto>
+          <DescCodAtto>BILANCIO ABBREVIATO D'ESERCIZIO</DescCodAtto>
+          <NPagine>22</NPagine>
+          <OrigineDoc>T</OrigineDoc>
+          <DescOrigineDoc>Digitale</DescOrigineDoc>
+          <ICE>Y</ICE>
+          <DescICE>Eseguiti con esito positivo</DescICE>
+        </Bilancio>
+        <Bilancio>
+          <ProgressivoBilancio>3</ProgressivoBilancio>
+          <KDocFisico>247354577</KDocFisico>
+          <DtChiusura>2011-12-31</DtChiusura>
+          <CodAtto>712</CodAtto>
+          <DescCodAtto>BILANCIO ABBREVIATO D'ESERCIZIO</DescCodAtto>
+          <NPagine>22</NPagine>
+          <OrigineDoc>T</OrigineDoc>
+          <DescOrigineDoc>Digitale</DescOrigineDoc>
+          <ICE>Y</ICE>
+          <DescICE>Eseguiti con esito positivo</DescICE>
+        </Bilancio>
+        <Bilancio>
+          <ProgressivoBilancio>4</ProgressivoBilancio>
+          <KDocFisico>302987281</KDocFisico>
+          <DtChiusura>2012-12-31</DtChiusura>
+          <CodAtto>712</CodAtto>
+          <DescCodAtto>BILANCIO ABBREVIATO D'ESERCIZIO</DescCodAtto>
+          <NPagine>25</NPagine>
+          <OrigineDoc>T</OrigineDoc>
+          <DescOrigineDoc>Digitale</DescOrigineDoc>
+          <ICE>Y</ICE>
+          <DescICE>Eseguiti con esito positivo</DescICE>
+        </Bilancio>
+        <Bilancio>
+          <ProgressivoBilancio>5</ProgressivoBilancio>
+          <KDocFisico>396108052</KDocFisico>
+          <DtChiusura>2013-12-31</DtChiusura>
+          <CodAtto>712</CodAtto>
+          <DescCodAtto>BILANCIO ABBREVIATO D'ESERCIZIO</DescCodAtto>
+          <NPagine>25</NPagine>
+          <OrigineDoc>T</OrigineDoc>
+          <DescOrigineDoc>Digitale</DescOrigineDoc>
+          <ICE>Y</ICE>
+          <DescICE>Eseguiti con esito positivo</DescICE>
+        </Bilancio>
+      </Societa>
+    </ListaBilanci>
+  </Risposta>

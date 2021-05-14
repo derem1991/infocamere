@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ListaSezioniBilancioUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/bilanci/sezioni/ricerca/chiave?KDocFisico=396108052]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWXG6XP5K1DF2013AE8</IdRichiesta>
+        <DtEstrazione>2021-05-14</DtEstrazione>
+        <OraEstrazione>12:42:06</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 BOND1X111DWX                                                                        CNT000000001                                                            AWWXG6XP5K1DF2013AE80001</RecordAccount>
+    </Testata>
+    <ListaSezioniBilancio>
+      <AnagraficaSocieta>
+        <Cciaa>MO</Cciaa>
+        <DescCciaa>MODENA</DescCciaa>
+        <NRea>371974</NRea>
+        <Denominazione>GECO SRL</Denominazione>
+        <CodFisc>03257950364</CodFisc>
+        <NatGiu>SR</NatGiu>
+        <DescNatGiu>SOCIETA' A RESPONSABILITA' LIMITATA</DescNatGiu>
+        <CodComSede>MO006</CodComSede>
+        <DescComSede>CASTELFRANCO EMILIA</DescComSede>
+      </AnagraficaSocieta>
+      <Bilancio>
+        <ProgressivoBilancio>1</ProgressivoBilancio>
+        <KDocFisico>396108052</KDocFisico>
+        <DtChiusura>2013-12-31</DtChiusura>
+        <CodAtto>712</CodAtto>
+        <DescCodAtto>BILANCIO ABBREVIATO D'ESERCIZIO</DescCodAtto>
+        <NPagine>25</NPagine>
+        <OrigineDoc>T</OrigineDoc>
+        <DescOrigineDoc>Digitale</DescOrigineDoc>
+        <ICE>Y</ICE>
+        <DescICE>Eseguiti con esito positivo</DescICE>
+      </Bilancio>
+      <SezioneBilancio>
+        <ProgressivoSezioneBilancio>1</ProgressivoSezioneBilancio>
+        <ProspettoSezione>B06</ProspettoSezione>
+        <DescProspettoSezione>BILANCIO XBRL</DescProspettoSezione>
+        <NPagineProspetto>9</NPagineProspetto>
+        <NomeFile>MO.770249.T11697.M15224K0047.224K0047.003.xbrl.p7m</NomeFile>
+        <NPagineFile>9</NPagineFile>
+        <ProgSezione>0006</ProgSezione>
+      </SezioneBilancio>
+      <SezioneBilancio>
+        <ProgressivoSezioneBilancio>2</ProgressivoSezioneBilancio>
+        <ProspettoSezione>PC</ProspettoSezione>
+        <DescProspettoSezione>PROSPETTO CONTABILE</DescProspettoSezione>
+        <NPagineProspetto>6</NPagineProspetto>
+        <NomeFile>MO.770249.T11697.M15224K0047.224K0047.003.xbrl.pdf</NomeFile>
+        <NPagineFile>6</NPagineFile>
+        <ProgSezione>0007</ProgSezione>
+        <Autogenerato>S</Autogenerato>
+      </SezioneBilancio>
+      <SezioneBilancio>
+        <ProgressivoSezioneBilancio>3</ProgressivoSezioneBilancio>
+        <ProspettoSezione>NI</ProspettoSezione>
+        <DescProspettoSezione>NOTA INTEGRATIVA</DescProspettoSezione>
+        <NPagineProspetto>8</NPagineProspetto>
+        <NomeFile>MO.770249.T11697.M15224K0047.224K0047.004.pdf.p7m</NomeFile>
+        <NPagineFile>8</NPagineFile>
+        <ProgSezione>0008</ProgSezione>
+      </SezioneBilancio>
+      <SezioneBilancio>
+        <ProgressivoSezioneBilancio>4</ProgressivoSezioneBilancio>
+        <ProspettoSezione>V01</ProspettoSezione>
+        <DescProspettoSezione>VERBALE ASSEMBLEA ORDINARIA</DescProspettoSezione>
+        <NPagineProspetto>2</NPagineProspetto>
+        <NomeFile>MO.770249.T11697.M15224K0047.224K0047.005.pdf.p7m</NomeFile>
+        <NPagineFile>2</NPagineFile>
+        <ProgSezione>0009</ProgSezione>
+      </SezioneBilancio>
+    </ListaSezioniBilancio>
+  </Risposta>

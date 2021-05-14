@@ -524,7 +524,140 @@
                         </div>
                      </div>
                   </div>
+               </div> 
+
+               <div class="card">
+                  <div class="card-header  " id="headingFour">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        Bilanci
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse show  " aria-labelledby="headingFour" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4"> Bilanci </h3>
+                        <p class="d-block text-sm px-4 pb-0 mb-0 ">Con i bilanci si possono scaricare 4 tipi di documenti: lista bilanci, lista sezioni bilancio , documenti del bilancio e documenti del bilancio unico,ovviamente si potrebbero unire per avere documentazioni dettagliate</p>
+                          <div class="col-12  p-2 m-0 row">
+                           <div class="col-md-4 col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">lista bilanci</h5>
+                                    <small class="d-block"> (INPUT: 03257950364 ) </small>
+                                    <small  class="d-block">l'input puo essere solo CF o PIVA di 11 0 16 caratteri </small>
+                                 </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item   flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">Lista dei bilanci ( risultato XML)</h5>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/listabilanci.xml" target="_blank"> 
+                                             <small> Scarica XML</small> 
+                                             </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                          <h4 class="mt-0 mb-1"> /rest/registroimprese/bilanci/ricerca/codicefiscale</h4>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">lista sezioni bilancio</h5>
+                                    <small class="d-block"> (INPUT: kdocfisico 396108052 relativo ad un bilancio ) </small>
+                                    <small class="d-block"> La ricerca può essere fatta anche per numero rea prendendo se non specificato l'anno l'ultimo bilancio disponibile</small>
+                                 </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item   flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">lista sezioni bilancio ( risultato XML)</h5>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/listasezionibilancio.xml" target="_blank"> 
+                                             <small> Scarica XML</small> 
+                                             </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                          <h4 class="mt-0 mb-1"> /rest/registroimprese/bilanci/sezioni/ricerca/chiave</h4>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4 col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">documenti bilanci</h5>
+                                    <small class="d-block"> (INPUT: kdocfisico 396108052 relativo ad un bilancio )  </small>
+                                    <small  class="d-block">la stessa ricerca può essere fatta per nrea prendendo sempre l'ultimo bilancio disponibile</small>
+                                 </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item   flex-column align-items-start p-4">
+
+                                           <h4 class="h4 mb-0">documenti bilanci</h4>
+                                          <a class="d-inline" href="{{ config('app.asset_url')}}/document/richiestadibilancio1.pdf" target="_blank"> 
+                                             <small> Documento 1 - Scarica PDF</small> 
+                                         </a>
+                                         <a class="d-inline" href="{{ config('app.asset_url')}}/document/richiestadibilancio2.pdf" target="_blank"> 
+                                          <small> Documento 2 - Scarica PDF</small> 
+                                          </a>
+                                          <a class="d-inline" href="{{ config('app.asset_url')}}/document/richiestadibilancio3.pdf" target="_blank"> 
+                                                <small> Documento 3 - Scarica PDF</small> 
+                                          </a>
+                                         <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">2 Chiamate effettuate</h5>
+                                          </div>
+                                          <h4 class="mt-0 mb-1">/rest/registroimprese/bilanci/documento/chiave</h4>
+                                          <h4 class="mt-0 mb-1">/rest/storage/download (download pdf)</h4>
+ 
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="col-md-4 col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">documenti   bilancio unico</h5>
+                                    <small class="d-block"> (INPUT: kdocfisico 396108052 relativo ad un bilancio ) </small>
+                                    <small class="d-block">Si ottiene il bilancio corrispondente alla chiave richiesta, in formato documento con copertina analogo all'output Telemaco e, se disponibili e richiesti con i relativi parametri, puo essere richiesto anche attraverso codice fiscale specificando anno di emissione del bilancio(se non specificato si prende l'ultimo anno disponibile)</small>
+                                 </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item   flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">documenti   bilancio unico ( risultato PDF)</h5>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/bilanciounico.pdf" target="_blank"> 
+                                             <small> Scarica PDF</small> 
+                                             </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">2 Chiamate effettuate</h5>
+                                          </div>
+                                          <h4 class="mt-0 mb-1"> /rest/registroimprese/bilanci/documento/unico/chiavedocfis</h4>
+                                          <h4 class="mt-0 mb-1"> /rest/storage/download (download pdf)      </h4>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                        </div>
+                     </div>
+                  </div>
                </div>
+               
+
+
+
             </div>
          </div>
       </div>
