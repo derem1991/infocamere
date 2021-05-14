@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ListaAnagraficheProtestiUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroprotesti/protesti/ricerca/nazionale?nominativo=Bianchi%20Alessandra]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>5</NumeroPosizioni>
+        <IdRichiesta>AWWXGHTGPZ4D570479FE</IdRichiesta>
+        <DtEstrazione>2021-05-14</DtEstrazione>
+        <OraEstrazione>14:59:01</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REGPIX111DWX                                                                        CNT000000001                                                            AWWXGHTGPZ4D570479FE0001</RecordAccount>
+    </Testata>
+    <ListaAnagrafiche>
+      <AnagraficaNominativo>
+        <ProgressivoAnagrafica>1</ProgressivoAnagrafica>
+        <KAnagrafica>252387312</KAnagrafica>
+        <Fonte>RP</Fonte>
+        <Nominativo>BIANCHI ALESSANDRA</Nominativo>
+        <SglPrvRes>LT</SglPrvRes>
+        <DescPrvRes>LATINA</DescPrvRes>
+        <CodComRes>LT019</CodComRes>
+        <DescComRes>PRIVERNO</DescComRes>
+        <IndirizzoRes>VIALE DELLE COOPERATIVE 2</IndirizzoRes>
+        <DtNascita>1951-02-25</DtNascita>
+        <SglPrvNas>LT</SglPrvNas>
+        <DescPrvNas>LATINA</DescPrvNas>
+        <CodComNas>LT019</CodComNas>
+        <DescComNas>PRIVERNO</DescComNas>
+      </AnagraficaNominativo>
+      <AnagraficaNominativo>
+        <ProgressivoAnagrafica>2</ProgressivoAnagrafica>
+        <KAnagrafica>422020936</KAnagrafica>
+        <Fonte>RP</Fonte>
+        <Nominativo>BIANCHI ALESSANDRA</Nominativo>
+        <CodFisc>BNCLSN66A52E801F</CodFisc>
+        <SglPrvRes>MI</SglPrvRes>
+        <DescPrvRes>MILANO</DescPrvRes>
+        <CodComRes>MI130</CodComRes>
+        <DescComRes>MAGENTA</DescComRes>
+        <IndirizzoRes>VIA SAN GEROLAMO EMILIANI 16</IndirizzoRes>
+      </AnagraficaNominativo>
+      <AnagraficaNominativo>
+        <ProgressivoAnagrafica>3</ProgressivoAnagrafica>
+        <KAnagrafica>470316060</KAnagrafica>
+        <Fonte>RP</Fonte>
+        <Nominativo>BIANCHI ALESSANDRA</Nominativo>
+        <CodFisc>BNCLSN51B65G698G</CodFisc>
+        <SglPrvRes>LT</SglPrvRes>
+        <DescPrvRes>LATINA</DescPrvRes>
+        <CodComRes>LT019</CodComRes>
+        <DescComRes>PRIVERNO</DescComRes>
+        <IndirizzoRes>VIALE DELLE COOPERATIVE 2</IndirizzoRes>
+      </AnagraficaNominativo>
+      <AnagraficaNominativo>
+        <ProgressivoAnagrafica>4</ProgressivoAnagrafica>
+        <KAnagrafica>955830857</KAnagrafica>
+        <Fonte>RP</Fonte>
+        <Nominativo>BIANCHI ALESSANDRA</Nominativo>
+        <CodFisc>BNCLSN77T52G482A</CodFisc>
+        <SglPrvRes>CH</SglPrvRes>
+        <DescPrvRes>CHIETI</DescPrvRes>
+        <CodComRes>CH022</CodComRes>
+        <DescComRes>CHIETI</DescComRes>
+        <IndirizzoRes>VIA AMITERNO 115</IndirizzoRes>
+      </AnagraficaNominativo>
+      <AnagraficaNominativo>
+        <ProgressivoAnagrafica>5</ProgressivoAnagrafica>
+        <KAnagrafica>169313527</KAnagrafica>
+        <Fonte>RP</Fonte>
+        <Nominativo>BIANCHI ALESSANDRA</Nominativo>
+        <CodFisc>BNCLSN66A52E801F</CodFisc>
+        <SglPrvRes>MI</SglPrvRes>
+        <DescPrvRes>MILANO</DescPrvRes>
+        <CodComRes>MI130</CodComRes>
+        <DescComRes>MAGENTA</DescComRes>
+        <IndirizzoRes>VIA EMILIANI SNC</IndirizzoRes>
+      </AnagraficaNominativo>
+    </ListaAnagrafiche>
+  </Risposta>

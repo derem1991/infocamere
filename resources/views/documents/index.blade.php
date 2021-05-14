@@ -534,12 +534,12 @@
                         </button>
                      </h5>
                   </div>
-                  <div id="collapseFour" class="collapse show  " aria-labelledby="headingFour" data-parent="#accordion">
+                  <div id="collapseFour" class="collapse    " aria-labelledby="headingFour" data-parent="#accordion">
                      <div class="card-body">
                         <h3 class="d-block px-4 pt-4"> Bilanci </h3>
                         <p class="d-block text-sm px-4 pb-0 mb-0 ">Con i bilanci si possono scaricare 4 tipi di documenti: lista bilanci, lista sezioni bilancio , documenti del bilancio e documenti del bilancio unico,ovviamente si potrebbero unire per avere documentazioni dettagliate</p>
                           <div class="col-12  p-2 m-0 row">
-                           <div class="col-md-4 col-12 my-2"  >
+                           <div class="col-md-4 col-12 my-2">
                               <div class="card col-12"style="border:1px solid black;" >
                                  <div class="card-header">
                                     <h5 class="h3 mb-0">lista bilanci</h5>
@@ -564,7 +564,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="col-md-4 col-12 my-2"  >
+                           <div class="col-md-4 col-12 my-2">
                               <div class="card col-12"style="border:1px solid black;" >
                                  <div class="card-header">
                                     <h5 class="h3 mb-0">lista sezioni bilancio</h5>
@@ -590,7 +590,7 @@
                               </div>
                            </div>
                            <div class="col-md-4 col-12 my-2"  >
-                              <div class="card col-12"style="border:1px solid black;" >
+                              <div class="card col-12" style="border:1px solid black;" >
                                  <div class="card-header">
                                     <h5 class="h3 mb-0">documenti bilanci</h5>
                                     <small class="d-block"> (INPUT: kdocfisico 396108052 relativo ad un bilancio )  </small>
@@ -655,6 +655,81 @@
                   </div>
                </div>
                
+
+
+
+
+               <div class="card">
+                  <div class="card-header oddcard" id="headingFive">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                        Protesti
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse show  oddcard" aria-labelledby="headingFive" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4">Protesti </h3>
+                        <p class="d-block text-sm px-4 pb-0 mb-0 ">Con il primo metodo si scarica l'xml relativo al protesto ed eventualmente si può creare un pdf custom sul xml ottenuto</p>
+                        <p class="d-block text-sm px-4 pb-0 mb-0 ">Con il secondo metodo si ottiene il pdf creato direttamente dal portale</p>
+                        <div class="col-12  p-2 m-0 row">
+                           <div class=" col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">Protesti   </h5>
+                                    <small class="d-block">(INPUT: BNCRCC68E23G838A ) </small>
+                                    <small class="d-block">se non si ha un identificativo preciso si può ricercare anche per denominativo ( il campo da ottenere è kanagrafica) </small>
+                                 </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">Anagrafica(risultato XML)</h5>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/anagraficadenominazione.xml" target="_blank"> 
+                                             <small> Scarica XML</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block">visura effetti attraverso kanagrafica 131791711 (RISULTATO XML)</h5>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/visuraeffettiprotesti.xml" target="_blank"> 
+                                             <small> Scarica XML</small> 
+                                             </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">2 Chiamate effettuate</h5>
+                                          </div>
+                                          <h4 class="mt-0 mb-1"> /rest/registroprotesti/protesti/ricerca/nazionale</h4>
+                                          <h4 class="mt-0 mb-1"> /rest/registroprotesti/protesti/visura/effetto/anagrafica/xml</h4>
+
+                                       </div>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                       <div   class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">Anagrafica(risultato XML)</h5>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/anagraficadenominazione.xml" target="_blank"> 
+                                             <small> Scarica XML</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block">visura effetti attraverso kanagrafica 131791711 (RISULTATO PDF)</h5>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/visuraeffettiprotesti.pdf" target="_blank"> 
+                                             <small> Scarica PDF</small> 
+                                             </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">3 Chiamate effettuate</h5>
+                                          </div>
+                                          <h4 class="mt-0 mb-1"> /rest/registroprotesti/protesti/ricerca/nazionale</h4>
+                                          <h4 class="mt-0 mb-1"> /rest/registroprotesti/protesti/visura/effetto/anagrafica/pdf (richiesta in differita)</h4>
+                                          <h4 class="mt-0 mb-1"> /rest/storage/download (download pdf)</h4>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                         
+                            
+                        </div>
+                     </div>
+                  </div>
+               </div>
 
 
 

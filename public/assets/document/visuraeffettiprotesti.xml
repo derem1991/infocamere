@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="VisuraEffettoUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroprotesti/protesti/visura/effetto/anagrafica/xml?KAnagrafica=131791711]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWXGJ11C51DF201EFCE</IdRichiesta>
+        <DtEstrazione>2021-05-14</DtEstrazione>
+        <OraEstrazione>15:02:18</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REGPIX231DWXEFF1                                                                    CNT000000001                                                            AWWXGJ11C51DF201EFCE0001</RecordAccount>
+    </Testata>
+    <VisuraEffetto>
+      <AnagraficaNominativo>
+        <KAnagrafica>131791711</KAnagrafica>
+        <Fonte>RP</Fonte>
+        <Nominativo>BIANCHI  ROCCO</Nominativo>
+        <CodFisc>BNCRCC68E23G838A</CodFisc>
+        <SglPrvRes>FR</SglPrvRes>
+        <DescPrvRes>FROSINONE</DescPrvRes>
+        <CodComRes>FR060</CodComRes>
+        <DescComRes>ROCCASECCA</DescComRes>
+        <IndirizzoRes>VIA CASILINA NORD 51</IndirizzoRes>
+      </AnagraficaNominativo>
+      <RegistroProtesti>
+        <DatiRegistroProtesti>
+          <CciaaPubblicazione>FR</CciaaPubblicazione>
+          <DtIscrRegistro>2020-04-28</DtIscrRegistro>
+        </DatiRegistroProtesti>
+        <InformazioniEffetto>
+          <DtLevata>2020-02-05</DtLevata>
+          <SglPrvLevata>FR</SglPrvLevata>
+          <DescPrvLevata>FROSINONE</DescPrvLevata>
+          <CodComLevata>FR060</CodComLevata>
+          <DescComLevata>ROCCASECCA</DescComLevata>
+          <DtEmissioneEffetto>2019-04-26</DtEmissioneEffetto>
+          <DtScadenzaEffetto>2020-02-01</DtScadenzaEffetto>
+          <CodTipoEffetto>C</CodTipoEffetto>
+          <DescTipoEffetto>CAMBIALE</DescTipoEffetto>
+          <ImportoValutaLevata>50000</ImportoValutaLevata>
+          <CodValutaLevata>EU</CodValutaLevata>
+          <DescValutaLevata>EURO</DescValutaLevata>
+          <CodMancatoPagRepr>CM1</CodMancatoPagRepr>
+          <DescMancatoPagRepr>Il domiciliatario non paga per mancanza di istruzioni</DescMancatoPagRepr>
+          <CodStatoEffetto>N</CodStatoEffetto>
+          <DescStatoEffetto>NORMALE</DescStatoEffetto>
+          <NRepertorio>101537</NRepertorio>
+        </InformazioniEffetto>
+      </RegistroProtesti>
+    </VisuraEffetto>
+  </Risposta>
