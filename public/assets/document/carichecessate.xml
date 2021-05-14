@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputPersonaRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/persone/scheda/codicefiscale/xml?codiceFiscale=BNCRCC68E23G838A&statoCarica=C]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>0</NumeroPosizioni>
+        <IdRichiesta>AWWXGPT6P22D91020838</IdRichiesta>
+        <DtEstrazione>2021-05-14</DtEstrazione>
+        <OraEstrazione>16:31:14</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIM7X112DWX                                                                        CNT000000001                                                            AWWXGPT6P22D910208380001</RecordAccount>
+    </Testata>
+  </Risposta>

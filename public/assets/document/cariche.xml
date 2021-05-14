@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputPersonaRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/persone/scheda/codicefiscale/xml?codiceFiscale=BNCRCC68E23G838A]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWXGPQ06K3DB0039286</IdRichiesta>
+        <DtEstrazione>2021-05-14</DtEstrazione>
+        <OraEstrazione>16:29:39</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIM2X231DWX                                                                        CNT000000001                                                            AWWXGPQ06K3DB00392860001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>BNCRCC68E23G838A</IdentificativoPosizione>
+        <OutputRestituiti>SKP+/+SKP</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-persona>
+        <imprese-persona>
+          <impresa-persona chiave-impresa="FR129074">
+            <dati-identificativi-impresa c-fonte="RI" fonte="Registro Imprese" denominazione="INFO CENTER DI CHIAPPINI DANILO E C. S.N.C." c-fiscale="02094050602" cciaa="FR" n-rea="129074">
+              <forma-giuridica c="SN">SOCIETA' IN NOME COLLETTIVO</forma-giuridica>
+              <indirizzo-localizzazione c-comune="060" comune="ROCCASECCA" provincia="FR" c-toponimo="VIA" toponimo="VIA" via="RIVOLTA" n-civico="78" cap="03038"/>
+            </dati-identificativi-impresa>
+            <info-attivita c-stato="I" stato="Impresa INATTIVA">
+              <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+                <classificazione-ateco c-attivita="47.19.2 " attivita="Commercio al dettaglio in esercizi non specializzati di computer, periferiche, attrezzature per le telecomunicazioni, elettronica di consumo audio e video, elettrodomestici"/>
+              </classificazioni-ateco>
+            </info-attivita>
+            <persona>
+              <cariche>
+                <carica p-carica="1" c-carica="SOA" dt-atto-nomina="20/05/1999">SOCIO AMMINISTRATORE</carica>
+              </cariche>
+            </persona>
+          </impresa-persona>
+        </imprese-persona>
+        <info-blocco-attuale n-imprese="1" n-imprese-rappresentante="0"/>
+        <dati-identificativi-persona cognome="BIANCHI" nome="ROCCO" sesso="M" c-fiscale="BNCRCC68E23G838A">
+          <estremi-nascita dt="23/05/1968" c-comune="056" comune="PONTECORVO" provincia="FR"/>
+          <indirizzo c-comune="060" comune="ROCCASECCA" provincia="FR" c-toponimo="VIA" toponimo="VIA" via="CASILINA NORD" n-civico="51" cap="03038"/>
+          <estremi-impresa-dati-persona cciaa="FR" n-rea="129074" denominazione="INFO CENTER DI CHIAPPINI DANILO E C. S.N.C."/>
+        </dati-identificativi-persona>
+      </blocchi-persona>
+    </dati>
+  </Risposta>
