@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ListaImpreseRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/imprese/ricerca/codicefiscale?codiceFiscale=03257950364]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>5</NumeroPosizioni>
+        <IdRichiesta>AWWXGKS5224D57049680</IdRichiesta>
+        <DtEstrazione>2021-05-14</DtEstrazione>
+        <OraEstrazione>15:29:09</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIM2X111DWX                                                                        CNT000000001                                                            AWWXGKS5224D570496800001</RecordAccount>
+    </Testata>
+    <ListaImpreseRI>
+      <Impresa>
+        <ProgressivoImpresa>1</ProgressivoImpresa>
+        <AnagraficaImpresa>
+          <Cciaa>MO</Cciaa>
+          <DescCciaa>MODENA</DescCciaa>
+          <NRea>371974</NRea>
+          <Denominazione>GECO SRL</Denominazione>
+          <SglPrvSede>MO</SglPrvSede>
+          <DescPrvSede>MODENA</DescPrvSede>
+          <CodFisc>03257950364</CodFisc>
+          <PIva>03257950364</PIva>
+          <NatGiu>SR</NatGiu>
+          <DescNatGiu>SOCIETA' A RESPONSABILITA' LIMITATA</DescNatGiu>
+          <Fonte>RI</Fonte>
+          <DescFonte>Registro Imprese</DescFonte>
+          <StatoAttivita>C</StatoAttivita>
+          <DescStatoAttivita>Cessata</DescStatoAttivita>
+          <ClassificazioneAteco>
+            <CodCodifica>07</CodCodifica>
+            <DescCodifica>Classificazione ATECO RI 2007</DescCodifica>
+            <CodAttivita>47.71.2</CodAttivita>
+            <DescAttivita>Commercio al dettaglio di confezioni per bambini e neonati</DescAttivita>
+          </ClassificazioneAteco>
+          <IndirizzoSede>
+            <SglPrvSede>MO</SglPrvSede>
+            <DescPrvSede>MODENA</DescPrvSede>
+            <CodComSede>MO006</CodComSede>
+            <DescComSede>CASTELFRANCO EMILIA</DescComSede>
+            <CodToponSede>VIA</CodToponSede>
+            <DescToponSede>VIA</DescToponSede>
+            <ViaSede>MANZONI</ViaSede>
+            <NCivicoSede>1</NCivicoSede>
+            <CapSede>41013</CapSede>
+          </IndirizzoSede>
+        </AnagraficaImpresa>
+      </Impresa>
+      <Impresa>
+        <ProgressivoImpresa>2</ProgressivoImpresa>
+        <AnagraficaImpresa>
+          <Cciaa>FE</Cciaa>
+          <DescCciaa>FERRARA</DescCciaa>
+          <NRea>197656</NRea>
+          <Denominazione>GECO SRL</Denominazione>
+          <SglPrvSede>MO</SglPrvSede>
+          <DescPrvSede>MODENA</DescPrvSede>
+          <CodFisc>03257950364</CodFisc>
+          <NatGiu>SR</NatGiu>
+          <DescNatGiu>SOCIETA' A RESPONSABILITA' LIMITATA</DescNatGiu>
+          <Fonte>RI</Fonte>
+          <DescFonte>Registro Imprese</DescFonte>
+          <StatoAttivita>C</StatoAttivita>
+          <DescStatoAttivita>Cessata</DescStatoAttivita>
+          <IndirizzoLocalizzazione/>
+        </AnagraficaImpresa>
+      </Impresa>
+      <Impresa>
+        <ProgressivoImpresa>3</ProgressivoImpresa>
+        <AnagraficaImpresa>
+          <Cciaa>TE</Cciaa>
+          <DescCciaa>TERAMO</DescCciaa>
+          <NRea>152715</NRea>
+          <Denominazione>GECO SRL</Denominazione>
+          <SglPrvSede>MO</SglPrvSede>
+          <DescPrvSede>MODENA</DescPrvSede>
+          <CodFisc>03257950364</CodFisc>
+          <NatGiu>SR</NatGiu>
+          <DescNatGiu>SOCIETA' A RESPONSABILITA' LIMITATA</DescNatGiu>
+          <Fonte>RI</Fonte>
+          <DescFonte>Registro Imprese</DescFonte>
+          <StatoAttivita>C</StatoAttivita>
+          <DescStatoAttivita>Cessata</DescStatoAttivita>
+          <AttivitaDichiarata>COMMERCIO AL DETTAGLIO DI ABBIGLIAMENTO PER BAMBINI ED ACCESSORI VARI.</AttivitaDichiarata>
+          <ClassificazioneAteco>
+            <CodCodifica>07</CodCodifica>
+            <DescCodifica>Classificazione ATECO RI 2007</DescCodifica>
+            <CodAttivita>47.71.2</CodAttivita>
+            <DescAttivita>Commercio al dettaglio di confezioni per bambini e neonati</DescAttivita>
+          </ClassificazioneAteco>
+          <IndirizzoLocalizzazione>
+            <SglPrvLocalizzazione>TE</SglPrvLocalizzazione>
+            <DescPrvLocalizzazione>TERAMO</DescPrvLocalizzazione>
+            <CodComLocalizzazione>TE041</CodComLocalizzazione>
+            <DescComLocalizzazione>TERAMO</DescComLocalizzazione>
+            <CodToponLocalizzazione>VIA</CodToponLocalizzazione>
+            <DescToponLocalizzazione>VIA</DescToponLocalizzazione>
+            <ViaLocalizzazione>G. GALILEI</ViaLocalizzazione>
+            <NCivicoLocalizzazione>48</NCivicoLocalizzazione>
+            <CapLocalizzazione>64020</CapLocalizzazione>
+            <FrazioneLocalizzazione>SAN NICOLO' A TORDINO</FrazioneLocalizzazione>
+          </IndirizzoLocalizzazione>
+        </AnagraficaImpresa>
+      </Impresa>
+      <Impresa>
+        <ProgressivoImpresa>4</ProgressivoImpresa>
+        <AnagraficaImpresa>
+          <Cciaa>RA</Cciaa>
+          <DescCciaa>RAVENNA</DescCciaa>
+          <NRea>193106</NRea>
+          <Denominazione>GECO SRL</Denominazione>
+          <SglPrvSede>MO</SglPrvSede>
+          <DescPrvSede>MODENA</DescPrvSede>
+          <CodFisc>03257950364</CodFisc>
+          <NatGiu>SR</NatGiu>
+          <DescNatGiu>SOCIETA' A RESPONSABILITA' LIMITATA</DescNatGiu>
+          <Fonte>RI</Fonte>
+          <DescFonte>Registro Imprese</DescFonte>
+          <StatoAttivita>C</StatoAttivita>
+          <DescStatoAttivita>Cessata</DescStatoAttivita>
+          <AttivitaDichiarata>DAL 08/04/09 COMMERCIO AL DETTAGLIO DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ACCESSORI E ARTICOLI DI ABBIGLIAMENTO IN GENERE</AttivitaDichiarata>
+          <ClassificazioneAteco>
+            <CodCodifica>07</CodCodifica>
+            <DescCodifica>Classificazione ATECO RI 2007</DescCodifica>
+            <CodAttivita>47.71.2</CodAttivita>
+            <DescAttivita>Commercio al dettaglio di confezioni per bambini e neonati</DescAttivita>
+          </ClassificazioneAteco>
+          <IndirizzoLocalizzazione>
+            <SglPrvLocalizzazione>RA</SglPrvLocalizzazione>
+            <DescPrvLocalizzazione>RAVENNA</DescPrvLocalizzazione>
+            <CodComLocalizzazione>RA010</CodComLocalizzazione>
+            <DescComLocalizzazione>FAENZA</DescComLocalizzazione>
+            <CodToponLocalizzazione>VIA</CodToponLocalizzazione>
+            <DescToponLocalizzazione>VIA</DescToponLocalizzazione>
+            <ViaLocalizzazione>MENGOLINA</ViaLocalizzazione>
+            <NCivicoLocalizzazione>9/21</NCivicoLocalizzazione>
+            <CapLocalizzazione>48018</CapLocalizzazione>
+          </IndirizzoLocalizzazione>
+        </AnagraficaImpresa>
+      </Impresa>
+      <Impresa>
+        <ProgressivoImpresa>5</ProgressivoImpresa>
+        <AnagraficaImpresa>
+          <Cciaa>RE</Cciaa>
+          <DescCciaa>REGGIO EMILIA</DescCciaa>
+          <NRea>276336</NRea>
+          <Denominazione>GECO SRL</Denominazione>
+          <SglPrvSede>MO</SglPrvSede>
+          <DescPrvSede>MODENA</DescPrvSede>
+          <CodFisc>03257950364</CodFisc>
+          <NatGiu>SR</NatGiu>
+          <DescNatGiu>SOCIETA' A RESPONSABILITA' LIMITATA</DescNatGiu>
+          <Fonte>RI</Fonte>
+          <DescFonte>Registro Imprese</DescFonte>
+          <StatoAttivita>C</StatoAttivita>
+          <DescStatoAttivita>Cessata</DescStatoAttivita>
+          <IndirizzoLocalizzazione/>
+        </AnagraficaImpresa>
+      </Impresa>
+    </ListaImpreseRI>
+  </Risposta>

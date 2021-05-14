@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ListaImpreseRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/imprese/ricerca/codicefiscale?codiceFiscale=03257950364&fSoloSedi=S]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWXGKV2RZ2D9102A720</IdRichiesta>
+        <DtEstrazione>2021-05-14</DtEstrazione>
+        <OraEstrazione>15:30:07</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIM2X111DWX                                                                        CNT000000001                                                            AWWXGKV2RZ2D9102A7200001</RecordAccount>
+    </Testata>
+    <ListaImpreseRI>
+      <Impresa>
+        <ProgressivoImpresa>1</ProgressivoImpresa>
+        <AnagraficaImpresa>
+          <Cciaa>MO</Cciaa>
+          <DescCciaa>MODENA</DescCciaa>
+          <NRea>371974</NRea>
+          <Denominazione>GECO SRL</Denominazione>
+          <SglPrvSede>MO</SglPrvSede>
+          <DescPrvSede>MODENA</DescPrvSede>
+          <CodFisc>03257950364</CodFisc>
+          <PIva>03257950364</PIva>
+          <NatGiu>SR</NatGiu>
+          <DescNatGiu>SOCIETA' A RESPONSABILITA' LIMITATA</DescNatGiu>
+          <Fonte>RI</Fonte>
+          <DescFonte>Registro Imprese</DescFonte>
+          <StatoAttivita>C</StatoAttivita>
+          <DescStatoAttivita>Cessata</DescStatoAttivita>
+          <ClassificazioneAteco>
+            <CodCodifica>07</CodCodifica>
+            <DescCodifica>Classificazione ATECO RI 2007</DescCodifica>
+            <CodAttivita>47.71.2</CodAttivita>
+            <DescAttivita>Commercio al dettaglio di confezioni per bambini e neonati</DescAttivita>
+          </ClassificazioneAteco>
+          <IndirizzoSede>
+            <SglPrvSede>MO</SglPrvSede>
+            <DescPrvSede>MODENA</DescPrvSede>
+            <CodComSede>MO006</CodComSede>
+            <DescComSede>CASTELFRANCO EMILIA</DescComSede>
+            <CodToponSede>VIA</CodToponSede>
+            <DescToponSede>VIA</DescToponSede>
+            <ViaSede>MANZONI</ViaSede>
+            <NCivicoSede>1</NCivicoSede>
+            <CapSede>41013</CapSede>
+          </IndirizzoSede>
+        </AnagraficaImpresa>
+      </Impresa>
+    </ListaImpreseRI>
+  </Risposta>

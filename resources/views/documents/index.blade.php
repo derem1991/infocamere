@@ -654,11 +654,7 @@
                      </div>
                   </div>
                </div>
-               
-
-
-
-
+                
                <div class="card">
                   <div class="card-header oddcard" id="headingFive">
                      <h5 class="mb-0">
@@ -667,7 +663,7 @@
                         </button>
                      </h5>
                   </div>
-                  <div id="collapseFive" class="collapse show  oddcard" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div id="collapseFive" class="collapse   oddcard" aria-labelledby="headingFive" data-parent="#accordion">
                      <div class="card-body">
                         <h3 class="d-block px-4 pt-4">Protesti </h3>
                         <p class="d-block text-sm px-4 pb-0 mb-0 ">Con il primo metodo si scarica l'xml relativo al protesto ed eventualmente si può creare un pdf custom sul xml ottenuto</p>
@@ -729,8 +725,62 @@
                         </div>
                      </div>
                   </div>
-               </div>
+               </div> 
 
+
+               <div class="card">
+                  <div class="card-header  " id="headingSix">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                        Anagrafica sedi
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse " aria-labelledby="headingSix" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4">Anagrafica sedi </h3>
+                        <div class="col-12  p-2 m-0 row">
+                           <div class=" col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">Anagrafica sedi   </h5>
+                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                                    <small class="d-block">se non si ha un identificativo preciso si può ricercare anche per denominativo   </small>
+                                    <small class="d-block">La chiamata da effettuare è una, tranne ovviamente se non si ricerca per denominazione, dove bisogna fare una chiamata in piu.<br>
+                                    Una volta trovato il CF o PIVA, si puo richiedere l'anagrafica completa dell'azienda o solo delle sedi portando allo stesso risultato.</small>
+                                 </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">Anagrafica sedi (risultato XML)</h5>
+                                             <small class="d-block">rest/registroimprese/imprese/ricerca/codicefiscale?codiceFiscale=03257950364 </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/anagraficaimpresa.xml" target="_blank">
+                                                <small> Scarica XML</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block">Anagrafica sedi completa(risultato XML)</h5>
+                                             <small class="d-block">rest/registroimprese/imprese/ricerca/codicefiscale?codiceFiscale=03257950364&fSoloSedi=S  </small>
+
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/anagraficasedi.xml" target="_blank"> 
+                                                <small> Scarica XML</small> 
+                                              </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                          <h4 class="mt-0 mb-1">rest/registroimprese/imprese/ricerca/codicefiscale?codiceFiscale=03257950364</h4>
+                                       </div>
+                                    </div>
+                                     
+                                 </div>
+                              </div>
+                           </div>
+                         
+                            
+                        </div>
+                     </div>
+                  </div>
+               </div> 
 
 
             </div>
