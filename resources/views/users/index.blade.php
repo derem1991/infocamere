@@ -5,6 +5,11 @@
       <div class="header-body">
          <div class="row align-items-center py-4">
             @include('layouts.headers.navigation',['title'=>'Utenti'])
+            @can('user-create')
+            <div class="col-lg-6 col-5 text-right">
+               <a href="{{route('users.create')}}" class="btn btn-sm btn-neutral">Nuovo</a>
+            </div>
+            @endcan
          </div>
       </div>
    </div>
