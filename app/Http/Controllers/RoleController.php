@@ -32,11 +32,7 @@ class RoleController extends Controller
     public function index(Request $request)
     {
         $roles = Role::orderBy('id','DESC')->get();
-   
-        $breadcrumb[0]['route']='roles.index';
-        $breadcrumb[0]['title']='Ruoli';
-
-        return view('roles.index',compact('roles','breadcrumb'));
+        return view('roles.index',compact('roles'));
     }
     
     /**
@@ -46,12 +42,8 @@ class RoleController extends Controller
      */
     public function create()
     {
-        $breadcrumb[0]['route']='roles.index';
-        $breadcrumb[0]['title']='Ruoli';
-        $breadcrumb[1]['title']='Creazione ruolo';
-
         $permissions = Permission::get();
-        return view('roles.createOrUpdate',compact('permissions','breadcrumb'));
+        return view('roles.createOrUpdate',compact('permissions'));
     }
     
     /**
@@ -79,15 +71,7 @@ class RoleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        $role = Role::find($id);
-        $rolePermissions = Permission::join("role_has_permissions","role_has_permissions.permission_id","=","permissions.id")
-            ->where("role_has_permissions.role_id",$id)
-            ->get();
-    
-        return view('roles.show',compact('role','rolePermissions'));
-    }
+   
     
     /**
      * Show the form for editing the specified resource.
@@ -99,13 +83,8 @@ class RoleController extends Controller
     {
         $role = Role::find($id);
         $permissions = Permission::get();
-         
-        $breadcrumb[0]['route']='roles.index';
-        $breadcrumb[0]['title']='Ruoli';
-        $breadcrumb[1]['title']='Modifica ruolo';
- 
-      
-        return view('roles.createOrUpdate',compact('role','permissions','breadcrumb'));
+
+        return view('roles.createOrUpdate',compact('role','permissions'));
     }
     
     /**

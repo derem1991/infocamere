@@ -30,13 +30,8 @@ class PermissionController extends Controller
      */
     public function index(Request $request)
     {
-       
         $permissions = Permission::orderBy('id','DESC')->get();
-   
-        $breadcrumb[0]['route']='permissions.index';
-        $breadcrumb[0]['title']='Permessi';
-
-        return view('permissions.index',compact('permissions','breadcrumb'));
+        return view('permissions.index',compact('permissions'));
     }
     
     /**
@@ -46,12 +41,7 @@ class PermissionController extends Controller
      */
     public function create()
     {
-    
-      $breadcrumb[0]['route']='permissions.index';
-      $breadcrumb[0]['title']='Permessi';
-      $breadcrumb[1]['title']='Creazione permessi';
- 
-      return view('permissions.createOrUpdate',compact('breadcrumb'));
+      return view('permissions.createOrUpdate');
     }
     
     /**
@@ -84,12 +74,8 @@ class PermissionController extends Controller
      */
     public function edit($id)
     {
-        $breadcrumb[0]['route']='permissions.index';
-        $breadcrumb[0]['title']='Permessi';
-        $breadcrumb[1]['title']='Modifica permesso';
- 
         $permission = Permission::find($id);
-        return view('permissions.createOrUpdate',compact('permission','breadcrumb'));
+        return view('permissions.createOrUpdate',compact('permission'));
     }
     
     /**
@@ -120,6 +106,6 @@ class PermissionController extends Controller
     public function destroy($id)
     {
         Permission::find($id)->delete();
-         return redirect()->route('permissions.index')->with('success','Permission deleted successfully');
+        return redirect()->route('permissions.index')->with('success','Permission deleted successfully');
     }
 }

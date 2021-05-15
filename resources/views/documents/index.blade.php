@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('content')
+@section('content') 
 <div class="header bg-primary pb-6">
    <div class="container-fluid">
       <div class="header-body">
@@ -9,6 +9,7 @@
       </div>
    </div>
 </div>
+ 
 <div class="container-fluid mt--6">
    <div class="row">
       <div class="col">

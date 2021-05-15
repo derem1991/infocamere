@@ -28,11 +28,7 @@ class UserController extends Controller
     public function index(Request $request)
     {
         $users = User::orderBy('id','DESC')->get();
-
-        $breadcrumb[0]['route']='users.index';
-        $breadcrumb[0]['title']='Utenti';
-
-        return view('users.index',compact('users','breadcrumb'));
+        return view('users.index',compact('users'));
     }
     public function myProfile()
     {
@@ -47,13 +43,9 @@ class UserController extends Controller
      */
     public function create()
     {
-        $breadcrumb[0]['route']='users.index';
-        $breadcrumb[0]['title']='Utenti';
-        $breadcrumb[1]['title']='Creazione utente';
-
         $roles = Role::pluck('name','name')->all();
         
-        return view('users.createOrUpdate',compact('roles','breadcrumb'));
+        return view('users.createOrUpdate',compact('roles'));
     }
     
     /**
@@ -89,7 +81,6 @@ class UserController extends Controller
     public function show($id)
     {
         $user = User::find($id);
-        
         return view('users.show',compact('user'));
     }
     
@@ -101,16 +92,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        
-        $breadcrumb[0]['route']='users.index';
-        $breadcrumb[0]['title']='Utenti';
-        $breadcrumb[1]['title']='Modifica utente';
-
         $user = User::find($id);
-         
         $roles = Role::pluck('name','name')->all();
-     
-        return view('users.createOrUpdate',compact('user','roles','breadcrumb'));
+        return view('users.createOrUpdate',compact('user','roles'));
     }
     
     /**

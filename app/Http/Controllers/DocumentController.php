@@ -13,13 +13,10 @@ class DocumentController extends Controller
     {
         
     }
-    
-   
+
     public function index(Request $request)
     {
- 
-        return view('documents.index');
+       return view('documents.index');
     }
-    
      
 }
