@@ -291,6 +291,9 @@
                                           </div>
                                           <h4 class="mt-0 mb-1">  /rest/registroimprese/output/impresa/documento/codicefiscale/pdf (richiesta in differita)</h4>
                                           <h4 class="mt-0 mb-1"> /rest/storage/download (download pdf)</h4>
+					  <div class="alert-warning">
+						Lanciando il seguente ordine di chiamate =>  download "lotti" in PDF e successivamente l'XML, per quest'ultima non ci risulta la presenza del campo STORNO.
+					  </div>
                                        </div>
                                     </div>
                                  </div>
@@ -308,6 +311,9 @@
                                        <div class="list-group-item   flex-column align-items-start p-4">
                                           <div class="d-block w-100 justify-content-between">
                                              <h5 class="mb-1 d-block">La Visura storica delle modifiche può essere recuperata dal pdf o dall'xml delle rispettive visure storiche. Da verificare se si può recuperare solo questo blocco</h5>
+					     <div class="alert-warning">
+						Si richiede se esistono delle chiamate ad hoc. Se si quali?
+					     </div>
                                           </div>
                                        </div>
                                     </div>
@@ -334,7 +340,7 @@
                            DA MANUALE INFOCAMERE: Per comporre il fascicolo, attuale o storico, occorre fare 3 richieste distinte: <br>
                            1 - richiesta visura ordinaria o storica, nel formato voluto, impostando rispettivamente il tipo documento
                            <b>FATTU</b> o <b>FSTOR </b> <br>
-                           N.B. FATTU O FSTOR sembra non piu  chiamabili dalle API (chiamate rispettive visure)<br>
+                           <span class="alert-warning">N.B. FATTU O FSTOR sembra non piu  chiamabili dalle API. Per risolvere il problema, il punto 1 è stato risolto chiamando direttamente le visure</span><br> 
                            2 – richiesta di statuto con il servizio <b>output/statuto/documento/nrea</b>, specificando cciaa-nrea della
                            posizione e l‟identificativo ottenuto in risposta alla richiesta 1  <br>
                            3 – per le società di capitale, richiesta di bilancio con uno a scelta dei servizi disponibili,
@@ -937,7 +943,7 @@
                         </button>
                      </h5>
                   </div>
-                  <div id="collapseNine" class="collapse show oddcard" aria-labelledby="headingNine" data-parent="#accordion">
+                  <div id="collapseNine" class="collapse oddcard" aria-labelledby="headingNine" data-parent="#accordion">
                      <div class="card-body">
                         <h3 class="d-block px-4 pt-4">Cariche attuali o cessate</h3>
                         <p class="d-block text-sm px-4 pb-0 mb-0 ">Con il primo metodo si scarica l'xml relativo alle cariche ed eventualmente si può creare un pdf custom sul xml ottenuto</p>
@@ -1011,7 +1017,7 @@
                            <div class="col-md-4 col-12 my-2"  >
                               <div class="card col-12"style="border:1px solid black;" >
                                  <div class="card-header">
-                                    <h5 class="h3 mb-0">Cariche cesssate e attive</h5>
+                                    <h5 class="h3 mb-0">Cariche cessate e attuali</h5>
                                     <small class="d-block"> (INPUT: BNCRCC68E23G838A ) </small>
                                     <small  class="d-block">l'input puo essere solo CF o PIVA di 11 0 16 caratteri </small>
                                  </div>
@@ -1053,6 +1059,41 @@
                      </div>
                   </div>
                </div>
+               <div class="card">
+                  <div class="card-header " id="headingTen">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                        Visure Artigiani
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseTen" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                     <div class="card-body">
+			<div class="alert-danger col-12">
+				Non ci risulta nessun chiamata dedicata per gli artigiani, ma si dovrebbe utilizzare la stessa delle altre visure. Confermate?
+				<br>Inoltre, tra le partire IVA forniteci non ci risultano artigiani.
+			</div>
+		     </div>
+		  </div>
+	       </div>
+               <div class="card">
+                  <div class="card-header oddcard" id="headingEleven">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                        Contratto di rete
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseEleven" class="collapse oddcard" aria-labelledby="headingNine" data-parent="#accordion">
+                     <div class="card-body">
+			<div class="alert-danger col-12">
+				Restituisce errore con il codice fiscale <DescrizioneErrore><![CDATA[INDISPONIBILITA' TEMPORANEA]]></DescrizioneErrore>-
+				Potreste fornirci un esempio di PIVA e chiamata. Grazie.
+			</div>
+		     </div>
+
+		  </div>
+	       </div>
 
 
             </div>
