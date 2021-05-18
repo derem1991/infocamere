@@ -341,14 +341,14 @@
                            DA MANUALE INFOCAMERE: Per comporre il fascicolo, attuale o storico, occorre fare 3 richieste distinte: <br>
                            1 - richiesta visura ordinaria o storica, nel formato voluto, impostando rispettivamente il tipo documento
                            <b>FATTU</b> o <b>FSTOR </b> <br>
-                           <span class="alert-warning">N.B. FATTU O FSTOR sembra non piu  chiamabili dalle API. Per risolvere il problema, il punto 1 è stato risolto chiamando direttamente le visure</span><br> 
+                           <b>N.B.Si puo richiedere tramite nrea.. se non presente bisogna effettuare una chiamata in piu per avere il dato</b><br> 
                            2 – richiesta di statuto con il servizio <b>output/statuto/documento/nrea</b>, specificando cciaa-nrea della
                            posizione e l‟identificativo ottenuto in risposta alla richiesta 1  <br>
                            3 – per le società di capitale, richiesta di bilancio con uno a scelta dei servizi disponibili,
                            <b>output/bilancio/documento/nrea </b>o <b>output/bilancio/documento/nrea/xbrl/xml </b>o
                            <b>output/bilancio/documento/nrea/xbrl/xml/csv</b> o <b>output/bilanci/unico/nrea</b>, specificando cciaa-nrea della
                            posizione e l‟identificativo ottenuto in risposta alla richiesta 1
-                        </p>
+                        </p> 
                         <div class="col-12  p-2 m-0 row">
                            <div class="col-md-12 col-12 my-2"  >
                               <div class="card col-12"style="border:1px solid black;" >
@@ -362,9 +362,9 @@
                                        <div class="list-group-item  flex-column align-items-start p-4">
                                           <div class="d-block w-100 justify-content-between">
                                              <h4>METODO 1 </h4>
-                                             <h5 class="mb-1 d-block">1) preso numero REA visura ordinaria impresa ( risultato XML) </h5>
-                                             <small class="d-block"> /rest/registroimprese/output/impresa/documento/codicefiscale/xml </small>
-                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/visuraordinariasocietacapitali.xml" target="_blank"> 
+                                             <h5 class="mb-1 d-block">1) preso numero REA fascicolo attuale  ( risultato XML) </h5>
+                                             <small class="d-block"> /rest/registroimprese/output/impresa/documento/nrea/xml </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/fascicoloattuale.xml" target="_blank"> 
                                              <small> Scarica XML</small> 
                                              </a>
                                              <h5 class="mb-1 d-block">2) richiesta di statuto attraverso nrea ( risultato PDF) </h5>
@@ -390,7 +390,7 @@
                                           <div class="mt-4 d-flex w-100 align-items-center">
                                              <h5 class="mb-1">Riepologo 5 Chiamate effettuate</h5>
                                           </div>
-                                          <h4 class="mt-0 mb-1"> /rest/registroimprese/output/impresa/documento/codicefiscale/xml</h4>
+                                          <h4 class="mt-0 mb-1"> /rest/registroimprese/output/impresa/documento/nrea/xml</h4>
                                           <h4 class="mt-0 mb-1"> output/statuto/documento/nrea</h4>
                                           <h4 class="mt-0 mb-1"> /rest/storage/download (download pdf)  </h4>
                                           <h4 class="mt-0 mb-1"> output/bilancio/documento/nrea </h4>
@@ -401,10 +401,10 @@
                                        <div   class="list-group-item  flex-column align-items-start p-4">
                                           <div class="d-block w-100 justify-content-between">
                                              <h4>METODO 2 </h4>
-                                             <h5 class="mb-1 d-block">1) preso numero REA visura ordinaria impresa ( risultato PDF)</h5>
-                                             <small class="d-block"> /rest/registroimprese/output/impresa/documento/codicefiscale/pdf </small>
+                                             <h5 class="mb-1 d-block">1) preso numero REA fascicolo attuale   ( risultato PDF)</h5>
+                                             <small class="d-block"> /rest/registroimprese/output/impresa/documento/nrea/pdf </small>
                                              <small class="d-block"> /rest/storage/download (download pdf) </small>
-                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/visuraordinariasocietacapitali.pdf" target="_blank"> 
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/fascicoloattuale.pdf" target="_blank"> 
                                              <small> Scarica PDF</small> 
                                              </a>
                                              <h5 class="mb-1 d-block">2) richiesta di statuto attraverso nrea ( risultato PDF) </h5>
@@ -427,7 +427,7 @@
                                           <div class="mt-4 d-flex w-100 align-items-center">
                                              <h5 class="mb-1">Riepologo 6 Chiamate effettuate</h5>
                                           </div>
-                                          <h4 class="mt-0 mb-1"> /rest/registroimprese/output/impresa/documento/codicefiscale/pdf (richiesta in differita)</h4>
+                                          <h4 class="mt-0 mb-1"> /rest/registroimprese/output/impresa/documento/nrea/pdf</h4>
                                           <h4 class="mt-0 mb-1"> /rest/storage/download (download pdf)</h4>
                                           <h4 class="mt-0 mb-1"> output/statuto/documento/nrea</h4>
                                           <h4 class="mt-0 mb-1"> /rest/storage/download (download pdf)  </h4>
@@ -452,9 +452,9 @@
                                        <div class="list-group-item  flex-column align-items-start p-4">
                                           <div class="d-block w-100 justify-content-between">
                                              <h4>METODO 1 </h4>
-                                             <h5 class="mb-1 d-block">1) preso numero REA visura storica impresa ( risultato XML) </h5>
-                                             <small class="d-block"> /rest/registroimprese/output/impresa/documento/codicefiscale/xml </small>
-                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/visurastoricasocietacapitali.xml" target="_blank"> 
+                                             <h5 class="mb-1 d-block">1) preso numero REA fascicolo storico  ( risultato XML) </h5>
+                                             <small class="d-block"> /rest/registroimprese/output/impresa/documento/nrea/xml </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/fascicolostorico.xml" target="_blank"> 
                                              <small> Scarica XML</small> 
                                              </a>
                                              <h5 class="mb-1 d-block">2) richiesta di statuto attraverso nrea ( risultato PDF) </h5>
@@ -480,7 +480,7 @@
                                           <div class="mt-4 d-flex w-100 align-items-center">
                                              <h5 class="mb-1">Riepologo 5 Chiamate effettuate</h5>
                                           </div>
-                                          <h4 class="mt-0 mb-1"> /rest/registroimprese/output/impresa/documento/codicefiscale/xml</h4>
+                                          <h4 class="mt-0 mb-1"> /rest/registroimprese/output/impresa/documento/nrea/xml </h4>
                                           <h4 class="mt-0 mb-1"> output/statuto/documento/nrea</h4>
                                           <h4 class="mt-0 mb-1"> /rest/storage/download (download pdf)  </h4>
                                           <h4 class="mt-0 mb-1"> output/bilancio/documento/nrea </h4>
@@ -491,10 +491,10 @@
                                        <div   class="list-group-item  flex-column align-items-start p-4">
                                           <div class="d-block w-100 justify-content-between">
                                              <h4>METODO 2 </h4>
-                                             <h5 class="mb-1 d-block">1) preso numero REA visura storica impresa ( risultato PDF)</h5>
-                                             <small class="d-block"> /rest/registroimprese/output/impresa/documento/codicefiscale/pdf </small>
+                                             <h5 class="mb-1 d-block">1) preso numero REA fascicolo storico ( risultato PDF)</h5>
+                                             <small class="d-block"> /rest/registroimprese/output/impresa/documento/nrea/pdf </small>
                                              <small class="d-block"> /rest/storage/download (download pdf) </small>
-                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/visurastoricasocietacapitali.pdf" target="_blank"> 
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/fascicolostorico.pdf" target="_blank"> 
                                              <small> Scarica PDF</small> 
                                              </a>
                                              <h5 class="mb-1 d-block">2) richiesta di statuto attraverso nrea ( risultato PDF) </h5>
@@ -517,7 +517,7 @@
                                           <div class="mt-4 d-flex w-100 align-items-center">
                                              <h5 class="mb-1">Riepologo 6 Chiamate effettuate</h5>
                                           </div>
-                                          <h4 class="mt-0 mb-1"> /rest/registroimprese/output/impresa/documento/codicefiscale/pdf (richiesta in differita)</h4>
+                                          <h4 class="mt-0 mb-1"> /rest/registroimprese/output/impresa/documento/nrea/pdf (richiesta in differita)</h4>
                                           <h4 class="mt-0 mb-1"> /rest/storage/download (download pdf)</h4>
                                           <h4 class="mt-0 mb-1"> output/statuto/documento/nrea</h4>
                                           <h4 class="mt-0 mb-1"> /rest/storage/download (download pdf)  </h4>
