@@ -339,7 +339,7 @@
                         <h3 class="d-block px-4 pt-4">Fascicolo attuale e storico </h3>
                         <p class="d-block text-sm px-4 pb-0 mb-0 ">
                            DA MANUALE INFOCAMERE: Per comporre il fascicolo, attuale o storico, occorre fare 3 richieste distinte: <br>
-                           1 - richiesta visura ordinaria o storica, nel formato voluto, impostando rispettivamente il tipo documento
+                           1 - richiesta fascicolo ordinario o storico, nel formato voluto, impostando rispettivamente il tipo documento
                            <b>FATTU</b> o <b>FSTOR </b> <br>
                            <b>N.B.Si puo richiedere tramite nrea.. se non presente bisogna effettuare una chiamata in piu per avere il dato</b><br> 
                            2 – richiesta di statuto con il servizio <b>output/statuto/documento/nrea</b>, specificando cciaa-nrea della
