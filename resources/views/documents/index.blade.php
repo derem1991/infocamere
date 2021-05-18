@@ -1070,13 +1070,11 @@
                   </div>
                   <div id="collapseTen" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
                      <div class="card-body">
-			<div class="alert-danger col-12">
-				Non ci risulta nessun chiamata dedicata per gli artigiani, ma si dovrebbe utilizzare la stessa delle altre visure. Confermate?
-				<br>Inoltre, tra le partire IVA forniteci non ci risultano artigiani.
-			</div>
-		     </div>
-		  </div>
-	       </div>
+                        Risposta AREA TECNICA INFOCAMERE:  <i>"è un output richiedibile dalle sole utenze abilitate ad effettuare pratiche; contiene un output formattato come un output testuale ed ha un contenuto informativo minore e graficamente "antico" rispetto alla visura ordinaria;" </i>                         
+                        <br><b>Quindi probabilmente bisogna utilizzare le visure ordinarie classiche e nessuna visura specifica per gli artigiani</b>
+                     </div>
+		            </div>
+	            </div>
                <div class="card">
                   <div class="card-header oddcard" id="headingEleven">
                      <h5 class="mb-0">
