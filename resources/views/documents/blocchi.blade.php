@@ -398,7 +398,101 @@
                      </div>
                   </div>
                </div> 
+               <div class="card">
+                  <div class="card-header oddcard" id="headingTredici">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTredici" aria-expanded="true" aria-controls="collapseTredici">
+                           Società o enti controllanti (blocco CON)
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseTredici" class="collapse oddcard" aria-labelledby="headingTredici" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4">Società o enti controllanti (blocco CON)</h3>
+                        <div class="col-12  p-2 m-0 row">
+                           <div class=" col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">Società o enti controllanti (blocco CON)</h5>
+                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                               </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">Società o enti controllanti (risultato XML)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=SIN </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/enticontrollanti.xml" target="_blank">
+                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block">Società o enti controllanti  (risultato pdf)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=SIN</small>
 
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/enticontrollanti.xml" target="_blank"> 
+                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                              </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> 
+
+               <div class="card">
+                  <div class="card-header  " id="headingQuattordici">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseQuattordici" aria-expanded="true" aria-controls="collapseQuattordici">
+                           Pratiche in istruttoria (blocco PRA)
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseQuattordici" class="collapse" aria-labelledby="headingQuattordici" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4"> Pratiche in istruttoria (blocco PRA)</h3>
+                        <div class="col-12  p-2 m-0 row">
+                           <div class=" col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">   Pratiche in istruttoria (blocco PRA) </h5>
+                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                               </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">  Pratiche in istruttoria   (risultato XML)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=TFS </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/praticheistruttoria.xml" target="_blank">
+                                                <small> Scarica XML</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block">  Pratiche in istruttoria   (risultato pdf)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=TFS</small>
+
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/praticheistruttoria.pdf" target="_blank"> 
+                                                <small> Scarica pdf</small> 
+                                              </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> 
 	         </div>
          </div>
       </div>

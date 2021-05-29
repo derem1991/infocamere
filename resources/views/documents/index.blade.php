@@ -292,30 +292,7 @@
                                           </div>
                                           <h4 class="mt-0 mb-1">  /rest/registroimprese/output/impresa/documento/codicefiscale/pdf (richiesta in differita)</h4>
                                           <h4 class="mt-0 mb-1"> /rest/storage/download (download pdf)</h4>
-					  <div class="alert-warning">
-						Lanciando il seguente ordine di chiamate =>  download "lotti" in PDF e successivamente l'XML, per quest'ultima non ci risulta la presenza del campo STORNO.
-					  </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class=" col-12 my-2"  >
-                              <div class="card col-12"style="border:1px solid black;" >
-                                 <div class="card-header">
-                                    <h5 class="h3 mb-0">Visura storica delle modifiche </h5>
-                                    <small class="d-block"> (INPUT: 03514840101 ) </small>
-                                    <small  class="d-block">l'input puo essere solo CF o PIVA di 11 0 16 caratteri </small>
-                                 </div>
-                                 <div class="card-body p-0">
-                                    <div class="list-group list-group-flush">
-                                       <div class="list-group-item   flex-column align-items-start p-4">
-                                          <div class="d-block w-100 justify-content-between">
-                                             <h5 class="mb-1 d-block">La Visura storica delle modifiche può essere recuperata dal pdf o dall'xml delle rispettive visure storiche. Da verificare se si può recuperare solo questo blocco</h5>
-					     <div class="alert-warning">
-						Si richiede se esistono delle chiamate ad hoc. Se si quali?
-					     </div>
-                                          </div>
+					  
                                        </div>
                                     </div>
                                  </div>

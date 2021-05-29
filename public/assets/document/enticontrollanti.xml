@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=03514840101&blocco=CON]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>0</NumeroPosizioni>
+        <IdRichiesta>AWWYY0551S1DF2012D78</IdRichiesta>
+        <DtEstrazione>2021-05-29</DtEstrazione>
+        <OraEstrazione>16:47:04</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIM2X11PNWX                                                                        CNT000000001                                                            AWWYY0551S1DF2012D780001</RecordAccount>
+    </Testata>
+  </Risposta>
