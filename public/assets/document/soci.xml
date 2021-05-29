@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=03257950364&blocco=SOC]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWYXYNVCD2D9102F5C8</IdRichiesta>
+        <DtEstrazione>2021-05-29</DtEstrazione>
+        <OraEstrazione>16:24:04</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMCX2BPDWXPRVMO       NRD371974   NGISR                                           CNT000000001                                                            AWWYXYNVCD2D9102F5C80001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>MO/371974</IdentificativoPosizione>
+        <OutputRestituiti>SOC/SOC</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SC" descrizione-tipo-impresa="Societa' di capitale" stato-impresa="CANCELLATA" dt-iscrizione-ri="10/03/2009" dt-cancellazione="04/03/2020" dt-atto-costituzione="05/03/2009" dt-ultimo-protocollo="03/03/2020"
+ dt-mod-ultimo-protocollo-evaso="04/03/2020" denominazione="GECO SRL" c-fiscale="03257950364" partita-iva="03257950364" c-cciaa-competente="MO" cciaa-competente="MODENA" cciaa="MO" n-rea="371974">
+          <forma-giuridica c="SR">SOCIETA' A RESPONSABILITA' LIMITATA</forma-giuridica>
+          <indirizzo-localizzazione c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO" c-toponimo="VIA" toponimo="VIA" via="MANZONI" n-civico="1" cap="41013"/>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="CASALINI" nome="SILVIA" carica="AMMINISTRATRICE UNICA" f-rappresentante-ri="S"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita dt-inizio="08/04/2009">
+          <attivita-prevalente-r>COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ARTICOLI E ACCESSORI DI ABBIGLIAMENTO IN GENERE.</attivita-prevalente-r>
+          <classificazione-ateco c-attivita="47.71.2" c-nace="47.71"/>
+        </sintesi-attivita>
+        <sintesi-cifre-impresa n-localizzazioni="5" n-amministratori="1" n-sindaci="0" n-titolari-cariche="0" n-soci="2" dt-addetti="31/03/2020" n-addetti="1" n-trasferimenti-sede="0" n-trasferimenti-quote="0">
+          <pratiche-anno dt-inizio="29/05/2020" n="0"/>
+          <capitale-sociale c-valuta="EU" valuta="EURO">
+            <deliberato ammontare="12.000,00"/>
+          </capitale-sociale>
+        </sintesi-cifre-impresa>
+        <elenco-soci dt-soci-titolari-al="29/05/2021" f-ultimo-elenco-soci="S">
+          <estremi-pratica cciaa="MO" anno="2010" n="29900" dt-protocollo="15/06/2010" dt-deposito="15/06/2010"/>
+          <capitale-sociale c-valuta="EU" valuta="EURO" ammontare="12.000,00"/>
+          <riquadri>
+            <riquadro>
+              <composizione-quote c-valuta="EU" valuta="EURO" valore-nominale="11.640,00" valore-versato="11.640,00"/>
+              <titolari>
+                <titolare f-rappresentante="S">
+                  <anagrafica-titolare c-tipo="P" tipo="PERSONA" c-fiscale="MRNSFN68H10F257R" denominazione="MORANDI STEFANO" cognome="MORANDI" nome="STEFANO"/>
+                  <domicilio comune="CASTELFRANCO EMILIA" provincia="MO" via="VIA COSTITUZIONE" n-civico="1" cap="41013"/>
+                  <diritto-partecipazione c-tipo="01" tipo="PROPRIETA'"/>
+                </titolare>
+              </titolari>
+              <note>MORANDI STEFANO, DOMICILIATO A CASTELFRANCO EMILIA(MO), FRAZIONE PIUMAZZO, CAP 41013, VIA COSTITUZIONE N.1</note>
+            </riquadro>
+            <riquadro>
+              <composizione-quote c-valuta="EU" valuta="EURO" valore-nominale="360,00" valore-versato="360,00"/>
+              <titolari>
+                <titolare f-rappresentante="S">
+                  <anagrafica-titolare c-tipo="P" tipo="PERSONA" c-fiscale="CSLSLV70L57C107C" denominazione="CASALINI SILVIA" cognome="CASALINI" nome="SILVIA"/>
+                  <domicilio comune="CASTELFRANCO EMILIA" provincia="MO" via="VIA DEI CANTASTORIE" n-civico="4" cap="41013" frazione="CAVAZZONA"/>
+                  <diritto-partecipazione c-tipo="01" tipo="PROPRIETA'"/>
+                </titolare>
+              </titolari>
+              <note>CASALINI SILVIA, DOMICILIATA A CASTELFRANCO EMILIA (MO), FRAZIONE CAVAZZONA, VIA DEI CANTASTORIE N.4, CAP 41013</note>
+            </riquadro>
+          </riquadri>
+        </elenco-soci>
+        <tabella-elenco-soci>
+          <soci>
+            <socio>
+              <anagrafica-titolare c-tipo="P" c-fiscale="MRNSFN68H10F257R" denominazione="MORANDI STEFANO"/>
+              <quote-diritti>
+                <quota-diritto c-tipo-diritto="01" tipo-diritto="PROPRIETA'" valore-nominale="11.640" percentuale-capitale="97"/>
+              </quote-diritti>
+            </socio>
+            <socio>
+              <anagrafica-titolare c-tipo="P" c-fiscale="CSLSLV70L57C107C" denominazione="CASALINI SILVIA"/>
+              <quote-diritti>
+                <quota-diritto c-tipo-diritto="01" tipo-diritto="PROPRIETA'" valore-nominale="360" percentuale-capitale="3"/>
+              </quote-diritti>
+            </socio>
+          </soci>
+        </tabella-elenco-soci>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>

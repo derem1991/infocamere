@@ -603,6 +603,102 @@
                   </div>
                </div> 
 
+               <div class="card">
+                  <div class="card-header oddcard" id="headingNine">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                           Titolari di altre cariche o qualifiche (blocco APE)
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseNine" class="collapse oddcard" aria-labelledby="headingNine" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4">Titolari di altre cariche o qualifiche (blocco APE)</h3>
+                        <div class="col-12  p-2 m-0 row">
+                           <div class=" col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">Titolari di altre cariche o qualifiche (blocco APE)   </h5>
+                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                               </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">Titolari di altre cariche o qualifiche (risultato XML)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=APE </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/titolaridialtrecariche.xml" target="_blank">
+                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block">Titolari di altre cariche o qualifiche (risultato pdf)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=APE</small>
+
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/titolaridialtrecariche.xml" target="_blank"> 
+                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                              </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> 
+
+               <div class="card">
+                  <div class="card-header   " id="headingTen">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                           Soci e titolari di diritti su quote o azioni (blocco SOC)
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseTen" class="collapse    " aria-labelledby="headingTen" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4"> Soci e titolari di diritti su quote o azioni (blocco SOC)</h3>
+                        <div class="col-12  p-2 m-0 row">
+                           <div class=" col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0"> Soci e titolari di diritti su quote o azioni (blocco SOC)   </h5>
+                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                               </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block"> Soci e titolari di diritti su quote o azioni (risultato XML)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=SOC </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/soci.xml" target="_blank">
+                                                <small> Scarica XML</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block"> Soci e titolari di diritti su quote o azioni (risultato pdf)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=SOC</small>
+
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/soci.pdf" target="_blank"> 
+                                                <small> Scarica pdf</small> 
+                                              </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> 
+
 
 	         </div>
          </div>
