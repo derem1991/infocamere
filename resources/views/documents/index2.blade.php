@@ -506,9 +506,7 @@
                         </div>
                      </div>
                   </div>
-               </div> 
-  
-
+               </div>
                <div class="card">
                   <div class="card-header  oddcard" id="headingSeven">
                      <h5 class="mb-0">
@@ -557,6 +555,53 @@
                   </div>
                </div> 
 
+               <div class="card">
+                  <div class="card-header " id="headingEight">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                           Sindaci, membri organi di controllo (blocco SIN)
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseEight" class="collapse " aria-labelledby="headingEight" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4">Sindaci, membri organi di controllo  (blocco SIN)</h3>
+                        <div class="col-12  p-2 m-0 row">
+                           <div class=" col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">Sindaci, membri organi di controllo   </h5>
+                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                               </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">Sindaci, membri organi di controllo(risultato XML)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=SIN </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/sindaci.xml" target="_blank">
+                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block">Sindaci, membri organi di controllo (risultato pdf)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=SIN</small>
+
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/sindaci.xml" target="_blank"> 
+                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                              </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> 
 
 
 	         </div>
