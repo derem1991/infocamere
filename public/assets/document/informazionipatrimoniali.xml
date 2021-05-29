@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=03514840101&blocco=IPA]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWYXXDCZW1DF2011DAE</IdRichiesta>
+        <DtEstrazione>2021-05-29</DtEstrazione>
+        <OraEstrazione>16:04:29</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMPX2BEDWXPRVGE       NRD351067   NGISN                                           CNT000000001                                                            AWWYXXDCZW1DF2011DAE0001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>GE/351067</IdentificativoPosizione>
+        <OutputRestituiti>IPA/IPA</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SP" descrizione-tipo-impresa="Societa' di persone" dt-iscrizione-rea="17/05/1995" dt-atto-costituzione="21/04/1995" dt-ultimo-protocollo="02/02/2018"
+ dt-mod-ultimo-protocollo-evaso="02/02/2018" denominazione="MATTONI ROSSI - S.N.C. DI VALENTI GUGLIELMO E C." c-fiscale="03514840101" partita-iva="03514840101" c-cciaa-competente="GE" cciaa-competente="GENOVA" cciaa="GE" n-rea="351067">
+          <stato-attivita c="A">attiva</stato-attivita>
+          <forma-giuridica c="SN">SOCIETA' IN NOME COLLETTIVO</forma-giuridica>
+          <indirizzo-localizzazione c-comune="025" comune="GENOVA" provincia="GE" c-toponimo="VIA" toponimo="VIA" via="CORSICA" n-civico="5 R." cap="16128" c-stradario="19160"/>
+          <indirizzo-posta-certificata>MATTONIROSSI@PECIMPRESE.IT</indirizzo-posta-certificata>
+          <telefono prefisso="010" n="5701973"/>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="VALENTI" nome="GUGLIELMO" carica="SOCIO"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita dt-inizio="10/10/1995">
+          <attivita-esercitata-r>ESERCIZIO BAR TAVOLA CALDA</attivita-esercitata-r>
+          <classificazione-ateco c-attivita="56.3" c-nace="56.3"/>
+        </sintesi-attivita>
+        <info-patrimoniali-finanziarie>
+          <valore-nominale-conferimenti c-valuta="EU" valuta="EURO" ammontare="5.164,57"/>
+        </info-patrimoniali-finanziarie>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>
