@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/documento/nrea/xml?cciaa=GE&nRea=351067&documento=FSTOR]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWYXT7K962D9102DEC2</IdRichiesta>
+        <DtEstrazione>2021-05-29</DtEstrazione>
+        <OraEstrazione>15:15:55</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMPX2F2DWXPRVGE       NRD351067   NGISN                                           CNT000000001                                                            AWWYXT7K962D9102DEC20001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>GE/351067</IdentificativoPosizione>
+        <OutputRestituiti>FSTORSP+/+SUL+ALB+STO+PER+PAT+IPA+TFS</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SP" descrizione-tipo-impresa="Societa' di persone" dt-iscrizione-rea="17/05/1995" dt-atto-costituzione="21/04/1995" dt-ultimo-protocollo="02/02/2018"
+ dt-mod-ultimo-protocollo-evaso="02/02/2018" denominazione="MATTONI ROSSI - S.N.C. DI VALENTI GUGLIELMO E C." c-fiscale="03514840101" partita-iva="03514840101" c-cciaa-competente="GE" cciaa-competente="GENOVA" cciaa="GE" n-rea="351067">
+          <stato-attivita c="A">attiva</stato-attivita>
+          <forma-giuridica c="SN">SOCIETA' IN NOME COLLETTIVO</forma-giuridica>
+          <indirizzo-localizzazione c-comune="025" comune="GENOVA" provincia="GE" c-toponimo="VIA" toponimo="VIA" via="CORSICA" n-civico="5 R." cap="16128" c-stradario="19160"/>
+          <indirizzo-posta-certificata>MATTONIROSSI@PECIMPRESE.IT</indirizzo-posta-certificata>
+          <telefono prefisso="010" n="5701973"/>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="VALENTI" nome="GUGLIELMO" carica="SOCIO"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita dt-inizio="10/10/1995">
+          <attivita-esercitata-r>ESERCIZIO BAR TAVOLA CALDA</attivita-esercitata-r>
+          <classificazione-ateco c-attivita="56.3" c-nace="56.3"/>
+        </sintesi-attivita>
+        <sintesi-cifre-impresa n-localizzazioni="1" n-titolari-cariche="3" dt-addetti="30/06/2018" n-addetti="1" n-trasferimenti-sede="0">
+          <pratiche-anno dt-inizio="29/05/2020" n="0"/>
+          <valore-nominale-conferimenti c-valuta="EU" valuta="EURO" ammontare="5.164,57"/>
+        </sintesi-cifre-impresa>
+        <doc-consultabili n-altri-atti="11"/>
+        <info-sede>
+          <telefono prefisso="010" n="5701973"/>
+          <indirizzo-posta-certificata>MATTONIROSSI@PECIMPRESE.IT</indirizzo-posta-certificata>
+          <dati-iscrizione-rea-rd n-rea="351067" dt-iscrizione="17/05/1995"/>
+          <partita-iva>03514840101</partita-iva>
+        </info-sede>
+        <info-attivita dt-inizio-attivita-impresa="10/10/1995">
+          <attivita-esercitata>ESERCIZIO BAR TAVOLA CALDA</attivita-esercitata>
+          <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+            <classificazione-ateco c-attivita="56.3" attivita="Bar e altri esercizi simili senza cucina" c-importanza="P" importanza="primaria Registro Imprese" dt-inizio="09/10/1995"/>
+            <classificazione-ateco c-attivita="56.10.11" attivita="Ristorazione con somministrazione" c-importanza="S" importanza="secondaria Registro Imprese" dt-inizio="09/10/1958"/>
+          </classificazioni-ateco>
+          <addetti-impresa c-tipo-informazione="R" tipo-informazione="RILEVATI" anno="2018" dt-rilevazione="30/06/2018">
+            <info-mesi>
+              <info-mese c-mese="03" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+              <info-mese c-mese="06" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+            </info-mesi>
+            <valori-medi valore-medio-dipendenti="0" valore-medio-indipendenti="1" valore-medio-totale="1"/>
+          </addetti-impresa>
+          <addetti-comuni>
+            <addetti-comune c-comune="025" comune="GENOVA" provincia="GE">
+              <pro-localizzazioni>
+                <pro-localizzazione>0</pro-localizzazione>
+                <pro-localizzazione>2</pro-localizzazione>
+              </pro-localizzazioni>
+              <info-mesi>
+                <info-mese c-mese="03" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+                <info-mese c-mese="06" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+              </info-mesi>
+              <valori-medi valore-medio-dipendenti="0" valore-medio-indipendenti="1" valore-medio-totale="1"/>
+            </addetti-comune>
+          </addetti-comuni>
+        </info-attivita>
+        <storia-attivita>
+          <classificazioni-ateco c-codifica="IVA" codifica="Classificazione dichiarata ai fini IVA dell'attivit&#224; prevalente">
+            <classificazione-ateco c-attivita="56.10.11" attivita="Ristorazione con somministrazione" dt-riferimento="13/03/2014"/>
+          </classificazioni-ateco>
+        </storia-attivita>
+        <storia-addetti>
+          <addetti-impresa c-tipo-informazione="R" tipo-informazione="RILEVATI" anno="2018" dt-rilevazione="30/06/2018">
+            <info-mesi>
+              <info-mese c-mese="03" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+              <info-mese c-mese="06" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+            </info-mesi>
+            <valori-medi valore-medio-dipendenti="0" valore-medio-indipendenti="1" valore-medio-totale="1"/>
+          </addetti-impresa>
+          <addetti-impresa c-tipo-informazione="R" tipo-informazione="RILEVATI" anno="2017" dt-rilevazione="31/12/2017">
+            <info-mesi>
+              <info-mese c-mese="03" n-dipendenti="14" n-indipendenti="2" n-totale="16"/>
+              <info-mese c-mese="06" n-dipendenti="16" n-indipendenti="2" n-totale="18"/>
+              <info-mese c-mese="09" n-dipendenti="14" n-indipendenti="1" n-totale="15"/>
+              <info-mese c-mese="12" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+            </info-mesi>
+            <valori-medi valore-medio-dipendenti="15" valore-medio-indipendenti="2" valore-medio-totale="16"/>
+          </addetti-impresa>
+          <addetti-impresa c-tipo-informazione="R" tipo-informazione="RILEVATI" anno="2016" dt-rilevazione="31/12/2016">
+            <info-mesi>
+              <info-mese c-mese="03" n-dipendenti="15" n-indipendenti="3" n-totale="18"/>
+              <info-mese c-mese="06" n-dipendenti="15" n-indipendenti="3" n-totale="18"/>
+              <info-mese c-mese="09" n-dipendenti="14" n-indipendenti="3" n-totale="17"/>
+              <info-mese c-mese="12" n-dipendenti="15" n-indipendenti="3" n-totale="18"/>
+            </info-mesi>
+            <valori-medi valore-medio-dipendenti="15" valore-medio-indipendenti="3" valore-medio-totale="18"/>
+          </addetti-impresa>
+        </storia-addetti>
+        <persone-sede>
+          <persona progressivo="1" f-rappresentante-ri="S">
+            <persona-fisica cognome="VALENTI" nome="GUGLIELMO" c-fiscale="VLNGLL58T15D969G" sesso="M">
+              <estremi-nascita dt="15/12/1958" c-comune="025" comune="GENOVA" provincia="GE"/>
+            </persona-fisica>
+            <indirizzo c-comune="025" comune="GENOVA" provincia="GE" c-toponimo="VIA" toponimo="VIA" via="AMENDOLA GIOVANNI" n-civico="9/9" cap="16145" altre-indicazioni="(IVI DAL 04/11/2002)"/>
+            <quota c-valuta="EU" valuta="EURO" valore="4.906,35"/>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche>
+                <proprieta-quota p-proprieta="0">TIPO DIRITTO: PROPRIETA'
+***
+CON DECRETO DEL GIUDICE PER LE INDAGINI PRELIMINARI DEL TRIBUNALE DI GENOVA
+IN DATA 07/09/2017 E' STATO DISPOSTO IL SEQUESTRO DELLA QUOTA DEL SOCIO
+VALENTI GUGLIELMO</proprieta-quota>
+              </atto-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="COM">SOCIO</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+          </persona>
+          <persona progressivo="4">
+            <persona-fisica cognome="TRIGLIA" nome="FABIO" c-fiscale="TRGFBA75P22F158I" sesso="M">
+              <estremi-nascita dt="22/09/1975" comune="MESSINA" provincia="ME"/>
+              <domicilio-fiscale c-comune="028" comune="LAVAGNA" provincia="GE" c-toponimo="CSO" toponimo="CORSO" via="MATTEOTTI" n-civico="13/29" cap="16033"/>
+            </persona-fisica>
+            <quota c-valuta="EU" valuta="EURO" valore="258,22"/>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche>
+                <proprieta-quota p-proprieta="0">TIPO DIRITTO: PROPRIETA'</proprieta-quota>
+              </atto-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="COM" dt-iscrizione="23/08/2017" dt-atto-nomina="31/07/2017">SOCIO</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+          </persona>
+          <persona progressivo="3">
+            <persona-fisica cognome="BROGI" nome="CARLO" c-fiscale="BRGCRL48R06D969O" sesso="M">
+              <estremi-nascita dt="06/10/1948" c-comune="025" comune="GENOVA" provincia="GE"/>
+            </persona-fisica>
+            <indirizzo c-comune="025" comune="GENOVA" provincia="GE" c-toponimo="VIA" toponimo="VIA" via="VAL TREBBIA" n-civico="70/7" cap="16141"/>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="DL2" dt-nomina="18/05/1998">DELEGATO DI CUI ART. 2 LEGGE 25/8/91 N.287</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+          </persona>
+        </persone-sede>
+        <localizzazioni>
+          <localizzazione progressivo="1" c-tipo="UL" tipo="UNITA' LOCALE" dt-apertura="26/06/1998" f-cessazione="S">
+            <sotto-tipi>
+              <sotto-tipo c="PES">PUBBLICO ESERCIZIO</sotto-tipo>
+              <sotto-tipo c="BAR">BAR</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="025" comune="GENOVA" provincia="GE" c-toponimo="VIA" toponimo="VIA" via="MALTA 15-17" n-civico="RR." cap="16121" c-stradario="35560"/>
+            <telefono prefisso="010" n="565896"/>
+            <attivita-esercitata>BAR - TAVOLA CALDA DAL 26/06/1998</attivita-esercitata>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="56.3" attivita="Bar e altri esercizi simili senza cucina" c-importanza="P" importanza="primaria Registro Imprese" dt-inizio="26/06/1998"/>
+              <classificazione-ateco c-attivita="56.10.11" attivita="Ristorazione con somministrazione" c-importanza="S" importanza="secondaria Registro Imprese" dt-inizio="26/06/1998"/>
+            </classificazioni-ateco>
+            <cessazione-localizzazione dt-cessazione="28/10/1999" dt-domanda="23/11/1999" c-causale="CH" causale="CHIUSURA DELL'UNITA' LOCALE"/>
+          </localizzazione>
+          <localizzazione progressivo="2" c-tipo="UL" tipo="UNITA' LOCALE" dt-apertura="01/06/2000" f-cessazione="N">
+            <sotto-tipi>
+              <sotto-tipo c="MA">MAGAZZINO</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="025" comune="GENOVA" provincia="GE" c-toponimo="VIA" toponimo="VIA" via="CORSICA" n-civico="11 R." cap="16128" c-stradario="19160"/>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="56.3" attivita="Bar e altri esercizi simili senza cucina" c-importanza="I" importanza="prevalente svolta dall'impresa"/>
+            </classificazioni-ateco>
+          </localizzazione>
+        </localizzazioni>
+        <mad>
+          <sessioni-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="05/12/2013">
+              <modifiche>
+                <modifica p-modifica="1" c-tipo="U" tipo="D'ufficio" c-modifica="90" descrizione-c-modifica="MODIFICA D'UFFICIO PER NORMALIZZAZIONE INDIRIZZO">DELLA SEDE DA: GENOVA (GE) VIA CORSICA 5 R CAP 16128</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="03/12/2010">
+              <modifiche>
+                <modifica p-modifica="1" c-tipo="U" tipo="D'ufficio" c-modifica="90" descrizione-c-modifica="MODIFICA D'UFFICIO PER NORMALIZZAZIONE INDIRIZZO">DELLA SEDE DA: GENOVA (GE) VIA CORSICA 5 R CAP 16100</modifica>
+                <modifica p-modifica="2" c-modifica="90" descrizione-c-modifica="MODIFICA D'UFFICIO PER NORMALIZZAZIONE INDIRIZZO">DELLA LOCALIZZAZIONE N.2 DA: GENOVA (GE) VIA CORSICA 11 R CAP 16100</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="07/02/2008">
+              <modifiche>
+                <modifica p-modifica="1" dt-effetto="07/02/2008" c-modifica="91" descrizione-c-modifica="MODIFICA PARTITA IVA A FRONTE RECUPERO AUTOMATICO DALL'AGENZIA DELLE ENTRATE"/>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="23/11/1999">
+              <modifiche>
+                <modifica p-modifica="1" dt-effetto="28/10/1999" c-modifica="U2" descrizione-c-modifica="CESSAZIONE UNITA' LOCALE">GENOVA (GE) VIA MALTA 15-17 RR</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="18/11/1999">
+              <modifiche>
+                <modifica p-modifica="1" dt-effetto="28/10/1999" c-modifica="R4">TRASFERIMENTO D'AZIENDA (EX L. 310/93) INERENTE L'ESERCIZIO SITO IN GENOVA,
+VIA MALTA 15 ROSSO</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="02/07/1998">
+              <modifiche>
+                <modifica p-modifica="1" dt-effetto="26/06/1998" c-modifica="U3" descrizione-c-modifica="APERTURA UNITA' LOCALE">GENOVA (GE) VIA MALTA 15-17 RR</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="03/11/1995">
+              <modifiche>
+                <modifica p-modifica="1" dt-effetto="10/10/1995" c-modifica="C1" descrizione-c-modifica="INIZIO ATTIVITA'"/>
+              </modifiche>
+            </sessione-rd-rea>
+          </sessioni-rd-rea>
+        </mad>
+        <trascrizioni>
+          <protocolli-ri>
+            <protocollo-ri n-protocollo-ufficio="5890" anno="2018" dt-protocollo="02/02/2018">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A99" tipo="ALTRI ATTI" descrizione-tipo="DECRETO DI SEQUESTRO PREVENTIVO" dt-atto="07/09/2017">
+                    <estremi-notarili c-forma="P" forma="ATTO PUBBLICO"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="02/02/2018"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="180000589001007">
+                      <tipo-trascrizione c-tipo-trascrizione="419">ALTRE MODIFICHE STATUTARIE - ATTI E FATTI SOGGETTI A DEPOSITO.</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>CON DECRETO DEL GIUDICE PER LE INDAGINI PRELIMINARI DEL TRIBUNALE DI GENOVA</descrizione>
+                        <descrizione>IN DATA 07/09/2017 E' STATO DISPOSTO IL SEQUESTRO DELLA QUOTA DEL SOCIO</descrizione>
+                        <descrizione>VALENTI GUGLIELMO</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="02/02/2018" dt-rettifica="02/02/2018"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="36512" anno="2017" dt-protocollo="31/07/2017">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                  <modello c="P" n-ricorrenze="2">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A04" tipo="MODIFICHE ATTO COSTIT/PATTI SOC.(SOC DI PERSONE, CONSORZI, GEIE)" dt-atto="31/07/2017">
+                    <estremi-notarili c-forma="A" forma="SCRITTURA PRIVATA AUTENTICATA" notaio="FIGARI GIANENRICO" n-repertorio="3345" localita-notaio="GENOVA" provincia-notaio="GE"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="23/08/2017"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="170003651201001" c-tipo-modifica="M" tipo-modifica="MODIFICA DATI PERSONA/SOCIETA'">
+                      <persona cognome="VALENTI" nome="GUGLIELMO" c-fiscale="VLNGLL58T15D969G"/>
+                      <tipo-trascrizione c-tipo-trascrizione="P4">QUOTA DI PARTECIPAZIONE POSSEDUTA:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>QUOTA: VALORE PRECEDENTE EURO 5.164,57</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="23/08/2017"/>
+                    </trascrizione-ri>
+                    <trascrizione-ri p-trascrizione="170003651201002" c-tipo-modifica="I" tipo-modifica="INSERIMENTO NUOVA PERSONA">
+                      <persona cognome="TRIGLIA" nome="FABIO" c-fiscale="TRGFBA75P22F158I"/>
+                      <tipo-trascrizione c-tipo-trascrizione="P3A">NOMINA CARICA E/O QUALIFICA/E DI:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>ASSUNZIONE DELLA QUALIFICA DI SOCIO CON ATTO DEL 31/07/2017</descrizione>
+                        <descrizione>QUOTA DI PARTECIPAZIONE POSSEDUTA: 258,22 EURO</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="23/08/2017"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="36510" anno="2017" dt-protocollo="31/07/2017">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="TA">ISCRIZIONE ATTO DI TRASF. PROPRIETA' O GODIMENTO DI AZIENDA</modello>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A20" tipo="TRASFERIMENTO D'AZIENDA" dt-atto="31/07/2017">
+                    <estremi-notarili c-forma="A" forma="SCRITTURA PRIVATA AUTENTICATA" notaio="TINIT-FGRGNR70P2" n-repertorio="3344"/>
+                    <registrazione ufficio-registro="TLG"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="22/08/2017"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="11081" anno="2017" dt-protocollo="13/03/2017">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                  <modello c="P" n-ricorrenze="2">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A04" tipo="MODIFICHE ATTO COSTIT/PATTI SOC.(SOC DI PERSONE, CONSORZI, GEIE)" dt-atto="10/02/2017">
+                    <estremi-notarili c-forma="A" forma="SCRITTURA PRIVATA AUTENTICATA" notaio="FIGARI GIANENRICO" n-repertorio="3067" localita-notaio="GENOVA" provincia-notaio="GE"/>
+                    <registrazione dt-registrazione="27/02/2017" n="3370" ufficio-registro="GENOVA" provincia-ufficio-registro="GE"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="24/03/2017"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="170001108101001" c-tipo-modifica="M" tipo-modifica="MODIFICA DATI PERSONA/SOCIETA'">
+                      <persona cognome="VALENTI" nome="GUGLIELMO" c-fiscale="VLNGLL58T15D969G"/>
+                      <tipo-trascrizione c-tipo-trascrizione="P4">QUOTA DI PARTECIPAZIONE POSSEDUTA:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>QUOTA: VALORE PRECEDENTE EURO 4.906,35</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="24/03/2017"/>
+                    </trascrizione-ri>
+                    <trascrizione-ri p-trascrizione="170001108101002" c-tipo-modifica="M" tipo-modifica="MODIFICA DATI PERSONA/SOCIETA'">
+                      <persona cognome="BLASCO" nome="ALDO" c-fiscale="BLSLDA52T13D969Z"/>
+                      <tipo-trascrizione c-tipo-trascrizione="P3E">CESSAZIONE DALLA CARICA O QUALIFICA DI:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>SOCIO DATA NOMINA 12/09/2014</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="24/03/2017"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="43933" anno="2014" dt-protocollo="22/09/2014">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                  <modello c="P" n-ricorrenze="2">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A04" tipo="MODIFICHE ATTO COSTIT/PATTI SOC.(SOC DI PERSONE, CONSORZI, GEIE)" dt-atto="12/09/2014">
+                    <estremi-notarili c-forma="A" forma="SCRITTURA PRIVATA AUTENTICATA" notaio="FIGARI GIANENRICO" n-repertorio="1591" localita-notaio="GENOVA" provincia-notaio="GE"/>
+                    <registrazione dt-registrazione="15/09/2014" n="12629" ufficio-registro="GENOVA" provincia-ufficio-registro="GE"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="24/09/2014"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="140004393301001">
+                      <tipo-trascrizione c-tipo-trascrizione="415">MODIFICA DEI POTERI DEGLI ORGANI AMMINISTRATIVI</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>PRECEDENTE:</descrizione>
+                        <descrizione>998 - POTERI DA STATUTO O DA PATTI SOCIALI (ASSENTE)</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="24/09/2014"/>
+                    </trascrizione-ri>
+                    <trascrizione-ri p-trascrizione="140004393301002" c-tipo-modifica="M" tipo-modifica="MODIFICA DATI PERSONA/SOCIETA'">
+                      <persona cognome="VALENTI" nome="GUGLIELMO" c-fiscale="VLNGLL58T15D969G"/>
+                      <tipo-trascrizione c-tipo-trascrizione="P4">QUOTA DI PARTECIPAZIONE POSSEDUTA:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>QUOTA: VALORE PRECEDENTE EURO 5.164,57</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="24/09/2014"/>
+                    </trascrizione-ri>
+                    <trascrizione-ri p-trascrizione="140004393301003" c-tipo-modifica="I" tipo-modifica="INSERIMENTO NUOVA PERSONA">
+                      <persona cognome="BLASCO" nome="ALDO" c-fiscale="BLSLDA52T13D969Z"/>
+                      <tipo-trascrizione c-tipo-trascrizione="P3A">NOMINA CARICA E/O QUALIFICA/E DI:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>ASSUNZIONE DELLA QUALIFICA DI SOCIO CON ATTO DEL 12/09/2014</descrizione>
+                        <descrizione>QUOTA DI PARTECIPAZIONE POSSEDUTA: 258,22 EURO</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="24/09/2014"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="16091" anno="2014" dt-protocollo="01/04/2014">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S5">INIZIO, MODIFICA, CESSAZIONE DI  ATTIVITA' NELLA SEDE LEGALE</modello>
+                  <modello c="P" n-ricorrenze="1">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                  <modello c="F2">COM. UNICA PRESENTATA AI FINI INPS E AGENZIA DELLE ENTRATE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="14137" anno="2014" dt-protocollo="18/03/2014">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                  <modello c="P" n-ricorrenze="2">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A04" tipo="MODIFICHE ATTO COSTIT/PATTI SOC.(SOC DI PERSONE, CONSORZI, GEIE)" dt-atto="13/03/2014">
+                    <estremi-notarili c-forma="A" forma="SCRITTURA PRIVATA AUTENTICATA" notaio="FIGARI GIANENRICO" n-repertorio="1333" localita-notaio="GENOVA" provincia-notaio="GE"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="01/04/2014"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="140001413701003" c-tipo-modifica="M" tipo-modifica="MODIFICA DATI PERSONA/SOCIETA'">
+                      <persona cognome="VALENTI" nome="GUGLIELMO" c-fiscale="VLNGLL58T15D969G"/>
+                      <tipo-trascrizione c-tipo-trascrizione="P4">QUOTA DI PARTECIPAZIONE POSSEDUTA:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>QUOTA: VALORE PRECEDENTE: (ASSENTE)</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="01/04/2014"/>
+                    </trascrizione-ri>
+                    <trascrizione-ri p-trascrizione="140001413701004" c-tipo-modifica="M" tipo-modifica="MODIFICA DATI PERSONA/SOCIETA'">
+                      <persona cognome="TILIA" nome="SABRINA" c-fiscale="TLISRN63M50D969U"/>
+                      <tipo-trascrizione c-tipo-trascrizione="P3E">CESSAZIONE DALLA CARICA O QUALIFICA DI:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>SOCIO DATA NOMINA</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="01/04/2014"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="74684" anno="2011" dt-protocollo="30/12/2011">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                </modelli>
+                <trascrizioni-ri>
+                  <trascrizione-ri p-trascrizione="110007468400001">
+                    <tipo-trascrizione c-tipo-trascrizione="201">VARIAZIONE INDIRIZZO PEC IMPRESA. INDIRIZZO PEC PRECEDENTE:</tipo-trascrizione>
+                    <descrizioni>
+                      <descrizione>(ASSENTE)</descrizione>
+                    </descrizioni>
+                    <iscrizione-modifica dt-iscrizione="05/03/2012"/>
+                  </trascrizione-ri>
+                </trascrizioni-ri>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="3242" anno="2010" dt-protocollo="26/01/2010">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="P" n-ricorrenze="1">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                </modelli>
+                <trascrizioni-ri>
+                  <trascrizione-ri p-trascrizione="100000324200002" c-tipo-modifica="M" tipo-modifica="MODIFICA DATI PERSONA/SOCIETA'">
+                    <persona cognome="TILIA" nome="SABRINA" c-fiscale="TLISRN63M50D969U"/>
+                    <tipo-trascrizione c-tipo-trascrizione="0P2">MODIFICA RESIDENZA ANAGRAFICA E/O DOMICILIO FISCALE</tipo-trascrizione>
+                    <descrizioni>
+                      <descrizione>DI: TILIA SABRINA VALORI PRECEDENTI:</descrizione>
+                      <descrizione>RESIDENZA: VIA AMENDOLA GIOVANNI, 9/9 GENOVA (GE)</descrizione>
+                    </descrizioni>
+                    <iscrizione-modifica dt-iscrizione="28/01/2010"/>
+                  </trascrizione-ri>
+                </trascrizioni-ri>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="47272" anno="2002" dt-protocollo="27/11/2002">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="P" n-ricorrenze="1">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                </modelli>
+                <trascrizioni-ri>
+                  <trascrizione-ri p-trascrizione="20004727200001" c-tipo-modifica="M" tipo-modifica="MODIFICA DATI PERSONA/SOCIETA'">
+                    <persona cognome="VALENTI" nome="GUGLIELMO" c-fiscale="VLNGLL58T15D969G"/>
+                    <tipo-trascrizione c-tipo-trascrizione="0P2">MODIFICA RESIDENZA ANAGRAFICA E/O DOMICILIO FISCALE</tipo-trascrizione>
+                    <descrizioni>
+                      <descrizione>DI: VALENTI GUGLIELMO VALORI PRECEDENTI:</descrizione>
+                      <descrizione>RESIDENZA: VIA MONTEVIDEO, 3/3 GENOVA (GE)</descrizione>
+                    </descrizioni>
+                    <iscrizione-modifica dt-iscrizione="27/11/2002"/>
+                  </trascrizione-ri>
+                </trascrizioni-ri>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="47269" anno="2002" dt-protocollo="27/11/2002">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="P" n-ricorrenze="1">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                </modelli>
+                <trascrizioni-ri>
+                  <trascrizione-ri p-trascrizione="20004726900001" c-tipo-modifica="M" tipo-modifica="MODIFICA DATI PERSONA/SOCIETA'">
+                    <persona cognome="TILIA" nome="SABRINA" c-fiscale="TLISRN63M50D969U"/>
+                    <tipo-trascrizione c-tipo-trascrizione="0P2">MODIFICA RESIDENZA ANAGRAFICA E/O DOMICILIO FISCALE</tipo-trascrizione>
+                    <descrizioni>
+                      <descrizione>DI: TILIA SABRINA VALORI PRECEDENTI:</descrizione>
+                      <descrizione>RESIDENZA: VIA MONTEVIDEO, 3/3 GENOVA (GE)</descrizione>
+                    </descrizioni>
+                    <iscrizione-modifica dt-iscrizione="27/11/2002"/>
+                  </trascrizione-ri>
+                </trascrizioni-ri>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="23798" anno="2001" dt-protocollo="13/06/2001">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="40825" anno="1999" dt-protocollo="23/11/1999">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="40401" anno="1999" dt-protocollo="18/11/1999">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="TA">ISCRIZIONE ATTO DI TRASF. PROPRIETA' O GODIMENTO DI AZIENDA</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A20" tipo="TRASFERIMENTO D'AZIENDA" dt-atto="28/10/1999">
+                    <estremi-notarili notaio="GRIFFO BENIAMINO" n-repertorio="35123"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="16/12/1999"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="24436" anno="1998" dt-protocollo="02/07/1998">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="16130" anno="1998" dt-protocollo="21/05/1998">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S5">INIZIO, MODIFICA, CESSAZIONE DI  ATTIVITA' NELLA SEDE LEGALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="600" tipo="ALTRI ATTI:" descrizione-tipo="DELEGATO SOMMINISTRAZIONE  LEGGE 287" dt-atto="18/05/1998">
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="17/06/1998"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="351067" anno="0" dt-protocollo="19/02/1996">
+              <modelli-trascrizioni>
+                <trascrizioni-ri>
+                  <trascrizione-ri p-trascrizione="35106700001">
+                    <tipo-trascrizione c-tipo-trascrizione="125">ISCRIZIONE DI DIRITTO NELLA SEZIONE ORDINARIA DEL REGISTRO DELLE IMPRESE</tipo-trascrizione>
+                  </trascrizione-ri>
+                </trascrizioni-ri>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+          </protocolli-ri>
+        </trascrizioni>
+        <iscrizione-ri n-iscrizione-ri="03514840101" provincia-ri="GE" cciaa-competente="GENOVA" c-n-iscrizione-ri-old="GE025-61581" dt-iscrizione="19/02/1996">
+          <sezioni>
+            <sezione c="O" descrizione="Iscritta nella sezione ORDINARIA" dt-iscrizione="19/02/1996"/>
+          </sezioni>
+        </iscrizione-ri>
+        <info-statuto dt-atto-costituzione="21/04/1995">
+          <durata-societa dt-termine="31/12/2050"/>
+          <iscrizione-rs dt-iscrizione="19/05/1995"/>
+          <oggetto-sociale>L'ATTIVITA' DI RISTORAZIONE, PIZZERIA, TRATTORIA, TAVOLE CALDE E FREDDE, BAR,
+GELATERIA, PASTICCERIA, LATTERIA, ALBERGO, CAMPEGGIO, COMPLESSI TURISTICI,
+DISCOTECHE E SALE DA BALLO.</oggetto-sociale>
+          <poteri>
+            <poteri-patti-sociali>ARTICOLO 7) AMMINISTRAZIONE
+L'AMMINISTRAZIONE SIA ORDINARIA CHE STRAORDINARIA NONCHE' LA RAPPRESENTANZA
+DELLA SOCIETA' SPETTANO AL SOLO SOCIO SIGNOR VALENTI GUGLIELMO LUCIANO.</poteri-patti-sociali>
+          </poteri>
+        </info-statuto>
+        <info-patrimoniali-finanziarie>
+          <valore-nominale-conferimenti c-valuta="EU" valuta="EURO" ammontare="5.164,57"/>
+        </info-patrimoniali-finanziarie>
+        <ta-fusioni-scissioni-subentri>
+          <trasferimenti-azienda>
+            <trasferimento-azienda>
+              <estremi-pratica dt-atto="29/12/1997" cciaa="GE" anno="1998" n="2241" dt-protocollo="20/01/1998" dt-deposito="20/01/1998"/>
+              <informazioni-atto c-oggetto="01" oggetto="COMPRAVENDITA">
+                <titolari>
+                  <titolare c-tipo="CD" tipo="Cedente">
+                    <anagrafica-titolare c-tipo="P" tipo="PERSONA" c-fiscale="CMPLRI74P49D969R" denominazione="CAMPANELLA ILARIA" cognome="CAMPANELLA" nome="ILARIA"/>
+                  </titolare>
+                  <titolare c-tipo="CS" tipo="Cessionario">
+                    <anagrafica-titolare c-tipo="I" tipo="IMPRESA" c-fiscale="03514840101" denominazione="MATTONI ROSSI - S.N.C. DI VALENTI GUGLIELMO E C."/>
+                  </titolare>
+                </titolari>
+              </informazioni-atto>
+            </trasferimento-azienda>
+            <trasferimento-azienda>
+              <estremi-pratica dt-atto="28/10/1999" cciaa="GE" anno="1999" n="40401" dt-protocollo="18/11/1999" dt-deposito="18/11/1999"/>
+              <informazioni-atto n-repertorio="35123" notaio="GRIFFO BENIAMINO" c-oggetto="01" oggetto="COMPRAVENDITA">
+                <titolari>
+                  <titolare c-tipo="CD" tipo="Cedente">
+                    <anagrafica-titolare c-tipo="I" tipo="IMPRESA" c-fiscale="03514840101" denominazione="MATTONI ROSSI - S.N.C. DI VALENTI GUGLIELMO E C."/>
+                  </titolare>
+                  <titolare c-tipo="CS" tipo="Cessionario">
+                    <anagrafica-titolare c-tipo="I" tipo="IMPRESA" c-fiscale="03747880106" denominazione="&quot;ROCK CAFE' SAS DI GIUSEPPE PALAZZOTTO &amp; C. &quot;" denominazione-denunciata="ROCK CAFE'  S.R.L."/>
+                  </titolare>
+                </titolari>
+              </informazioni-atto>
+            </trasferimento-azienda>
+            <trasferimento-azienda>
+              <estremi-pratica dt-atto="31/07/2017" cciaa="GE" anno="2017" n="36510" dt-protocollo="31/07/2017" dt-deposito="31/07/2017"/>
+              <informazioni-atto n-repertorio="3344" notaio="TINIT-FGRGNR70P2" c-oggetto="04" oggetto="AFFITTO/COMODATO">
+                <titolari>
+                  <titolare c-tipo="CD" tipo="Cedente">
+                    <anagrafica-titolare c-tipo="I" tipo="IMPRESA" c-fiscale="03514840101" denominazione="MATTONI ROSSI - S.N.C. DI VALENTI GUGLIELMO E C."/>
+                  </titolare>
+                  <titolare c-tipo="CS" tipo="Cessionario">
+                    <anagrafica-titolare c-tipo="A" tipo="ALTRO" c-fiscale="00247540099" denominazione="SBOCCIA S.A.S. DI ROBERTO E THOMAS VALENTI &amp; C."/>
+                  </titolare>
+                </titolari>
+              </informazioni-atto>
+            </trasferimento-azienda>
+          </trasferimenti-azienda>
+        </ta-fusioni-scissioni-subentri>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nomelocalexsmlschemaoutput">
+    <Testata>
+        <Riepilogo>
+            <RichiestaInput>
+                <![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/bilanci/documento/nrea?cciaa=GE&nRea=351067]]>
+            </RichiestaInput>
+            <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+            <NumeroPosizioni>0</NumeroPosizioni>
+            <IdRichiesta>AWWYXV2CJ74D570484D9</IdRichiesta>
+            <FileOutput>NIUG00YS</FileOutput>
+            <DtEstrazione>2021-05-29</DtEstrazione>
+            <OraEstrazione>15:28:52</OraEstrazione>
+        </Riepilogo>
+        <RecordAccount>TELEMACO      KJJJ002 BOND1X11PNWX                                                                        CNT000000001                                                            AWWYXV2CJ74D570484D90001</RecordAccount>
+
+</Testata>
+
+</Risposta>
