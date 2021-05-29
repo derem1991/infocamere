@@ -18,5 +18,8 @@ class DocumentController extends Controller
     {
        return view('documents.index');
     }
-     
+    public function index2(Request $request)
+    {
+       return view('documents.index2');
+    }
 }

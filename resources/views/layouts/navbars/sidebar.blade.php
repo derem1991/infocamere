@@ -82,6 +82,11 @@
                         <i class="fa fa-file text-primary"></i>Documenti
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('documents.index2') }}">
+                        <i class="fa fa-file text-primary"></i>Documenti 2
+                    </a>
+                </li>
             </ul>
             <!-- Divider -->
             <hr class="my-3">
