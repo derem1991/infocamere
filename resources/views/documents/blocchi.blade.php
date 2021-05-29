@@ -445,7 +445,6 @@
                      </div>
                   </div>
                </div> 
-
                <div class="card">
                   <div class="card-header  " id="headingQuattordici">
                      <h5 class="mb-0">
@@ -493,6 +492,102 @@
                      </div>
                   </div>
                </div> 
+
+               <div class="card">
+                  <div class="card-header oddcard" id="headingquind">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapsequind" aria-expanded="true" aria-controls="collapsequind">
+                           Storia dei trasferimenti di quote - solo per SRL  (blocco QUO)
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapsequind" class="collapse oddcard" aria-labelledby="headingquind" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4">Storia dei trasferimenti di quote - solo per SRL  (blocco QUO)</h3>
+                        <div class="col-12  p-2 m-0 row">
+                           <div class=" col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">Storia dei trasferimenti di quote - solo per SRL  (blocco QUO)</h5>
+                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                               </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">Storia dei trasferimenti di quote - solo per SRL (risultato XML)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=QUO </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/trasferimentiquote.xml" target="_blank">
+                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block">Storia dei trasferimenti di quote - solo per SRL (risultato pdf)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=QUO</small>
+
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/trasferimentiquote.xml" target="_blank"> 
+                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                              </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> 
+               <div class="card">
+                  <div class="card-header  " id="headingSED">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSED" aria-expanded="true" aria-controls="collapseSED">
+                           informazioni da patti sociali (blocco PAT)
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseSED" class="collapse" aria-labelledby="headingSED" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4">  informazioni da patti sociali (blocco PAT)</h3>
+                        <div class="col-12  p-2 m-0 row">
+                           <div class=" col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">    informazioni da patti sociali (blocco PAT) </h5>
+                                    <small class="d-block">(INPUT: 03514840101 ) </small>
+                               </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">informazioni da patti sociali  (risultato XML)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=TFS </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/informazionipattisociali.xml" target="_blank">
+                                                <small> Scarica XML</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block">informazioni da patti sociali  (risultato pdf)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=TFS</small>
+
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/informazionipattisociali.pdf" target="_blank"> 
+                                                <small> Scarica pdf</small> 
+                                              </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> 
+
 	         </div>
          </div>
       </div>

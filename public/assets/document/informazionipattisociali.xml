@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=03514840101&blocco=PAT]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWYY11L4M3DB003D93C</IdRichiesta>
+        <DtEstrazione>2021-05-29</DtEstrazione>
+        <OraEstrazione>17:00:41</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMPX2B5DWXPRVGE       NRD351067   NGISN                                           CNT000000001                                                            AWWYY11L4M3DB003D93C0001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>GE/351067</IdentificativoPosizione>
+        <OutputRestituiti>PAT/PAT</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SP" descrizione-tipo-impresa="Societa' di persone" dt-iscrizione-rea="17/05/1995" dt-atto-costituzione="21/04/1995" dt-ultimo-protocollo="02/02/2018"
+ dt-mod-ultimo-protocollo-evaso="02/02/2018" denominazione="MATTONI ROSSI - S.N.C. DI VALENTI GUGLIELMO E C." c-fiscale="03514840101" partita-iva="03514840101" c-cciaa-competente="GE" cciaa-competente="GENOVA" cciaa="GE" n-rea="351067">
+          <stato-attivita c="A">attiva</stato-attivita>
+          <forma-giuridica c="SN">SOCIETA' IN NOME COLLETTIVO</forma-giuridica>
+          <indirizzo-localizzazione c-comune="025" comune="GENOVA" provincia="GE" c-toponimo="VIA" toponimo="VIA" via="CORSICA" n-civico="5 R." cap="16128" c-stradario="19160"/>
+          <indirizzo-posta-certificata>MATTONIROSSI@PECIMPRESE.IT</indirizzo-posta-certificata>
+          <telefono prefisso="010" n="5701973"/>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="VALENTI" nome="GUGLIELMO" carica="SOCIO"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita dt-inizio="10/10/1995">
+          <attivita-esercitata-r>ESERCIZIO BAR TAVOLA CALDA</attivita-esercitata-r>
+          <classificazione-ateco c-attivita="56.3" c-nace="56.3"/>
+        </sintesi-attivita>
+        <sintesi-cifre-impresa n-localizzazioni="1" n-titolari-cariche="3" dt-addetti="30/06/2018" n-addetti="1" n-trasferimenti-sede="0">
+          <pratiche-anno dt-inizio="29/05/2020" n="0"/>
+          <valore-nominale-conferimenti c-valuta="EU" valuta="EURO" ammontare="5.164,57"/>
+        </sintesi-cifre-impresa>
+        <iscrizione-ri n-iscrizione-ri="03514840101" provincia-ri="GE" cciaa-competente="GENOVA" c-n-iscrizione-ri-old="GE025-61581" dt-iscrizione="19/02/1996">
+          <sezioni>
+            <sezione c="O" descrizione="Iscritta nella sezione ORDINARIA" dt-iscrizione="19/02/1996"/>
+          </sezioni>
+        </iscrizione-ri>
+        <info-statuto dt-atto-costituzione="21/04/1995">
+          <durata-societa dt-termine="31/12/2050"/>
+          <iscrizione-rs dt-iscrizione="19/05/1995"/>
+          <oggetto-sociale>L'ATTIVITA' DI RISTORAZIONE, PIZZERIA, TRATTORIA, TAVOLE CALDE E FREDDE, BAR,
+GELATERIA, PASTICCERIA, LATTERIA, ALBERGO, CAMPEGGIO, COMPLESSI TURISTICI,
+DISCOTECHE E SALE DA BALLO.</oggetto-sociale>
+          <poteri>
+            <poteri-patti-sociali>ARTICOLO 7) AMMINISTRAZIONE
+L'AMMINISTRAZIONE SIA ORDINARIA CHE STRAORDINARIA NONCHE' LA RAPPRESENTANZA
+DELLA SOCIETA' SPETTANO AL SOLO SOCIO SIGNOR VALENTI GUGLIELMO LUCIANO.</poteri-patti-sociali>
+          </poteri>
+        </info-statuto>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>
