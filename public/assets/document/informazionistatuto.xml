@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=03257950364&blocco=STA]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWYY1SXK92D9102070C</IdRichiesta>
+        <DtEstrazione>2021-05-29</DtEstrazione>
+        <OraEstrazione>17:12:16</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMCX2B2DWXPRVMO       NRD371974   NGISR                                           CNT000000001                                                            AWWYY1SXK92D9102070C0001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>MO/371974</IdentificativoPosizione>
+        <OutputRestituiti>STA/STA</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SC" descrizione-tipo-impresa="Societa' di capitale" stato-impresa="CANCELLATA" dt-iscrizione-ri="10/03/2009" dt-cancellazione="04/03/2020" dt-atto-costituzione="05/03/2009" dt-ultimo-protocollo="03/03/2020"
+ dt-mod-ultimo-protocollo-evaso="04/03/2020" denominazione="GECO SRL" c-fiscale="03257950364" partita-iva="03257950364" c-cciaa-competente="MO" cciaa-competente="MODENA" cciaa="MO" n-rea="371974">
+          <forma-giuridica c="SR">SOCIETA' A RESPONSABILITA' LIMITATA</forma-giuridica>
+          <indirizzo-localizzazione c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO" c-toponimo="VIA" toponimo="VIA" via="MANZONI" n-civico="1" cap="41013"/>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="CASALINI" nome="SILVIA" carica="AMMINISTRATRICE UNICA" f-rappresentante-ri="S"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita dt-inizio="08/04/2009">
+          <attivita-prevalente-r>COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ARTICOLI E ACCESSORI DI ABBIGLIAMENTO IN GENERE.</attivita-prevalente-r>
+          <classificazione-ateco c-attivita="47.71.2" c-nace="47.71"/>
+        </sintesi-attivita>
+        <sintesi-cifre-impresa n-localizzazioni="5" n-amministratori="1" n-sindaci="0" n-titolari-cariche="0" n-soci="2" dt-addetti="31/03/2020" n-addetti="1" n-trasferimenti-sede="0" n-trasferimenti-quote="0">
+          <pratiche-anno dt-inizio="29/05/2020" n="0"/>
+          <capitale-sociale c-valuta="EU" valuta="EURO">
+            <deliberato ammontare="12.000,00"/>
+          </capitale-sociale>
+        </sintesi-cifre-impresa>
+        <iscrizione-ri n-iscrizione-ri="03257950364" provincia-ri="MO" cciaa-competente="MODENA" dt-iscrizione="10/03/2009">
+          <sezioni>
+            <sezione c="O" descrizione="Iscritta nella sezione ORDINARIA" dt-iscrizione="10/03/2009"/>
+          </sezioni>
+        </iscrizione-ri>
+        <info-statuto dt-atto-costituzione="05/03/2009">
+          <durata-societa dt-termine="31/12/2030">
+            <scadenza-esercizi dt-primo-esercizio="31/12/2009" giorni-proroga-bilancio="60"/>
+          </durata-societa>
+          <oggetto-sociale>LA SOCIETA' HA PER OGGETTO:- IL COMMERCIO SIA AL DETTAGLIO CHE ALL'INGROSSO DI
+PRODOTTI DI ABBIGLIAMENTO E CALZATURE IN GENERE, ARTICOLI DI MAGLIERIA,
+TESSUTI, TOVAGLIATO, ACCESSORI PER L'ABBIGLIAMENTO E BIANCHERIA PER UOMO, DONNA
+E BAMBINO,- LA FABBRICAZIONE E LO STOCCAGGIO DI PRODOTTI DI ABBIGLIAMENTO E
+CALZATUR E IN GENERE, MAGLIERIA, TESSUTI, TOVAGLIATO, ACCESSORI PER
+L'ABBIGLIAMENTO E BIA NCHERIA PER UOMO, DONNA E BAMBINO, SIA IN CONTO IN
+PROPRIO CHE PER CONTO TERZI, - LA GESTIONE DI CATENE DI NEGOZI IN FRANCHISING.
+LA SOCIETA' POTRA' ESERCITAR E ATTIVITA' DI CONSULENZA PER COMUNICAZIONE,
+SPONSORIZZAZIONE, PUBBLICITA' E MAR KETING ED OGNI ATTIVITA' DI CONSULENZA
+COMMERCIALE CONNESSA AL SETTORE DELL'ABBI GLIAMENTO, DELLE CALZATURE, DEI
+TESSUTI E DEL TOVAGLIATO.LA SOCIETA' POTRA' ES ERCITARE, ANCHE  PER CONTO DI
+TERZI, ATTIVITA' DI CONSULENZA E PROGETTAZIONE DI PIANI DI SVILUPPO
+COMMERCIALE, DI CONTRATTI DI FRANCHISING E DI OGNI ALTRA FORMA DI
+COLLABORAZIONE COMMERCIALE CONNESSA AL SETTORE DELL'ABBIGLIAMENTO, DELLE CAL
+ZATURE, DEI TESSUTI E DEL TOVAGLIATO. LA SOCIETA' POTRA' COMPIERE TUTTE LE OPER
+AZIONI COMMERCIALI, MOBILIARI, IMMOBILIARI E FINANZIARIE NECESSARIE O UTILI PER
+IL CONSEGUIMENTO DELL'OGGETTO SOCIALE; PRESTARE GARANZIE, AVALLI, FIDEIUSSIONI
+A NCHE A FAVORE DI TERZI, STIPULARE MUTUI, FIDI, APERTURE DI CONTI CORRENTI,
+OPERA ZIONI BANCARIE IN GENERE CON ISTITUTI DI CREDITO, RICEVERE CONFERIMENTI,
+STIPULA RE CONTRATTI DI ASSOCIAZIONE IN PARTECIPAZIONE, NONCHE' DI LOCAZIONE
+FINANZIARIA IN GENERE.E' COMUNQUE ESCLUSA OGNI ATTIVITA' DI SOLLECITAZIONE DEL
+PUBBLICO RISPARMIO, OGNI ATTIVITA' DI INTERMEDIAZIONE, NEGOZIAZIONE,
+COLLOCAMENTO O ALTRO SU STRUMENTI FINANZIARI, OGNI ATTIVITA' PROFESSIONALE
+RISERVATA, NONCHE' L'ESERCIZIO, NEI CONFRONTI DEL PUBBLICO DI ALCUNA DELLE
+ATTIVITA' DI CUI ALL'ART.106 DE L DECRETO LEGISLATIVO N.385 DEL 1 SETTEMBRE
+1993.</oggetto-sociale>
+          <poteri>
+            <poteri-statuto>L'ORGANO AMMINISTRATIVO, IN QUALUNQUE FORMA SIA NOMINATO, E' INVESTITO DI TUTTI
+I PIU' AMPI POTERI ATTINENTI ALL'AMMINISTRAZIONE DELLA SOCIETA', SIA ORDINARIA
+CHE STRAORDINARIA E PUO' COMPIERE TUTTE LE OPERAZIONI NECESSARIE OD UTILI PER
+IL CONSEGUIMENTO DELL'OGGETTO SOCIALE, AD ECCEZIONE DI QUANTO RISERVATO DALLA
+LEGGE O DALLO STATUTO ALLA COMPETENZA DEI SOCI. QUALORA VENGA NOMINATO UN
+CONSIGLIO DI AMMINISTRAZIONE, QUESTO, SE NON VI HANNO PROVVEDUTO I SOCI,
+NOMINERA' NEL SUO SENO UN PRESIDENTE ED EVENTUALMENTE ANCHE UN VICE-PRESIDENTE
+E UNO O PIU' AMMINISTRATORI DELEGATI. IL CONSIGLIO DI AMMINISTRAZIONE PUO'
+DELEGARE LE PROPRIE ATTRIBUZIONI AD UNO O PIU' DEI SUOI MEMBRI NEL RISPETTO DI
+QUANTO DISPOSTO DALL'ARTICOLO 2381 DEL CODICE CIVILE.  LA FIRMA E LA
+RAPPRESENTANZA LEGALE DELLA SOCIETA', DI FRONTE AI TERZI E IN OGNI SEDE
+AMMINISTRATIVA E GIUDIZIARIA, SPETTANO: A) ALL'AMMINISTRATORE UNICO; B) AL
+PRESIDENTE DEL CONSIGLIO DI AMMINISTRAZIONE O AL VICE PRESIDENTE IN CASO DI
+ASSENZA O IMPEDIMENTO DEL PRESIDENTE; C) ALL'AMMINISTRATORE DELEGATO OVE
+NOMINATO E NEI LIMITI DEI POTERI CONFERITIGLI; D) IN CASO DI AMMINISTRAZIONE
+PLURIPERSONALE NON COLLEGIALE, AI SINGOLI AMMINISTRATORI, IN VIA DISGIUNTA O
+CONGIUNTA, A SECONDA DI QUANTO STABILITO ALL'ATTO DELLA NOMINA PER I RELATIVI
+POTERI.</poteri-statuto>
+            <ripartizioni-utili-perdite>ARTICOLO 29) DELLO STATUTO SOCIALE.</ripartizioni-utili-perdite>
+          </poteri>
+          <riferimenti>
+            <clausole>
+              <recesso f-presenza-nello-statuto="S"/>
+              <gradimento f-presenza-nello-statuto="S"/>
+              <prelazione f-presenza-nello-statuto="S"/>
+              <compromissorie f-presenza-nello-statuto="S"/>
+            </clausole>
+          </riferimenti>
+        </info-statuto>
+        <amministrazione-controllo>
+          <sistema-amministrazione c="R1">AMMINISTRATORE UNICO</sistema-amministrazione>
+          <forme-amministrative>
+            <forma-amministrativa c="AU" f-in-carica="S" f-organo-controllo="N">AMMINISTRATORE UNICO</forma-amministrativa>
+          </forme-amministrative>
+        </amministrazione-controllo>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>

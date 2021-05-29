@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=03257950364&blocco=STO]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWYY1TLQX3DB003DC3E</IdRichiesta>
+        <DtEstrazione>2021-05-29</DtEstrazione>
+        <OraEstrazione>17:12:37</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMCX2BQDWXPRVMO       NRD371974   NGISR                                           CNT000000001                                                            AWWYY1TLQX3DB003DC3E0001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>MO/371974</IdentificativoPosizione>
+        <OutputRestituiti>STO/STO</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SC" descrizione-tipo-impresa="Societa' di capitale" stato-impresa="CANCELLATA" dt-iscrizione-ri="10/03/2009" dt-cancellazione="04/03/2020" dt-atto-costituzione="05/03/2009" dt-ultimo-protocollo="03/03/2020"
+ dt-mod-ultimo-protocollo-evaso="04/03/2020" denominazione="GECO SRL" c-fiscale="03257950364" partita-iva="03257950364" c-cciaa-competente="MO" cciaa-competente="MODENA" cciaa="MO" n-rea="371974">
+          <forma-giuridica c="SR">SOCIETA' A RESPONSABILITA' LIMITATA</forma-giuridica>
+          <indirizzo-localizzazione c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO" c-toponimo="VIA" toponimo="VIA" via="MANZONI" n-civico="1" cap="41013"/>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="CASALINI" nome="SILVIA" carica="AMMINISTRATRICE UNICA" f-rappresentante-ri="S"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita dt-inizio="08/04/2009">
+          <attivita-prevalente-r>COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ARTICOLI E ACCESSORI DI ABBIGLIAMENTO IN GENERE.</attivita-prevalente-r>
+          <classificazione-ateco c-attivita="47.71.2" c-nace="47.71"/>
+        </sintesi-attivita>
+        <sintesi-cifre-impresa n-localizzazioni="5" n-amministratori="1" n-sindaci="0" n-titolari-cariche="0" n-soci="2" dt-addetti="31/03/2020" n-addetti="1" n-trasferimenti-sede="0" n-trasferimenti-quote="0">
+          <pratiche-anno dt-inizio="29/05/2020" n="0"/>
+          <capitale-sociale c-valuta="EU" valuta="EURO">
+            <deliberato ammontare="12.000,00"/>
+          </capitale-sociale>
+        </sintesi-cifre-impresa>
+        <estremi-atto-costituzione c-tipo="AC" tipo="ATTO COSTITUTIVO" n-repertorio="36738/10096" notaio="BARBATI ALDO" localita-notaio="MODENA" provincia-notaio="MO"/>
+        <storia-addetti>
+          <addetti-impresa c-tipo-informazione="R" tipo-informazione="RILEVATI" anno="2020" dt-rilevazione="31/03/2020">
+            <info-mesi>
+              <info-mese c-mese="03" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+            </info-mesi>
+          </addetti-impresa>
+          <addetti-impresa c-tipo-informazione="R" tipo-informazione="RILEVATI" anno="2019" dt-rilevazione="31/12/2019">
+            <info-mesi>
+              <info-mese c-mese="03" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+              <info-mese c-mese="06" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+              <info-mese c-mese="09" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+              <info-mese c-mese="12" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+            </info-mesi>
+            <valori-medi valore-medio-dipendenti="0" valore-medio-indipendenti="1" valore-medio-totale="1"/>
+          </addetti-impresa>
+          <addetti-impresa c-tipo-informazione="R" tipo-informazione="RILEVATI" anno="2018" dt-rilevazione="31/12/2018">
+            <info-mesi>
+              <info-mese c-mese="09" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+              <info-mese c-mese="12" n-dipendenti="0" n-indipendenti="1" n-totale="1"/>
+            </info-mesi>
+            <valori-medi valore-medio-dipendenti="0" valore-medio-indipendenti="1" valore-medio-totale="1"/>
+          </addetti-impresa>
+        </storia-addetti>
+        <localizzazioni>
+          <localizzazione progressivo="3" c-tipo="UL" tipo="UNITA' LOCALE" dt-apertura="08/04/2009" f-cessazione="S">
+            <sotto-tipi>
+              <sotto-tipo c="DEP">DEPOSITO</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO" c-toponimo="VIA" toponimo="VIA" via="DEI MUGNAI" n-civico="13" cap="41013"/>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="47.71.2" attivita="Commercio al dettaglio di confezioni per bambini e neonati" c-importanza="I" importanza="prevalente svolta dall'impresa"/>
+            </classificazioni-ateco>
+            <cessazione-localizzazione dt-cessazione="20/12/2010" dt-domanda="18/01/2011" c-causale="CH" causale="CHIUSURA DELL'UNITA' LOCALE"/>
+          </localizzazione>
+          <localizzazione progressivo="1" c-tipo="UL" tipo="UNITA' LOCALE" dt-apertura="08/04/2009" f-cessazione="S">
+            <sotto-tipi>
+              <sotto-tipo c="NEG">NEGOZIO</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="004" comune="CENTO" provincia="FE" c-toponimo="VIA" toponimo="VIA" via="BOLOGNA" n-civico="13" cap="44042"/>
+            <sede-fuori-provincia n-rea="197656" cciaa="FE"/>
+            <attivita-esercitata>COMMERCIO AL DETTAGLIO DI ABBIGLIAMENTO PER BAMBINI E ALTRI ARTICOLI DI
+ABBIGLIAMENTO IN GENERE.</attivita-esercitata>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="47.71.2" attivita="Commercio al dettaglio di confezioni per bambini e neonati" c-importanza="P" importanza="primaria Registro Imprese" dt-inizio="08/04/2009"/>
+              <classificazione-ateco c-attivita="47.71.1" attivita="Commercio al dettaglio di confezioni per adulti" c-importanza="S" importanza="secondaria Registro Imprese" dt-inizio="08/04/2009"/>
+            </classificazioni-ateco>
+            <albi-ruoli-licenze>
+              <denunce-inizio-attivita>
+                <denuncia-inizio-attivita c-tipo="DC" tipo="Denuncia inizio attivit&#224; o comunicazione" dt-denuncia="08/04/2009" c-ente-rilascio="AC" ente-rilascio="COMUNE"/>
+              </denunce-inizio-attivita>
+              <commercio-dettaglio dt-dichiarazione="08/04/2009" superficie-vendita="207" c-settore-merceologico="N" settore-merceologico="NON ALIMENTARE">
+                <integrazione-informazioni c-tipo-domanda="CA" tipo-domanda="comunicazione di apertura " dt-presentazione="08/04/2009" c-comune-presentazione="004" comune-presentazione="CENTO" provincia-presentazione="MO" dt-decorrenza="08/04/2009" c-struttura-esercizio="V" struttura-esercizio="Esercizio di commercio al dettaglio di VICINATO " mq-vendita-non-alimentare="207" mq-esercizio="216"/>
+              </commercio-dettaglio>
+            </albi-ruoli-licenze>
+            <cessazione-localizzazione dt-cessazione="19/12/2012" dt-domanda="19/12/2012" c-causale="CP" causale="CESSAZIONE DELLE ATTIVITA' NELLA PROVINCIA"/>
+          </localizzazione>
+          <localizzazione progressivo="1" c-tipo="UL" tipo="UNITA' LOCALE" dt-apertura="08/04/2009" f-cessazione="S">
+            <sotto-tipi>
+              <sotto-tipo c="NEG">NEGOZIO</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="036" comune="RUBIERA" provincia="RE" c-toponimo="VIA" toponimo="VIA" via="PALERMO" n-civico="1/C" cap="42048"/>
+            <sede-fuori-provincia n-rea="276336" cciaa="RE"/>
+            <attivita-esercitata>COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ARTICOLI DI ABBIGLIAMENTO IN GENERE.</attivita-esercitata>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="47.71.2" attivita="Commercio al dettaglio di confezioni per bambini e neonati" c-importanza="P" importanza="primaria Registro Imprese" dt-inizio="08/04/2009"/>
+              <classificazione-ateco c-attivita="47.71.1" attivita="Commercio al dettaglio di confezioni per adulti" c-importanza="S" importanza="secondaria Registro Imprese" dt-inizio="08/04/2009"/>
+            </classificazioni-ateco>
+            <albi-ruoli-licenze>
+              <denunce-inizio-attivita>
+                <denuncia-inizio-attivita c-tipo="DC" tipo="Denuncia inizio attivit&#224; o comunicazione" dt-denuncia="08/04/2009" c-ente-rilascio="AC" ente-rilascio="COMUNE"/>
+              </denunce-inizio-attivita>
+            </albi-ruoli-licenze>
+            <cessazione-localizzazione dt-cessazione="26/07/2010" dt-domanda="07/09/2010" c-causale="CH" causale="CHIUSURA DELL'UNITA' LOCALE"/>
+          </localizzazione>
+          <localizzazione progressivo="2" c-tipo="UL" tipo="UNITA' LOCALE" dt-apertura="26/09/2009" f-cessazione="S">
+            <sotto-tipi>
+              <sotto-tipo c="NEG">NEGOZIO</sotto-tipo>
+            </sotto-tipi>
+            <indirizzo-localizzazione c-comune="036" comune="RUBIERA" provincia="RE" c-toponimo="VIA" toponimo="VIA" via="TRENTO" n-civico="8/B" cap="42048"/>
+            <sede-fuori-provincia n-rea="276336" cciaa="RE"/>
+            <attivita-esercitata>COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO E ACCESSORI, DAL 26/9/2009;</attivita-esercitata>
+            <classificazioni-ateco c-codifica="07" codifica="Classificazione ATECORI 2007">
+              <classificazione-ateco c-attivita="47.71" attivita="Commercio al dettaglio di articoli di abbigliamento" c-importanza="P" importanza="primaria Registro Imprese" dt-inizio="26/09/2009"/>
+              <classificazione-ateco c-attivita="47.71.5" attivita="Commercio al dettaglio di cappelli, ombrelli, guanti e cravatte" c-importanza="S" importanza="secondaria Registro Imprese" dt-inizio="26/09/2009"/>
+            </classificazioni-ateco>
+            <albi-ruoli-licenze>
+              <denunce-inizio-attivita>
+                <denuncia-inizio-attivita c-tipo="DC" tipo="Denuncia inizio attivit&#224; o comunicazione" dt-denuncia="05/08/2009" c-ente-rilascio="AC" ente-rilascio="COMUNE"/>
+              </denunce-inizio-attivita>
+              <commercio-dettaglio dt-dichiarazione="26/09/2009" superficie-vendita="23" c-settore-merceologico="N" settore-merceologico="NON ALIMENTARE">
+                <integrazione-informazioni c-tipo-domanda="CA" tipo-domanda="comunicazione di apertura " dt-presentazione="05/08/2009" c-comune-presentazione="036" comune-presentazione="RUBIERA" provincia-presentazione="MO" dt-decorrenza="26/09/2009" c-struttura-esercizio="V" struttura-esercizio="Esercizio di commercio al dettaglio di VICINATO " mq-vendita-non-alimentare="23" mq-esercizio="31"/>
+              </commercio-dettaglio>
+            </albi-ruoli-licenze>
+            <cessazione-localizzazione dt-cessazione="28/09/2011" dt-domanda="13/10/2011" c-causale="CP" causale="CESSAZIONE DELLE ATTIVITA' NELLA PROVINCIA"/>
+          </localizzazione>
+        </localizzazioni>
+        <mad>
+          <sessioni-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="18/01/2011">
+              <modifiche>
+                <modifica p-modifica="1" dt-effetto="20/12/2010" c-modifica="U2" descrizione-c-modifica="CESSAZIONE UNITA' LOCALE">n.3, CASTELFRANCO EMILIA (MO) VIA DEI MUGNAI 13
+(DEPOSITO)</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="18/01/2011">
+              <modifiche>
+                <modifica p-modifica="1" dt-effetto="20/12/2010" c-modifica="U3" descrizione-c-modifica="APERTURA UNITA' LOCALE">CASTELFRANCO EMILIA (MO) VIA DEGLI ARROTINI 26
+(DEPOSITO)</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="30/03/2010">
+              <modifiche>
+                <modifica p-modifica="1" dt-effetto="06/03/2010" c-modifica="U3" descrizione-c-modifica="APERTURA UNITA' LOCALE">VIGNOLA (MO) VIA MAZZINI 8
+(NEGOZIO) PER L'ATTIVITA' DI COMMERCIO AL MINUTO DI ARTICOLI DI
+ABBIGLIAMENTO PER BAMBINI E ACCESSORI VARI</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="02/10/2009">
+              <modifiche>
+                <modifica p-modifica="1" c-tipo="U" tipo="D'ufficio">MODIFICA D'UFFICIO A SEGUITO DI PROTOCOLLO INTERCAMERALE N. 59199 DEL
+06/10/2009:</modifica>
+                <modifica p-modifica="2" c-modifica="U3" descrizione-c-modifica="APERTURA UNITA' LOCALE">RUBIERA (RE) VIA TRENTO 8/B
+(NEGOZIO) PER COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO E ACCESSORI</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="06/05/2009">
+              <modifiche>
+                <modifica p-modifica="1" c-tipo="U" tipo="D'ufficio">MODIFICA D'UFFICIO A SEGUITO DI PROTOCOLLO INTERCAMERALE N. 33276 DEL
+20/05/2009:</modifica>
+                <modifica p-modifica="2" c-modifica="U3" descrizione-c-modifica="APERTURA UNITA' LOCALE">FAENZA (RA) VIA MENGOLINA 9/21
+(NEGOZIO) PER COMMERCIO AL DETTAGLIO DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ACCESSORI E ARTICOLI DI ABBIGLIAMENTO IN GENERE</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="06/05/2009">
+              <modifiche>
+                <modifica p-modifica="1" dt-effetto="08/04/2009" c-modifica="C7" descrizione-c-modifica="VARIAZIONE DELL' ATTIVITA' PREVALENTE DELL' IMPRESA">COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO PER BAMBINI E ALTRI ARTIC
+OLI E ACCESSORI DI ABBIGLIAMENTO IN GENERE. TALE ATTIVITA' E' ORA L'UNICA SVO
+LTA DALL'IMPRESA, MA VIENE SVOLTA PRESSO LE UNITA' LOCALI E NON PRESSO LA SED
+E LEGALE.</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="06/05/2009">
+              <modifiche>
+                <modifica p-modifica="1" dt-effetto="08/04/2009" c-modifica="U3" descrizione-c-modifica="APERTURA UNITA' LOCALE">CASTELFRANCO EMILIA (MO) VIA DEI MUGNAI 13
+(DEPOSITO)</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="06/05/2009">
+              <modifiche>
+                <modifica p-modifica="1" c-tipo="U" tipo="D'ufficio">MODIFICA D'UFFICIO A SEGUITO DI PROTOCOLLO INTERCAMERALE N. 31391 DEL
+12/05/2009:</modifica>
+                <modifica p-modifica="2" c-modifica="U3" descrizione-c-modifica="APERTURA UNITA' LOCALE">CENTO (FE) VIA BOLOGNA 13
+(NEGOZIO) PER COMMERCIO AL DETTAGLIO DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ARTICOLI DI ABBIGLIAMENTO IN GENERE</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+            <sessione-rd-rea c-movimentazione="M" movimentazione="modifica" dt-denuncia="04/05/2009">
+              <modifiche>
+                <modifica p-modifica="1" c-tipo="U" tipo="D'ufficio">MODIFICA D'UFFICIO A SEGUITO DI PROTOCOLLO INTERCAMERALE N. 30899 DEL
+08/05/2009:</modifica>
+                <modifica p-modifica="2" c-modifica="U3" descrizione-c-modifica="APERTURA UNITA' LOCALE">RUBIERA (RE) VIA PALERMO 1/C
+(NEGOZIO) PER COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO PER
+BAMBINI E ALTRI ARTICOLI DI ABBIGLIAMENTO IN GENERE</modifica>
+              </modifiche>
+            </sessione-rd-rea>
+          </sessioni-rd-rea>
+        </mad>
+        <trascrizioni>
+          <protocolli-ri>
+            <protocollo-ri n-protocollo="12552" anno="2020" dt-protocollo="03/03/2020">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C4">COM. UNICA PRESENTATA AI FINI R.I. E AGENZIA DELLE ENTRATE</modello>
+                  <modello c="S3">SCIOGLIMENTO LIQUIDAZIONE FALLIMENTO CANCELLAZIONE SOCIETA'</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A14" tipo="CANCELLAZIONE DAL REGISTRO DELLE IMPRESE" dt-atto="03/03/2020">
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="04/03/2020"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="200001255201001">
+                      <tipo-trascrizione c-tipo-trascrizione="71">ISTANZA DI CANCELLAZIONE</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>ISTANZA DI CANCELLAZIONE DAL REGISTRO DELLE IMPRESE</descrizione>
+                        <descrizione>DATA CANCELLAZIONE: 04/03/2020</descrizione>
+                        <descrizione>MOTIVO: CHIUSURA DEL FALLIMENTO PER INSUFFICIENZA DI ATTIVO EX ART. 118 N. 4</descrizione>
+                        <descrizione>L.F.</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="04/03/2020"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="8618" anno="2020" dt-protocollo="12/02/2020">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="P" n-ricorrenze="1">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A15" tipo="PROCEDURE CONCORSUALI" descrizione-tipo="RETTIFICA PROT. 8582/2020" dt-atto="12/02/2020">
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="12/02/2020"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="200000861801001" c-tipo-modifica="M" tipo-modifica="MODIFICA DATI PERSONA/SOCIETA'">
+                      <persona cognome="CHIERICI" nome="MARCO" c-fiscale="CHRMRC73M06L885Q"/>
+                      <tipo-trascrizione c-tipo-trascrizione="P3E">CESSAZIONE DALLA CARICA O QUALIFICA DI:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>CURATORE FALLIMENTARE DATA NOMINA 10/03/2016</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="12/02/2020"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="8582" anno="2020" dt-protocollo="12/02/2020">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="CF">COMUNICAZIONI D'UFFICIO DI PROC. CONCORSUALI E ALTRI PROVV.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A15" tipo="PROCEDURE CONCORSUALI" dt-atto="12/02/2020">
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="12/02/2020"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="200000858201004">
+                      <tipo-trascrizione c-tipo-trascrizione="601">PROCEDURE CONCORSUALI</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>FALLIMENTO: EMESSO DECRETO DI CHIUSURA DEL FALLIMENTO PER L'IMPOSSIBILITA' DI</descrizione>
+                        <descrizione>SODDISFARE NEMMENO IN PARTE I CREDITORI. DATA PROVVEDIMENTO: 10/03/2016. DATA</descrizione>
+                        <descrizione>CHIUSURA: 12/02/2020.</descrizione>
+                        <descrizione>ESTREMI DELLA COMUNICAZIONE:</descrizione>
+                        <descrizione>TRIBUNALE: MODENA N. PROVVEDIMENTO: 34/2016 DATA PROVVEDIMENTO: 12/02/2020</descrizione>
+                        <descrizione>DATA DEPOSITO: 12/02/2020 GIUDICE DELEGATO: BIANCONI CARLO</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="12/02/2020"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="46399" anno="2019" dt-protocollo="01/08/2019">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A15" tipo="PROCEDURE CONCORSUALI" descrizione-tipo="RAPPORTO RIEPILOGATIVO DELLE ATTIVITA' SVOLTE EX ART. 33, C. 5, L.F." dt-atto="01/08/2019">
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="05/08/2019"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="17681" anno="2019" dt-protocollo="28/03/2019">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                </modelli>
+                <trascrizioni-ri>
+                  <trascrizione-ri p-trascrizione="190001768100001">
+                    <tipo-trascrizione c-tipo-trascrizione="201">VARIAZIONE INDIRIZZO PEC IMPRESA. INDIRIZZO PEC PRECEDENTE:</tipo-trascrizione>
+                    <descrizioni>
+                      <descrizione>SILVIA.CASALINI@PEC.GECOWEB.EU</descrizione>
+                      <descrizione>CON PROVVEDIMENTO N. 1098/2019 DEL 25/03/2019 IL GIUDICE DEL REGISTRO HA DISPOST</descrizione>
+                      <descrizione>O ISCRIZIONE D'UFFICIO DELLA CANCELLAZIONE PEC NON VALIDA</descrizione>
+                    </descrizioni>
+                    <iscrizione-modifica dt-iscrizione="28/03/2019"/>
+                  </trascrizione-ri>
+                </trascrizioni-ri>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="9394" anno="2019" dt-protocollo="11/02/2019">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A15" tipo="PROCEDURE CONCORSUALI" descrizione-tipo="RAPPORTO RIEPILOGATIVO DELLE ATTIVITA' SVOLTE EX ART.33, C.5 L.F." dt-atto="11/02/2019">
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="12/02/2019"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="46910" anno="2018" dt-protocollo="02/08/2018">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A15" tipo="PROCEDURE CONCORSUALI" descrizione-tipo="RAPPORTO RIEPILOGATIVO EX ART. 33, COMMA 5, L.F." dt-atto="02/08/2018">
+                    <estremi-notarili c-forma="C" forma="COMUNICAZIONE"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="06/08/2018"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="8004" anno="2018" dt-protocollo="12/02/2018">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S3">SCIOGLIMENTO LIQUIDAZIONE FALLIMENTO CANCELLAZIONE SOCIETA'</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A99" tipo="ALTRI ATTI" descrizione-tipo="RETTIFICA PROT. 7899/2018" dt-atto="12/02/2018">
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="12/02/2018"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="7899" anno="2018" dt-protocollo="12/02/2018">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A15" tipo="PROCEDURE CONCORSUALI" descrizione-tipo="RAPPORTO RIEPILOGATIVO EX ART. 33 COMMA 5 L.F." dt-atto="12/02/2018">
+                    <estremi-notarili c-forma="C" forma="COMUNICAZIONE"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="12/02/2018"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="46131" anno="2017" dt-protocollo="01/08/2017">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A15" tipo="PROCEDURE CONCORSUALI" descrizione-tipo="RAPPORTO RIEPILOGATIVO DELLE ATTIVITA' SVOLTE EX ART.33, COMMA 5 L.F." dt-atto="14/07/2017">
+                    <estremi-notarili c-forma="C" forma="COMUNICAZIONE"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="02/08/2017"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="9365" anno="2017" dt-protocollo="21/02/2017">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A15" tipo="PROCEDURE CONCORSUALI" descrizione-tipo="RAPPORTO RIEPILOGATIVO DELLE ATTIVITA' SVOLTE EX ART.33, COMMA 5 L.F." dt-atto="01/02/2017">
+                    <estremi-notarili c-forma="C" forma="COMUNICAZIONE"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="22/02/2017"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="13381" anno="2016" dt-protocollo="17/03/2016">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="C4">COM. UNICA PRESENTATA AI FINI R.I. E AGENZIA DELLE ENTRATE</modello>
+                  <modello c="P" n-ricorrenze="1">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                  <modello c="S3">SCIOGLIMENTO LIQUIDAZIONE FALLIMENTO CANCELLAZIONE SOCIETA'</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A15" tipo="PROCEDURE CONCORSUALI" descrizione-tipo="COMUNICAZIONE EX ART.29, COMMA 6, D.L.78/2010" dt-atto="17/03/2016">
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="18/03/2016"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="12426" anno="2016" dt-protocollo="10/03/2016">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="CF">COMUNICAZIONI D'UFFICIO DI PROC. CONCORSUALI E ALTRI PROVV.</modello>
+                  <modello c="P" n-ricorrenze="1">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A15" tipo="PROCEDURE CONCORSUALI" dt-atto="10/03/2016">
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="10/03/2016"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="160001242601002">
+                      <tipo-trascrizione c-tipo-trascrizione="601">PROCEDURE CONCORSUALI</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>FALLIMENTO: EMESSA SENTENZA DICHIARATIVA DI FALLIMENTO. DATA PROVVEDIMENTO:</descrizione>
+                        <descrizione>10/03/2016.</descrizione>
+                        <descrizione>ESTREMI DELLA COMUNICAZIONE:</descrizione>
+                        <descrizione>TRIBUNALE: MODENA N. PROVVEDIMENTO: 34/2016 DATA PROVVEDIMENTO: 10/03/2016</descrizione>
+                        <descrizione>DATA DEPOSITO: 10/03/2016 GIUDICE DELEGATO: MIRABELLI ALESSANDRA</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="10/03/2016"/>
+                    </trascrizione-ri>
+                    <trascrizione-ri p-trascrizione="160001242601003" c-tipo-modifica="I" tipo-modifica="INSERIMENTO NUOVA PERSONA">
+                      <persona cognome="CHIERICI" nome="MARCO" c-fiscale="CHRMRC73M06L885Q"/>
+                      <tipo-trascrizione c-tipo-trascrizione="P3A">NOMINA CARICA E/O QUALIFICA/E DI:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>E' STATA NOMINATA  ALLA CARICA DI CURATORE FALLIMENTARE CON ATTO DEL</descrizione>
+                        <descrizione>10/03/2016</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="10/03/2016"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="8862" anno="2015" dt-protocollo="24/02/2015">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="B">DEPOSITO BILANCIO</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="712" tipo="BILANCIO ABBREVIATO D'ESERCIZIO" dt-atto="31/12/2013">
+                    <iscrizione-modifica c-tipo-iscrizione="D" tipo-iscrizione="atto depositato" dt-deposito="24/02/2015"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="46429" anno="2013" dt-protocollo="25/06/2013">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="B">DEPOSITO BILANCIO</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="712" tipo="BILANCIO ABBREVIATO D'ESERCIZIO" dt-atto="31/12/2012">
+                    <iscrizione-modifica c-tipo-iscrizione="D" tipo-iscrizione="atto depositato" dt-deposito="25/06/2013"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="61062" anno="2012" dt-protocollo="24/12/2012">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="29487" anno="2012" dt-protocollo="14/06/2012">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="B">DEPOSITO BILANCIO</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="712" tipo="BILANCIO ABBREVIATO D'ESERCIZIO" dt-atto="31/12/2011">
+                    <iscrizione-modifica c-tipo-iscrizione="D" tipo-iscrizione="atto depositato" dt-deposito="14/06/2012"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="16023" anno="2012" dt-protocollo="17/04/2012">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="50894" anno="2011" dt-protocollo="18/10/2011">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="27139" anno="2011" dt-protocollo="30/05/2011">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="B">DEPOSITO BILANCIO</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="712" tipo="BILANCIO ABBREVIATO D'ESERCIZIO" dt-atto="31/12/2010">
+                    <iscrizione-modifica c-tipo-iscrizione="D" tipo-iscrizione="atto depositato" dt-deposito="30/05/2011"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="2940" anno="2011" dt-protocollo="20/01/2011">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="2383" anno="2011" dt-protocollo="18/01/2011">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                </modelli>
+                <trascrizioni-ri>
+                  <trascrizione-ri p-trascrizione="110000238300001">
+                    <tipo-trascrizione c-tipo-trascrizione="201">VARIAZIONE INDIRIZZO PEC IMPRESA. INDIRIZZO PEC PRECEDENTE:</tipo-trascrizione>
+                    <descrizioni>
+                      <descrizione>PROFASSMO@LEGALMAIL.IT</descrizione>
+                    </descrizioni>
+                    <iscrizione-modifica dt-iscrizione="20/01/2011"/>
+                  </trascrizione-ri>
+                </trascrizioni-ri>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="2364" anno="2011" dt-protocollo="18/01/2011">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                  <modello c="C4">COM. UNICA PRESENTATA AI FINI R.I. E AGENZIA DELLE ENTRATE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="2327" anno="2011" dt-protocollo="18/01/2011">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S5">INIZIO, MODIFICA, CESSAZIONE DI  ATTIVITA' NELLA SEDE LEGALE</modello>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                  <modello c="C4">COM. UNICA PRESENTATA AI FINI R.I. E AGENZIA DELLE ENTRATE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="44011" anno="2010" dt-protocollo="08/09/2010">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="40648" anno="2010" dt-protocollo="30/07/2010">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="29900" anno="2010" dt-protocollo="15/06/2010">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S2">MODIFICA SOCIETA' , CONSORZIO G.E.I.E, ENTE PUBBLICO ECON.</modello>
+                  <modello c="C1">COMUNICAZIONE UNICA PRESENTATA AI FINI R.I.</modello>
+                  <modello c="S">ELENCO SOCI E TITOLARI DI DIRITTI SU AZIONI O QUOTE SOCIALI</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A99" tipo="ALTRI ATTI" descrizione-tipo="COMUNICAZIONE VERSAMENTO CAPITALE" dt-atto="01/06/2010">
+                    <estremi-notarili c-forma="X" forma="ALTRA FORMA"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="09/07/2010"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="100002990001001">
+                      <tipo-trascrizione c-tipo-trascrizione="46G">VERSAMENTO DEL CAPITALE. CAPITALE PRECEDENTE:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>DELIBERATO  12.000,00 SOTTOSCRITTO 12.000,00 VERSATO 3.000,00 VALUTA: EURO</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="09/07/2010"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="25528" anno="2010" dt-protocollo="28/05/2010">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="B">DEPOSITO BILANCIO</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="712" tipo="BILANCIO ABBREVIATO D'ESERCIZIO" dt-atto="31/12/2009">
+                    <iscrizione-modifica c-tipo-iscrizione="D" tipo-iscrizione="atto depositato" dt-deposito="28/05/2010"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="12059" anno="2010" dt-protocollo="30/03/2010">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S5">INIZIO, MODIFICA, CESSAZIONE DI  ATTIVITA' NELLA SEDE LEGALE</modello>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                  <modello c="C4">COM. UNICA PRESENTATA AI FINI R.I. E AGENZIA DELLE ENTRATE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="59199" anno="2009" dt-protocollo="06/10/2009">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="0">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="33276" anno="2009" dt-protocollo="20/05/2009">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="0">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="32218" anno="2009" dt-protocollo="15/05/2009">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S5">INIZIO, MODIFICA, CESSAZIONE DI  ATTIVITA' NELLA SEDE LEGALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="32206" anno="2009" dt-protocollo="15/05/2009">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="1">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="31391" anno="2009" dt-protocollo="12/05/2009">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="0">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo-ufficio="30899" anno="2009" dt-protocollo="08/05/2009">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="UL" n-ricorrenze="0">APERTURA MODIFICA CESSAZIONE DI UNITA' LOCALE O AZIENDALE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="25185" anno="2009" dt-protocollo="30/03/2009">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S">ELENCO SOCI E TITOLARI DI DIRITTI SU AZIONI O QUOTE SOCIALI</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="520" tipo="DICHIARAZIONE AI SENSI ART.16 C.12 UNDECIES L.2 DEL 28/1/2009" dt-atto="30/03/2009">
+                    <iscrizione-modifica c-tipo-iscrizione="D" tipo-iscrizione="atto depositato" dt-deposito="30/03/2009" dt-iscrizione="23/04/2009"/>
+                  </atto>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+            <protocollo-ri n-protocollo="9199" anno="2009" dt-protocollo="09/03/2009">
+              <modelli-trascrizioni>
+                <modelli>
+                  <modello c="S1">ISCRIZIONE DI  SOCIETA,CONSORZIO, G.E.I.E., ENTE PUBB. ECON.</modello>
+                  <modello c="S">ELENCO SOCI E TITOLARI DI DIRITTI SU AZIONI O QUOTE SOCIALI</modello>
+                  <modello c="P" n-ricorrenze="1">ISCRIZIONE NEL RI E REA DI ATTI E FATTI RELATIVI A PERSONE</modello>
+                </modelli>
+              </modelli-trascrizioni>
+              <atti-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A01" tipo="ATTO COSTITUTIVO" dt-atto="05/03/2009">
+                    <estremi-notarili c-forma="P" forma="ATTO PUBBLICO" notaio="BARBATI ALDO" n-repertorio="36738/10096" localita-notaio="MODENA" provincia-notaio="MO"/>
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="10/03/2009"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="90000919901001">
+                      <tipo-trascrizione c-tipo-trascrizione="001">ISCRIZIONE NELLA SEZIONE ORDINARIA DEL REGISTRO DELLE IMPRESE</tipo-trascrizione>
+                      <iscrizione-modifica dt-iscrizione="10/03/2009"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+                <atto-trascrizioni>
+                  <atto c-tipo="A06" tipo="NOMINA/CONFERMA AMMINISTRATORI" dt-atto="05/03/2009">
+                    <iscrizione-modifica c-tipo-iscrizione="I" tipo-iscrizione="atto iscritto" dt-iscrizione="10/03/2009"/>
+                  </atto>
+                  <trascrizioni-ri>
+                    <trascrizione-ri p-trascrizione="90000919902001" c-tipo-modifica="I" tipo-modifica="INSERIMENTO NUOVA PERSONA">
+                      <persona cognome="CASALINI" nome="SILVIA" c-fiscale="CSLSLV70L57C107C"/>
+                      <tipo-trascrizione c-tipo-trascrizione="P3A">NOMINA CARICA E/O QUALIFICA/E DI:</tipo-trascrizione>
+                      <descrizioni>
+                        <descrizione>ISCRIVE LA PROPRIA NOMINA  DI CUI HA AVUTO NOTIZIA IN DATA 05/03/2009 ALLA</descrizione>
+                        <descrizione>CARICA DI AMMINISTRATORE UNICO CON ATTO DEL 05/03/2009 DURATA: FINO ALLA</descrizione>
+                        <descrizione>REVOCA LA PERSONA DICHIARA DI AGIRE DA SOLA</descrizione>
+                        <descrizione>DATA PRESENTAZIONE 06/03/2009</descrizione>
+                      </descrizioni>
+                      <iscrizione-modifica dt-iscrizione="10/03/2009"/>
+                    </trascrizione-ri>
+                  </trascrizioni-ri>
+                </atto-trascrizioni>
+              </atti-trascrizioni>
+            </protocollo-ri>
+          </protocolli-ri>
+        </trascrizioni>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>
