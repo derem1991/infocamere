@@ -173,28 +173,28 @@
                   </div>
                   <div id="collapseEight" class="collapse " aria-labelledby="headingEight" data-parent="#accordion">
                      <div class="card-body">
-                        <h3 class="d-block px-4 pt-4">Sindaci, membri organi di controllo  (blocco SIN)</h3>
+                        <h3 class="d-block px-4 pt-4">Sindaci, membri organi di controllo (blocco SIN)</h3>
                         <div class="col-12  p-2 m-0 row">
                            <div class=" col-12 my-2"  >
                               <div class="card col-12"style="border:1px solid black;" >
                                  <div class="card-header">
-                                    <h5 class="h3 mb-0">Sindaci, membri organi di controllo   </h5>
-                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                                    <h5 class="h3 mb-0">Sindaci, membri organi di controllo (blocco SIN) </h5>
+                                    <small class="d-block">(INPUT: 02313821007 ) </small>
                                </div>
                                  <div class="card-body p-0">
                                     <div class="list-group list-group-flush">
                                        <div class="list-group-item  flex-column align-items-start p-4">
                                           <div class="d-block w-100 justify-content-between">
-                                             <h5 class="mb-1 d-block">Sindaci, membri organi di controllo(risultato XML)</h5>
+                                             <h5 class="mb-1 d-block">Sindaci, membri organi di controllo   (risultato XML)</h5>
                                              <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=SIN </small>
                                              <a class="d-block" href="{{ config('app.asset_url')}}/document/sindaci.xml" target="_blank">
-                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                                <small> Scarica XML</small> 
                                              </a>
                                              <h5 class="mb-1 d-block">Sindaci, membri organi di controllo (risultato pdf)</h5>
                                              <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=SIN</small>
 
-                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/sindaci.xml" target="_blank"> 
-                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/sindaci.pdf" target="_blank"> 
+                                                <small> Scarica pdf</small> 
                                               </a>
                                           </div>
                                           <div class="mt-4 d-flex w-100 align-items-center">
@@ -220,28 +220,28 @@
                   </div>
                   <div id="collapseNine" class="collapse oddcard" aria-labelledby="headingNine" data-parent="#accordion">
                      <div class="card-body">
-                        <h3 class="d-block px-4 pt-4">Titolari di altre cariche o qualifiche (blocco APE)</h3>
+                        <h3 class="d-block px-4 pt-4"> Titolari di altre cariche o qualifiche (blocco APE)</h3>
                         <div class="col-12  p-2 m-0 row">
                            <div class=" col-12 my-2"  >
                               <div class="card col-12"style="border:1px solid black;" >
                                  <div class="card-header">
-                                    <h5 class="h3 mb-0">Titolari di altre cariche o qualifiche (blocco APE)   </h5>
-                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                                    <h5 class="h3 mb-0"> Titolari di altre cariche o qualifiche (blocco APE)</h5>
+                                    <small class="d-block">(INPUT: 02313821007 ) </small>
                                </div>
                                  <div class="card-body p-0">
                                     <div class="list-group list-group-flush">
                                        <div class="list-group-item  flex-column align-items-start p-4">
                                           <div class="d-block w-100 justify-content-between">
-                                             <h5 class="mb-1 d-block">Titolari di altre cariche o qualifiche (risultato XML)</h5>
+                                             <h5 class="mb-1 d-block"> Titolari di altre cariche o qualifiche (risultato XML)</h5>
                                              <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=APE </small>
                                              <a class="d-block" href="{{ config('app.asset_url')}}/document/titolaridialtrecariche.xml" target="_blank">
-                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                                <small> Scarica XML</small> 
                                              </a>
-                                             <h5 class="mb-1 d-block">Titolari di altre cariche o qualifiche (risultato pdf)</h5>
+                                             <h5 class="mb-1 d-block"> Titolari di altre cariche o qualifiche (risultato pdf)</h5>
                                              <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=APE</small>
 
-                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/titolaridialtrecariche.xml" target="_blank"> 
-                                                <small> Scarica XML - O RISULTATI OTTENUTI</small> 
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/titolaridialtrecariche.pdf" target="_blank"> 
+                                                <small> Scarica pdf</small> 
                                               </a>
                                           </div>
                                           <div class="mt-4 d-flex w-100 align-items-center">
@@ -461,7 +461,7 @@
                               <div class="card col-12"style="border:1px solid black;" >
                                  <div class="card-header">
                                     <h5 class="h3 mb-0">   Pratiche in istruttoria (blocco PRA) </h5>
-                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                                    <small class="d-block">(INPUT: 02313821007 ) </small>
                                </div>
                                  <div class="card-body p-0">
                                     <div class="list-group list-group-flush">
@@ -492,7 +492,6 @@
                      </div>
                   </div>
                </div> 
-
                <div class="card">
                   <div class="card-header oddcard" id="headingquind">
                      <h5 class="mb-0">
@@ -563,12 +562,12 @@
                                        <div class="list-group-item  flex-column align-items-start p-4">
                                           <div class="d-block w-100 justify-content-between">
                                              <h5 class="mb-1 d-block">informazioni da patti sociali  (risultato XML)</h5>
-                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=TFS </small>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=PAT </small>
                                              <a class="d-block" href="{{ config('app.asset_url')}}/document/informazionipattisociali.xml" target="_blank">
                                                 <small> Scarica XML</small> 
                                              </a>
                                              <h5 class="mb-1 d-block">informazioni da patti sociali  (risultato pdf)</h5>
-                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=TFS</small>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=PAT</small>
 
                                              <a class="d-block" href="{{ config('app.asset_url')}}/document/informazionipattisociali.pdf" target="_blank"> 
                                                 <small> Scarica pdf</small> 
@@ -587,6 +586,103 @@
                      </div>
                   </div>
                </div> 
+               <div class="card">
+                  <div class="card-header oddcard " id="headingDicia">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDicia" aria-expanded="true" aria-controls="collapseDicia">
+                           Informazioni da statuto (blocco STA)
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseDicia" class="collapse oddcard" aria-labelledby="headingDicia" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4"> Informazioni da statuto (blocco STA)</h3>
+                        <div class="col-12  p-2 m-0 row">
+                           <div class=" col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">  Informazioni da statuto (blocco STA) </h5>
+                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                               </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">Informazioni da statuto  (risultato XML)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=STA </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/informazionistatuto.xml" target="_blank">
+                                                <small> Scarica XML</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block"> Informazioni da statuto (risultato pdf)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=STA</small>
+
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/informazionistatuto.pdf" target="_blank"> 
+                                                <small> Scarica pdf</small> 
+                                              </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> 
+
+
+               <div class="card">
+                  <div class="card-header   " id="headingDicias">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDicias" aria-expanded="true" aria-controls="collapseDicias">
+                           storia delle modifiche (blocco STO)
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseDicias" class="collapse  " aria-labelledby="headingDicias" data-parent="#accordion">
+                     <div class="card-body">
+                        <h3 class="d-block px-4 pt-4"> storia delle modifiche (blocco STO)</h3>
+                        <div class="col-12  p-2 m-0 row">
+                           <div class=" col-12 my-2"  >
+                              <div class="card col-12"style="border:1px solid black;" >
+                                 <div class="card-header">
+                                    <h5 class="h3 mb-0">  storia delle modifiche (blocco STO)</h5>
+                                    <small class="d-block">(INPUT: 03257950364 ) </small>
+                               </div>
+                                 <div class="card-body p-0">
+                                    <div class="list-group list-group-flush">
+                                       <div class="list-group-item  flex-column align-items-start p-4">
+                                          <div class="d-block w-100 justify-content-between">
+                                             <h5 class="mb-1 d-block">storia delle modifiche   (risultato XML)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?blocco=STO </small>
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/storiamodifiche.xml" target="_blank">
+                                                <small> Scarica XML</small> 
+                                             </a>
+                                             <h5 class="mb-1 d-block"> storia delle modifiche (risultato pdf)</h5>
+                                             <small class="d-block">/rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?blocco=STO</small>
+
+                                             <a class="d-block" href="{{ config('app.asset_url')}}/document/storiamodifiche.pdf" target="_blank"> 
+                                                <small> Scarica pdf</small> 
+                                              </a>
+                                          </div>
+                                          <div class="mt-4 d-flex w-100 align-items-center">
+                                             <h5 class="mb-1">1 Chiamata effettuata</h5>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> 
+
 
 	         </div>
          </div>

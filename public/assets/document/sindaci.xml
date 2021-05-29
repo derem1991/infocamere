@@ -2,13 +2,138 @@
   <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
     <Testata>
       <Riepilogo>
-        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=03257950364&blocco=SIN]]></RichiestaInput>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=02313821007&blocco=SIN]]></RichiestaInput>
         <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
-        <NumeroPosizioni>0</NumeroPosizioni>
-        <IdRichiesta>AWWYXY0T0J2D9102F29E</IdRichiesta>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWYY29FTS2D91020950</IdRichiesta>
         <DtEstrazione>2021-05-29</DtEstrazione>
-        <OraEstrazione>16:14:07</OraEstrazione>
+        <OraEstrazione>17:19:59</OraEstrazione>
       </Riepilogo>
-      <RecordAccount>TELEMACO      KJJJ002 REIM2X11PNWX                                                                        CNT000000001                                                            AWWYXY0T0J2D9102F29E0001</RecordAccount>
+      <RecordAccount>TELEMACO      KJJJ002 REIMCX2BNDWXPRVRM       NRD804877   NGISO                                           CNT000000001                                                            AWWYY29FTS2D910209500001</RecordAccount>
     </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>RM/804877</IdentificativoPosizione>
+        <OutputRestituiti>SIN/SIN</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SC" descrizione-tipo-impresa="Societa' di capitale" dt-iscrizione-rea="02/01/1995" dt-atto-costituzione="13/12/1994" dt-ultimo-protocollo="28/05/2021"
+ dt-mod-ultimo-protocollo-evaso="20/05/2021" denominazione="INFOCAMERE - SOCIETA' CONSORTILE DI INFORMATICA DELLE CAMERE DI COMMERCIO ITALIANE PER AZIONI" c-fiscale="02313821007" partita-iva="02313821007" c-lei="815600EAD78C57FCE690" c-cciaa-competente="RM" cciaa-competente="ROMA" cciaa="RM" n-rea="804877">
+          <stato-attivita c="A">attiva</stato-attivita>
+          <forma-giuridica c="SO">SOCIETA' CONSORTILE PER AZIONI</forma-giuridica>
+          <indirizzo-localizzazione c-comune="091" comune="ROMA" provincia="RM" c-toponimo="VIA" toponimo="VIA" via="GIOVANNI BATTISTA MORGAGNI" n-civico="13" cap="00161"/>
+          <indirizzo-posta-certificata>PROTOCOLLO@PEC.INFOCAMERE.IT</indirizzo-posta-certificata>
+          <telefono prefisso="06" n="442851"/>
+          <sito-internet>WWW.INFOCAMERE.IT</sito-internet>
+          <email>RELAZIONI.ESTERNE@INFOCAMERE.IT</email>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="TAGLIAVANTI" nome="LORENZO" carica="PRESIDENTE CONSIGLIO AMMINISTRAZIONE" f-rappresentante-ri="S"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita f-certificazioni-qualita="S" punteggio-rating-legalita="**++" dt-inizio="01/01/1995">
+          <attivita-prevalente-r>ELABORAZIONI DATI</attivita-prevalente-r>
+          <classificazione-ateco c-attivita="63.11.1" c-nace="63.11"/>
+        </sintesi-attivita>
+        <persone-sede>
+          <persona progressivo="94" f-amministratore="N" f-sindaco="S">
+            <persona-fisica cognome="BOLATTO" nome="GUIDO" c-fiscale="BLTGDU63A07D208R" sesso="M">
+              <estremi-nascita dt="07/01/1963" comune="CUORGNE'" provincia="TO"/>
+              <domicilio-fiscale comune="TORINO" provincia="TO" c-toponimo="VIA" toponimo="VIA" via="CAMILLO BENSO DI CAVOUR" n-civico="5" cap="10123"/>
+            </persona-fisica>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="PCS" dt-iscrizione="19/08/2016" dt-atto-nomina="23/05/2019" n-anni-esercizio="3" c-durata="NE" descrizione-durata="ESERCIZI">PRESIDENTE DEL COLLEGIO SINDACALE</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+            <ruoli-persona>
+              <ruolo-persona c-tipo="RC" tipo="REGISTRO REVISORI LEGALI" n="109696" dt-iscrizione="17/12/1999" c-ente-rilascio="MF" ente-rilascio="MINISTERO DELL'ECONOMIA E DELLE FINANZE"/>
+            </ruoli-persona>
+          </persona>
+          <persona progressivo="122" f-amministratore="N" f-sindaco="S">
+            <persona-fisica cognome="BENEDETTO" nome="LAURA" c-fiscale="BNDLRA65D61A952Z" sesso="F">
+              <estremi-nascita dt="21/04/1965" comune="BOLZANO" provincia="BZ"/>
+              <domicilio-fiscale comune="FIRENZE" provincia="FI" c-toponimo="VIA" toponimo="VIA" via="IL PRATO" n-civico="50" cap="50123"/>
+            </persona-fisica>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="SIE" dt-iscrizione="19/08/2016" dt-atto-nomina="23/05/2019" n-anni-esercizio="3" c-durata="NE" descrizione-durata="ESERCIZI">SINDACA</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+            <ruoli-persona>
+              <ruolo-persona c-tipo="RC" tipo="REGISTRO REVISORI LEGALI" n="4780" dt-iscrizione="24/04/1995" c-ente-rilascio="MF" ente-rilascio="MINISTERO DELL'ECONOMIA E DELLE FINANZE"/>
+            </ruoli-persona>
+          </persona>
+          <persona progressivo="147" f-amministratore="N" f-sindaco="S">
+            <persona-fisica cognome="BOARETTO" nome="STEFANO" c-fiscale="BRTSFN75R25F382P" sesso="M">
+              <estremi-nascita dt="25/10/1975" comune="MONSELICE" provincia="PD"/>
+              <domicilio-fiscale c-comune="091" comune="ROMA" provincia="RM" c-toponimo="VIA" toponimo="VIA" via="GIOVANNI BATTISTA MORGAGNI" n-civico="13" cap="00161"/>
+            </persona-fisica>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="SIE" dt-iscrizione="04/07/2019" dt-atto-nomina="23/05/2019" n-anni-esercizio="3" c-durata="NE" descrizione-durata="ESERCIZI">SINDACO</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+            <ruoli-persona>
+              <ruolo-persona c-tipo="RC" tipo="REGISTRO REVISORI LEGALI" n="159609" dt-iscrizione="15/07/2010" c-ente-rilascio="MF" ente-rilascio="MINISTERO DELL'ECONOMIA E DELLE FINANZE"/>
+            </ruoli-persona>
+          </persona>
+          <persona progressivo="123" f-amministratore="N" f-sindaco="S">
+            <persona-fisica cognome="PALLADINO" nome="LORELLA" c-fiscale="PLLLLL61B64B519H" sesso="F">
+              <estremi-nascita dt="24/02/1961" comune="CAMPOBASSO" provincia="CB"/>
+              <domicilio-fiscale c-comune="006" comune="CAMPOBASSO" provincia="CB" c-toponimo="CNT" toponimo="CONTRADA" via="MACCHIE" n-civico="51/B" cap="86100"/>
+            </persona-fisica>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="SIS" dt-iscrizione="19/08/2016" dt-atto-nomina="23/05/2019" n-anni-esercizio="3" c-durata="NE" descrizione-durata="ESERCIZI">SINDACA SUPPLENTE</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+            <ruoli-persona>
+              <ruolo-persona c-tipo="RC" tipo="REGISTRO REVISORI LEGALI" n="81091" dt-iscrizione="03/08/1999" c-ente-rilascio="MF" ente-rilascio="MINISTERO DELL'ECONOMIA E DELLE FINANZE"/>
+            </ruoli-persona>
+          </persona>
+          <persona progressivo="133" f-amministratore="N" f-sindaco="S">
+            <persona-fisica cognome="SODINI" nome="ALBERTO" c-fiscale="SDNLRT66B12H501Q" sesso="M">
+              <estremi-nascita dt="12/02/1966" c-comune="091" comune="ROMA" provincia="RM"/>
+              <domicilio-fiscale c-comune="091" comune="ROMA" provincia="RM" c-toponimo="VIA" toponimo="VIA" via="GIOVANNI BATTISTA MORGAGNI" n-civico="13" cap="00161" altre-indicazioni="LA SEDE SOCIALE"/>
+            </persona-fisica>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="SIS" dt-iscrizione="19/08/2016" dt-atto-nomina="23/05/2019" n-anni-esercizio="3" c-durata="NE" descrizione-durata="ESERCIZI">SINDACO SUPPLENTE</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+            <ruoli-persona>
+              <ruolo-persona c-tipo="RC" tipo="REGISTRO REVISORI LEGALI" n="119434" dt-iscrizione="18/07/2000" c-ente-rilascio="MF" ente-rilascio="MINISTERO DELL'ECONOMIA E DELLE FINANZE"/>
+            </ruoli-persona>
+          </persona>
+          <persona progressivo="128" f-amministratore="N" f-sindaco="S">
+            <persona-giuridica denominazione="BDO ITALIA S.P.A." c-fiscale="07722780967"/>
+            <indirizzo-posta-certificata>BDO@BDOPEC.IT</indirizzo-posta-certificata>
+            <indirizzo comune="MILANO" provincia="MI" c-toponimo="VLE" toponimo="VIALE" via="ABRUZZI" n-civico="94" cap="20131"/>
+            <atti-conferimento-cariche>
+              <atto-conferimento-cariche p-gruppo-cariche="0">
+                <cariche>
+                  <carica p-carica="1" c-carica="SDR" dt-iscrizione="04/07/2019" dt-atto-nomina="23/05/2019" n-anni-esercizio="3" c-durata="NE" descrizione-durata="ESERCIZI">SOCIETA' DI REVISIONE</carica>
+                </cariche>
+              </atto-conferimento-cariche>
+            </atti-conferimento-cariche>
+            <ruoli-persona>
+              <ruolo-persona c-tipo="BV" tipo="REGISTRO SOCIETA' DI REVISIONE" n="167911" dt-iscrizione="02/04/2013" c-ente-rilascio="MF" ente-rilascio="MINISTERO DELL'ECONOMIA E DELLE FINANZE" provincia="MI"/>
+            </ruoli-persona>
+          </persona>
+        </persone-sede>
+        <amministrazione-controllo>
+          <collegio-sindacale-in-carica n-in-carica="5" anni-durata="3" c-durata="NE" durata="ESERCIZI" dt-inizio-carica="23/05/2019"/>
+        </amministrazione-controllo>
+      </blocchi-impresa>
+    </dati>
   </Risposta>

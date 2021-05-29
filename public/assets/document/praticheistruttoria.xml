@@ -2,35 +2,63 @@
   <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
     <Testata>
       <Riepilogo>
-        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=03257950364&blocco=PRA]]></RichiestaInput>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=02313821007&blocco=PRA]]></RichiestaInput>
         <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
         <NumeroPosizioni>1</NumeroPosizioni>
-        <IdRichiesta>AWWYY03LNT4D5704942F</IdRichiesta>
+        <IdRichiesta>AWWYY2ZRBQ2D91020D0E</IdRichiesta>
         <DtEstrazione>2021-05-29</DtEstrazione>
-        <OraEstrazione>16:46:18</OraEstrazione>
+        <OraEstrazione>17:30:34</OraEstrazione>
       </Riepilogo>
-      <RecordAccount>TELEMACO      KJJJ002 REIMCX2BLDWXPRVMO       NRD371974   NGISR                                           CNT000000001                                                            AWWYY03LNT4D5704942F0001</RecordAccount>
+      <RecordAccount>TELEMACO      KJJJ002 REIMCX2BLDWXPRVRM       NRD804877   NGISO                                           CNT000000001                                                            AWWYY2ZRBQ2D91020D0E0001</RecordAccount>
     </Testata>
     <dati>
       <Riconoscimento>
-        <IdentificativoPosizione>MO/371974</IdentificativoPosizione>
+        <IdentificativoPosizione>RM/804877</IdentificativoPosizione>
         <OutputRestituiti>PRA/PRA</OutputRestituiti>
       </Riconoscimento>
       <blocchi-impresa>
-        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SC" descrizione-tipo-impresa="Societa' di capitale" stato-impresa="CANCELLATA" dt-iscrizione-ri="10/03/2009" dt-cancellazione="04/03/2020" dt-atto-costituzione="05/03/2009" dt-ultimo-protocollo="03/03/2020"
- dt-mod-ultimo-protocollo-evaso="04/03/2020" denominazione="GECO SRL" c-fiscale="03257950364" partita-iva="03257950364" c-cciaa-competente="MO" cciaa-competente="MODENA" cciaa="MO" n-rea="371974">
-          <forma-giuridica c="SR">SOCIETA' A RESPONSABILITA' LIMITATA</forma-giuridica>
-          <indirizzo-localizzazione c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO" c-toponimo="VIA" toponimo="VIA" via="MANZONI" n-civico="1" cap="41013"/>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SC" descrizione-tipo-impresa="Societa' di capitale" dt-iscrizione-rea="02/01/1995" dt-atto-costituzione="13/12/1994" dt-ultimo-protocollo="28/05/2021"
+ dt-mod-ultimo-protocollo-evaso="20/05/2021" denominazione="INFOCAMERE - SOCIETA' CONSORTILE DI INFORMATICA DELLE CAMERE DI COMMERCIO ITALIANE PER AZIONI" c-fiscale="02313821007" partita-iva="02313821007" c-lei="815600EAD78C57FCE690" c-cciaa-competente="RM" cciaa-competente="ROMA" cciaa="RM" n-rea="804877">
+          <stato-attivita c="A">attiva</stato-attivita>
+          <forma-giuridica c="SO">SOCIETA' CONSORTILE PER AZIONI</forma-giuridica>
+          <indirizzo-localizzazione c-comune="091" comune="ROMA" provincia="RM" c-toponimo="VIA" toponimo="VIA" via="GIOVANNI BATTISTA MORGAGNI" n-civico="13" cap="00161"/>
+          <indirizzo-posta-certificata>PROTOCOLLO@PEC.INFOCAMERE.IT</indirizzo-posta-certificata>
+          <telefono prefisso="06" n="442851"/>
+          <sito-internet>WWW.INFOCAMERE.IT</sito-internet>
+          <email>RELAZIONI.ESTERNE@INFOCAMERE.IT</email>
           <persone-rappresentanti>
-            <persona-rappresentante cognome="CASALINI" nome="SILVIA" carica="AMMINISTRATRICE UNICA" f-rappresentante-ri="S"/>
+            <persona-rappresentante cognome="TAGLIAVANTI" nome="LORENZO" carica="PRESIDENTE CONSIGLIO AMMINISTRAZIONE" f-rappresentante-ri="S"/>
           </persone-rappresentanti>
         </dati-identificativi>
-        <sintesi-attivita dt-inizio="08/04/2009">
-          <attivita-prevalente-r>COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO PER BAMBINI E ALTRI
-ARTICOLI E ACCESSORI DI ABBIGLIAMENTO IN GENERE.</attivita-prevalente-r>
-          <classificazione-ateco c-attivita="47.71.2" c-nace="47.71"/>
+        <sintesi-attivita f-certificazioni-qualita="S" punteggio-rating-legalita="**++" dt-inizio="01/01/1995">
+          <attivita-prevalente-r>ELABORAZIONI DATI</attivita-prevalente-r>
+          <classificazione-ateco c-attivita="63.11.1" c-nace="63.11"/>
         </sintesi-attivita>
-        <protocolli-aperti f-presenza-info="N"/>
+        <protocolli-aperti f-presenza-info="S">
+          <protocollo-aperto c-albo="RI" c-stato-avanzamento="01" stato-avanzamento="PROTOCOLLATA" c-stato-pratica="AP" stato-pratica="Aperta" dt-protocollo="28/05/2021" anno="2021" n="183306">
+            <modelli>
+              <modello c="B">DEPOSITO BILANCIO</modello>
+            </modelli>
+            <atti>
+              <atto c="713" dt-atto="31/12/2020">BILANCIO CONSOLIDATO D'ESERCIZIO</atto>
+            </atti>
+          </protocollo-aperto>
+          <protocollo-aperto c-albo="RI" c-stato-avanzamento="01" stato-avanzamento="PROTOCOLLATA" c-stato-pratica="AP" stato-pratica="Aperta" dt-protocollo="27/05/2021" anno="2021" n="180466">
+            <modelli>
+              <modello c="S">
+                <riquadri>
+                  <riquadro c="03">ELENCO SOCI</riquadro>
+                  <riquadro c="04">INDICAZIONE ANALITICA VARIAZIONI QUOTE,AZIONI,SOCI CONSORZI</riquadro>
+                </riquadri>
+              </modello>
+              <modello c="B">DEPOSITO BILANCIO</modello>
+            </modelli>
+            <atti>
+              <atto c="711" dt-atto="31/12/2020">BILANCIO ORDINARIO D'ESERCIZIO</atto>
+              <atto c="508" dt-atto="30/04/2021">COMUNICAZIONE ELENCO SOCI</atto>
+            </atti>
+          </protocollo-aperto>
+        </protocolli-aperti>
       </blocchi-impresa>
     </dati>
   </Risposta>
