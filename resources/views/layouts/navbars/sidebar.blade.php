@@ -83,8 +83,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('documents.index2') }}">
-                        <i class="fa fa-file text-primary"></i>Documenti 2
+                    <a class="nav-link" href="{{ route('documents.blocchi') }}">
+                        <i class="fa fa-file text-primary"></i>Blocchi
                     </a>
                 </li>
             </ul>

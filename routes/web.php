@@ -36,5 +36,5 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/myprofile', [UserController::class, 'myProfile'])->name('users.myProfile');
     //end users
     Route::resource('documents',DocumentController::class); // per ora non presenti permessi xke probabilmente sara pagina test
-    Route::get('/documents2', [DocumentController::class, 'index2'])->name('documents.index2');
+    Route::get('/blocchi', [DocumentController::class, 'blocchi'])->name('documents.blocchi');
 });

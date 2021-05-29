@@ -18,8 +18,8 @@ class DocumentController extends Controller
     {
        return view('documents.index');
     }
-    public function index2(Request $request)
+    public function blocchi(Request $request)
     {
-       return view('documents.index2');
+       return view('documents.blocchi');
     }
 }

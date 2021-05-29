@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=03257950364&blocco=TFS]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWYXZ9PBS2D9102F8A8</IdRichiesta>
+        <DtEstrazione>2021-05-29</DtEstrazione>
+        <OraEstrazione>16:33:55</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMCX2BSDWXPRVMO       NRD371974   NGISR                                           CNT000000001                                                            AWWYXZ9PBS2D9102F8A80001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>MO/371974</IdentificativoPosizione>
+        <OutputRestituiti>TFS/TFS</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SC" descrizione-tipo-impresa="Societa' di capitale" stato-impresa="CANCELLATA" dt-iscrizione-ri="10/03/2009" dt-cancellazione="04/03/2020" dt-atto-costituzione="05/03/2009" dt-ultimo-protocollo="03/03/2020"
+ dt-mod-ultimo-protocollo-evaso="04/03/2020" denominazione="GECO SRL" c-fiscale="03257950364" partita-iva="03257950364" c-cciaa-competente="MO" cciaa-competente="MODENA" cciaa="MO" n-rea="371974">
+          <forma-giuridica c="SR">SOCIETA' A RESPONSABILITA' LIMITATA</forma-giuridica>
+          <indirizzo-localizzazione c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO" c-toponimo="VIA" toponimo="VIA" via="MANZONI" n-civico="1" cap="41013"/>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="CASALINI" nome="SILVIA" carica="AMMINISTRATRICE UNICA" f-rappresentante-ri="S"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita dt-inizio="08/04/2009">
+          <attivita-prevalente-r>COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ARTICOLI E ACCESSORI DI ABBIGLIAMENTO IN GENERE.</attivita-prevalente-r>
+          <classificazione-ateco c-attivita="47.71.2" c-nace="47.71"/>
+        </sintesi-attivita>
+        <ta-fusioni-scissioni-subentri>
+          <trasferimenti-azienda>
+            <trasferimento-azienda>
+              <estremi-pratica dt-atto="02/04/2009" cciaa="TE" anno="2009" n="9357" dt-protocollo="08/04/2009" dt-deposito="08/04/2009"/>
+              <informazioni-atto n-repertorio="36838" notaio="BRBLDA54R15F257C" c-oggetto="04" oggetto="AFFITTO/COMODATO">
+                <titolari>
+                  <titolare c-tipo="CD" tipo="Cedente">
+                    <anagrafica-titolare c-tipo="I" tipo="IMPRESA" c-fiscale="00751390675" denominazione="MODENA MARKET S.R.L. IN LIQUIDAZIONE" denominazione-denunciata="MODENA MARKET S.P.A."/>
+                  </titolare>
+                  <titolare c-tipo="CS" tipo="Cessionario">
+                    <anagrafica-titolare c-tipo="A" tipo="ALTRO" c-fiscale="03257950364" denominazione="GECO SRL"/>
+                  </titolare>
+                </titolari>
+              </informazioni-atto>
+            </trasferimento-azienda>
+          </trasferimenti-azienda>
+        </ta-fusioni-scissioni-subentri>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>
