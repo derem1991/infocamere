@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+  <Risposta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OutputRIUnico.xsd">
+    <Testata>
+      <Riepilogo>
+        <RichiestaInput><![CDATA[http://aiws.intra.infocamere.it/aiws/rest/registroimprese/output/impresa/blocchi/codicefiscale/xml?codiceFiscale=03257950364&blocco=CAP]]></RichiestaInput>
+        <FormatoDocumentoAllegato>X</FormatoDocumentoAllegato>
+        <NumeroPosizioni>1</NumeroPosizioni>
+        <IdRichiesta>AWWYXW50DX2D9102E9E8</IdRichiesta>
+        <DtEstrazione>2021-05-29</DtEstrazione>
+        <OraEstrazione>15:45:26</OraEstrazione>
+      </Riepilogo>
+      <RecordAccount>TELEMACO      KJJJ002 REIMCX2BBDWXPRVMO       NRD371974   NGISR                                           CNT000000001                                                            AWWYXW50DX2D9102E9E80001</RecordAccount>
+    </Testata>
+    <dati>
+      <Riconoscimento>
+        <IdentificativoPosizione>MO/371974</IdentificativoPosizione>
+        <OutputRestituiti>CAP/CAP</OutputRestituiti>
+      </Riconoscimento>
+      <blocchi-impresa>
+        <dati-identificativi f-sede-intercamerale="S" c-fonte="RI" fonte="Registro Imprese" tipo-soggetto="I" descrizione-tipo-soggetto="Sede dell'impresa" tipo-impresa="SC" descrizione-tipo-impresa="Societa' di capitale" stato-impresa="CANCELLATA" dt-iscrizione-ri="10/03/2009" dt-cancellazione="04/03/2020" dt-atto-costituzione="05/03/2009" dt-ultimo-protocollo="03/03/2020"
+ dt-mod-ultimo-protocollo-evaso="04/03/2020" denominazione="GECO SRL" c-fiscale="03257950364" partita-iva="03257950364" c-cciaa-competente="MO" cciaa-competente="MODENA" cciaa="MO" n-rea="371974">
+          <forma-giuridica c="SR">SOCIETA' A RESPONSABILITA' LIMITATA</forma-giuridica>
+          <indirizzo-localizzazione c-comune="006" comune="CASTELFRANCO EMILIA" provincia="MO" c-toponimo="VIA" toponimo="VIA" via="MANZONI" n-civico="1" cap="41013"/>
+          <persone-rappresentanti>
+            <persona-rappresentante cognome="CASALINI" nome="SILVIA" carica="AMMINISTRATRICE UNICA" f-rappresentante-ri="S"/>
+          </persone-rappresentanti>
+        </dati-identificativi>
+        <sintesi-attivita dt-inizio="08/04/2009">
+          <attivita-prevalente-r>COMMERCIO AL DETTAGLIO DI ARTICOLI DI ABBIGLIAMENTO PER BAMBINI E ALTRI
+ARTICOLI E ACCESSORI DI ABBIGLIAMENTO IN GENERE.</attivita-prevalente-r>
+          <classificazione-ateco c-attivita="47.71.2" c-nace="47.71"/>
+        </sintesi-attivita>
+        <info-patrimoniali-finanziarie>
+          <capitale-sociale c-valuta="EU" valuta="EURO">
+            <deliberato ammontare="12.000,00"/>
+            <sottoscritto ammontare="12.000,00"/>
+            <versato ammontare="12.000,00"/>
+            <tipo-conferimenti c="D">DENARO</tipo-conferimenti>
+          </capitale-sociale>
+          <conferimenti-benefici f-presenza-nello-statuto="S"/>
+          <strumenti-finanziari>
+            <titoli-debito>ARTICOLO 8) DELLO STATUTO SOCIALE</titoli-debito>
+          </strumenti-finanziari>
+        </info-patrimoniali-finanziarie>
+      </blocchi-impresa>
+    </dati>
+  </Risposta>
