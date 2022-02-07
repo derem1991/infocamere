@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use App\Models\Wallet;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 
@@ -16,11 +17,13 @@ class CreateAdminUserSeeder extends Seeder
      */
     public function run()
     {
+        $wallet = Wallet::first();
         //Super admin
         $user = User::create([
-        	'name' => 'Super Admin', 
-        	'email' => 'superadmin@emadema.com',
-        	'password' => bcrypt('000000')
+        	'name'      => 'Super Admin', 
+        	'email'     => 'superadmin@emadema.com',
+        	'password'  => bcrypt('000000'),
+            'wallet_id' => $wallet->id,
         ]);
         $role = Role::create(['name' => 'Super Admin']);     
         $permissions = Permission::pluck('id','id')->all();
@@ -33,7 +36,8 @@ class CreateAdminUserSeeder extends Seeder
         $user = User::create([
         	'name' => 'Utente', 
         	'email' => 'adminwallet@emadema.com',
-        	'password' => bcrypt('000000')
+        	'password' => bcrypt('000000'),
+            'wallet_id' => $wallet->id,
         ]);
         $user->assignRole([$role->id]);
         //end admin wallet
@@ -43,7 +47,8 @@ class CreateAdminUserSeeder extends Seeder
         $user = User::create([
         	'name' => 'User', 
         	'email' => 'user@emadema.com',
-        	'password' => bcrypt('000000')
+        	'password' => bcrypt('000000'),
+            'wallet_id' => $wallet->id,
         ]);
         $user->assignRole([$role->id]);
         //end user

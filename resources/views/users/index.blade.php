@@ -36,7 +36,10 @@
                                 <th scope="col" class="sort" data-sort="Id">Id</th>
                                 <th scope="col" class="sort" data-sort="Nome">Nome</th>
                                 <th scope="col" class="sort" data-sort="Email">Email</th>
+                                <th scope="col" class="sort" data-sort="Wallet">Wallet</th>
+                                @can('user-list') <!--facciamo vedere il ruolo solo a chi vede tutti gli utenti -->
                                 <th scope="col" class="sort" data-sort="Ruolo">Ruolo</th>
+                                @endcan
                                 <th scope="col" class="sort" data-sort="Data creazione">Data creazione</th>
                                 <th scope="col" >Azioni</th>
                               </tr>
@@ -48,6 +51,8 @@
                                     <td class="sorting_1">{{ $user->id ?? ''}}</td>
                                     <td>{{ $user->name ?? ''}}</td>
                                     <td>{{ $user->email ?? ''}}</td>
+                                    <td>{{ $user->wallet->name ?? ''}}</td>
+                                    @can('user-list')
                                     <td>
                                        @if(isset($user->roles) && !empty($user->roles))
                                         @foreach($user->roles as $role)
@@ -55,6 +60,7 @@
                                         @endforeach
                                        @endif
                                     </td>
+                                    @endcan
                                     <td>{{ $user->created_at ?? ''}}</td>
                                     <td class="text-right">
                                        <div class="dropdown">

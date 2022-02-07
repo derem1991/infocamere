@@ -34,9 +34,7 @@
                {{ Form::open(['route' => 'users.store']) }}
             @endif
            
-               <!-- Card body -->
                <div class="card-body">
-                  <!-- Form groups used in grid -->
                   <div class="row">
                      <div class="col-12 col-md-4">
                         <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }} mb-3">
@@ -60,6 +58,22 @@
                            @endif
                         </div>
                      </div>
+                     <div class="col-12 col-md-4">
+                        <div class="form-group{{ $errors->has('wallet_id') ? ' has-danger' : '' }} mb-3">
+                           <label class="form-control-label" for="wallet_id">Wallet </label>
+                           <select id="wallet_id" class="form-control" name="wallet_id" value="{{ old('wallet_id') }}" required > 
+                              @foreach($wallets as $wallet)
+                                <option value="{{$wallet->id}}" @if(isset($user) && $user->wallet_id == $wallet->id) selected @endif> {{$wallet->name}} </option>
+                              @endforeach
+                           </select>
+                           @if ($errors->has('roles'))
+                           <span class="invalid-feedback" style="display: block;" role="alert">
+                           <strong>{{ $errors->first('roles') }}</strong>
+                           </span>
+                           @endif
+                        </div>
+                     </div>
+                     <hr class="w-100">
                      <div class="col-12 col-md-4">
                         <div class="form-group{{ $errors->has('roles') ? ' has-danger' : '' }} mb-3">
                            <label class="form-control-label" for="roles">Ruolo </label>

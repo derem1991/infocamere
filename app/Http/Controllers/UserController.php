@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\Wallet;
 use Spatie\Permission\Models\Role;
 use DB;
 use Hash;
@@ -12,48 +13,43 @@ use Illuminate\Support\Arr;
 use Auth;
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     function __construct()
     {
-         $this->middleware('permission:user-list|user-create|user-edit|user-delete', ['only' => ['index','store']]);
-         $this->middleware('permission:user-create', ['only' => ['create','store']]);
-         $this->middleware('permission:user-edit', ['only' => ['edit','update']]);
-         $this->middleware('permission:user-delete', ['only' => ['destroy']]);
+        $this->middleware('permission:user-mylist', ['only' => ['index']]);
+        $this->middleware('permission:user-create', ['only' => ['create','store']]);
+        $this->middleware('permission:user-edit', ['only' => ['edit','update']]);
+        $this->middleware('permission:user-delete', ['only' => ['destroy']]);
     }
 
     public function index(Request $request)
     {
-        $users = User::orderBy('id','DESC')->get();
+        if(Auth::user()->can('user-list')) // possibilita vedere tutti gli utenti
+         $users = User::orderBy('id','DESC')->get();
+        else // utenti stesso wallet
+         $users = User::where('wallet_id',Auth::user()->wallet_id)->orderBy('id','DESC')->get();
+
         return view('users.index',compact('users'));
     }
+
     public function myProfile()
     {
         $user = Auth::user();
- 
         return view('users.myProfile',compact('user'));
     }
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+ 
     public function create()
     {
         $roles = Role::pluck('name','name')->all();
-        
-        return view('users.createOrUpdate',compact('roles'));
+
+        if(Auth::user()->can('user-list')) // possibilita wallet proprio
+            $wallets = Wallet::all();
+        else // utenti stesso wallet
+            $wallets = Wallet::where('id',Auth::user()->wallet_id)->get();
+
+        return view('users.createOrUpdate',compact('roles','wallets'));
     }
-    
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+ 
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -71,39 +67,31 @@ class UserController extends Controller
     
         return redirect()->route('users.index')->with('success','User created successfully');
     }
-    
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+ 
     public function show($id)
     {
         $user = User::find($id);
         return view('users.show',compact('user'));
     }
-    
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+ 
     public function edit($id)
     {
         $user = User::find($id);
         $roles = Role::pluck('name','name')->all();
-        return view('users.createOrUpdate',compact('user','roles'));
+
+        if(Auth::user()->can('user-list')) // tutti wallet
+            $wallets = Wallet::all();
+        else // utenti stesso wallet
+        {
+          if($user->wallet_id != Auth::user()->wallet_id)
+           abort(404);
+          else
+           $wallets = Wallet::where('id',Auth::user()->wallet_id)->get();
+        }
+             
+        return view('users.createOrUpdate',compact('user','roles','wallets'));
     }
-    
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+ 
     public function update(Request $request, $id)
     {
         $this->validate($request, [
@@ -135,13 +123,7 @@ class UserController extends Controller
     
         return redirect()->route($route)->with('success','User updated successfully');
     }
-    
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+ 
     public function destroy($id)
     {
         User::find($id)->delete();
