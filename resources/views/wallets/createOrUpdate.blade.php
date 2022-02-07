@@ -4,10 +4,10 @@
    <div class="container-fluid">
        <div class="header-body">
           <div class="row align-items-center py-4">
-            @include('layouts.headers.navigation',['title'=>'Creazione Permessi'])
-            @can('permission-create')
+            @include('layouts.headers.navigation',['title'=>'Creazione wallet'])
+            @can('wallet-create')
             <div class="col-lg-6 col-5 text-right">
-               <a href="{{route('permissions.create')}}" class="btn btn-sm btn-neutral">Nuovo</a>
+               <a href="{{route('wallets.create')}}" class="btn btn-sm btn-neutral">Nuovo</a>
             </div>
             @endcan
            </div> 
@@ -20,17 +20,17 @@
          <div class="card">
             <!-- Card header -->
             <div class="card-header">
-               <h3 class="mb-0">{{ isset($permission) ? 'Modifica' : 'Creazione' }} permesso</h3>
+               <h3 class="mb-0">{{ isset($wallet) ? 'Modifica' : 'Creazione' }} wallet</h3>
                <p class="text-sm mb-0">
-                  {{ isset($permission) ? 'Modifica' : 'Crea' }} un permesso 
+                  {{ isset($wallet) ? 'Modifica' : 'Crea' }} un wallet 
                </p>
             </div>
          </div>
          <div class="card mb-4">
-            @if(isset($permission))
-               {{ Form::model($permission, ['route' => ['permissions.update', $permission->id], 'method' => 'PUT']) }}
+            @if(isset($wallet))
+               {{ Form::model($wallet, ['route' => ['wallets.update', $wallet->id], 'method' => 'PUT']) }}
             @else
-               {{ Form::open(['route' => 'permissions.store']) }}
+               {{ Form::open(['route' => 'wallets.store']) }}
             @endif
            
                <!-- Card body -->
@@ -40,7 +40,7 @@
                      <div class="col-12 col-md-6">
                         <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }} mb-3">
                            <label class="form-control-label" for="name">Nome </label>
-                           <input class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" id="name" placeholder="Nome" type="text" name="name" value="{{$permission->name ?? ''}}" required autofocus>
+                           <input class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" id="name" placeholder="Nome" type="text" name="name" value="{{$wallet->name ?? ''}}" required autofocus>
                            @if ($errors->has('name'))
                            <span class="invalid-feedback" style="display: block;" role="alert">
                            <strong>{{ $errors->first('name') }}</strong>
@@ -49,9 +49,20 @@
                         </div>
                      </div>
                      <div class="col-12 col-md-6">
-                        <div class="form-group{{ $errors->has('description') ? ' has-danger' : '' }} mb-3">
+                        <div class="form-group{{ $errors->has('') ? ' has-danger' : '' }} mb-3">
+                           <label class="form-control-label" for="budget">Budget </label>
+                           <input class="form-control{{ $errors->has('budget') ? ' is-invalid' : '' }}" step="0.01" id="budget" placeholder="Budget" type="number" name="budget" value="{{$wallet->budget ?? ''}}" required>
+                           @if ($errors->has('budget'))
+                           <span class="invalid-feedback" style="display: block;" role="alert">
+                           <strong>{{ $errors->first('budget') }}</strong>
+                           </span>
+                           @endif
+                        </div>
+                     </div>
+                     <div class="col-12">
+                        <div class="form-group{{ $errors->has('') ? ' has-danger' : '' }} mb-3">
                            <label class="form-control-label" for="description">Descrizione </label>
-                           <input class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" id="description" placeholder="Descrizione" type="text" name="description" value="{{$permission->description ?? ''}}" autofocus>
+                           <input class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" id="description" placeholder="Descrizione" type="text" name="description" value="{{$wallet->description ?? ''}}">
                            @if ($errors->has('description'))
                            <span class="invalid-feedback" style="display: block;" role="alert">
                            <strong>{{ $errors->first('description') }}</strong>
@@ -59,6 +70,7 @@
                            @endif
                         </div>
                      </div>
+                     
                   </div>
                   <button type="submit" class="btn btn-slack btn-icon">
                      <span class="btn-inner--icon"><i class="fa fa-check"></i></span>

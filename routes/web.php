@@ -7,6 +7,7 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\WalletController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,11 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('users', UserController::class);
     Route::get('/myprofile', [UserController::class, 'myProfile'])->name('users.myProfile');
     //end users
+
+    //wallets//
+    Route::resource('wallets', WalletController::class);
+    //end wallets
+
     Route::resource('documents',DocumentController::class); // per ora non presenti permessi xke probabilmente sara pagina test
     Route::get('/blocchi', [DocumentController::class, 'blocchi'])->name('documents.blocchi');
 });

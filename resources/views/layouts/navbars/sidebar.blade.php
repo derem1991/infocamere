@@ -87,6 +87,13 @@
                         <i class="fa fa-file text-primary"></i>Blocchi
                     </a>
                 </li>
+                @can('wallet-list')
+                <li class="nav-item @if(Route::currentRouteName() == 'wallets.index') active @endif">
+                    <a class="nav-link" href="{{ route('wallets.index') }}">
+                        <i class="fas fa-wallet"></i> Wallet
+                    </a>
+                </li>
+                @endcan
             </ul>
             <!-- Divider -->
             <hr class="my-3">
