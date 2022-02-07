@@ -34,7 +34,7 @@ class WalletController extends Controller
     {
         $this->validate($request, [
             'name'   => 'required',
-            'budget' => 'required',
+            'budget' => 'required|numeric|min:0|not_in:0',
         ]);
 
         $data = $request->all();
@@ -53,7 +53,7 @@ class WalletController extends Controller
     {
         $this->validate($request, [
             'name'   => 'required',
-            'budget' => 'required',
+            'budget' => 'required|numeric|min:0|not_in:0',
         ]);
         $input = $request->all();
         $update = Wallet::find($id);
