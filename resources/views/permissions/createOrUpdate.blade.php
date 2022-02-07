@@ -37,7 +37,7 @@
                <div class="card-body">
                   <!-- Form groups used in grid -->
                   <div class="row">
-                     <div class="col-12 col-md-4">
+                     <div class="col-12 col-md-6">
                         <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }} mb-3">
                            <label class="form-control-label" for="name">Nome </label>
                            <input class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" id="name" placeholder="Nome" type="text" name="name" value="{{$permission->name ?? ''}}" required autofocus>
@@ -48,7 +48,17 @@
                            @endif
                         </div>
                      </div>
-                     
+                     <div class="col-12 col-md-6">
+                        <div class="form-group{{ $errors->has('description') ? ' has-danger' : '' }} mb-3">
+                           <label class="form-control-label" for="description">Descrizione </label>
+                           <input class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" id="description" placeholder="Descrizione" type="text" name="description" value="{{$permission->description ?? ''}}" autofocus>
+                           @if ($errors->has('description'))
+                           <span class="invalid-feedback" style="display: block;" role="alert">
+                           <strong>{{ $errors->first('description') }}</strong>
+                           </span>
+                           @endif
+                        </div>
+                     </div>
                   </div>
                   <button type="submit" class="btn btn-slack btn-icon">
                      <span class="btn-inner--icon"><i class="fa fa-check"></i></span>

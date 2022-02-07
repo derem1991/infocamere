@@ -14,23 +14,26 @@ class PermissionTableSeeder extends Seeder
      */
     public function run()
     {
-        $permissions = [
-           'role-list',
-           'role-create',
-           'role-edit',
-           'role-delete',
-           'permission-list',
-           'permission-create',
-           'permission-edit',
-           'permission-delete',
-           'user-list',
-           'user-create',
-           'user-edit',
-           'user-delete'
+        $permissions = 
+        [
+           ['name'=>'role-list','description' =>'Lista dei ruoli'],
+           ['name'=>'role-create','description' =>'Creare un ruolo'],
+           ['name'=>'role-edit','description' =>'Editare un ruolo'],
+           ['name'=>'role-delete','description' =>'Cancellare un ruolo'],
+           ['name'=>'permission-list','description' =>'Lista dei permessi'],
+           ['name'=>'permission-create','description' =>'Creare un permesso'],
+           ['name'=>'permission-edit','description' =>'Cancellare un permesso'],
+           ['name'=>'permission-delete','description' =>'Eliminare un permesso'],
+           ['name'=>'user-mylist','description' =>'Lista degli utenti del proprio wallet'],
+           ['name'=>'user-list','description' =>'Lista di tutti gli utenti'],
+           ['name'=>'user-create','description' =>'Creare un utente'],
+           ['name'=>'user-edit','description' =>'Editare un utente'],
+           ['name'=>'user-delete','description' =>'Eliminare un utente']
         ];
    
-        foreach ($permissions as $permission) {
-             Permission::create(['name' => $permission]);
+        foreach ($permissions as $permission) 
+        {
+           Permission::create(['name' => $permission['name'],'description'=>$permission['description']]);
         }
     }
 }

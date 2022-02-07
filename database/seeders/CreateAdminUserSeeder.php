@@ -16,26 +16,36 @@ class CreateAdminUserSeeder extends Seeder
      */
     public function run()
     {
+        //Super admin
         $user = User::create([
-        	'name' => 'Marco De Magistris', 
-        	'email' => 'info@emadema.com',
+        	'name' => 'Super Admin', 
+        	'email' => 'superadmin@emadema.com',
         	'password' => bcrypt('000000')
         ]);
-  
-        $role = Role::create(['name' => 'Admin']);
-   
+        $role = Role::create(['name' => 'Super Admin']);     
         $permissions = Permission::pluck('id','id')->all();
-  
         $role->syncPermissions($permissions);
-   
         $user->assignRole([$role->id]);
+        //End superadmin
 
-        $role = Role::create(['name' => 'User']);
+        //admin wallet
+        $role = Role::create(['name' => 'Admin wallet']);
         $user = User::create([
         	'name' => 'Utente', 
+        	'email' => 'adminwallet@emadema.com',
+        	'password' => bcrypt('000000')
+        ]);
+        $user->assignRole([$role->id]);
+        //end admin wallet
+
+        //user
+        $role = Role::create(['name' => 'user']);
+        $user = User::create([
+        	'name' => 'User', 
         	'email' => 'user@emadema.com',
         	'password' => bcrypt('000000')
         ]);
         $user->assignRole([$role->id]);
+        //end user
     }
 }

@@ -93,6 +93,7 @@ class PermissionController extends Controller
     
         $permission = Permission::find($id);
         $permission->name = $request->input('name');
+        $permission->description = $request->input('description');
         $permission->save(); 
     
         return redirect()->route('permissions.index')->with('success','Permission updated successfully');

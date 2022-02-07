@@ -35,6 +35,7 @@
                               <tr>
                                 <th scope="col" class="sort" data-sort="Id">Id</th>
                                 <th scope="col" class="sort" data-sort="Nome">Nome</th>
+                                <th scope="col" class="sort" data-sort="Nome">Descrizione</th>
                                 <th scope="col" class="sort" data-sort="Ruolo">Ruoli associati</th>
                                 <th scope="col" class="sort" data-sort="Data creazione">Numero utenti </th>
                                 <th scope="col" >Azioni</th>
@@ -46,6 +47,7 @@
                                  <tr role="row" class="odd">
                                     <td class="sorting_1">{{ $permission->id ?? ''}}</td>
                                     <td>{{ $permission->name ?? ''}}</td>
+                                    <td>{{ $permission->description ?? ''}}</td>
                                     <td>
                                         @if(isset($permission->roles) && !empty($permission->roles))
                                           @foreach($permission->roles as $role)
