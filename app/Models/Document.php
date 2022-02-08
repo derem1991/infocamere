@@ -6,16 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Notifications\Notifiable;
 
-class Wallet extends Model
+class Document extends Model
 {
     use HasFactory, Notifiable;
 
   
-    protected $fillable = [
+    protected $fillable = 
+    [
         'id',
         'name',
         'description',
-        'budget',
+        'active',
+        'is_piva',
+        'is_cfiscale',        
     ];
  
    

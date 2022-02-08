@@ -41,6 +41,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('wallets', WalletController::class);
     //end wallets
 
-    Route::resource('documents',DocumentController::class); // per ora non presenti permessi xke probabilmente sara pagina test
+    //documents//
+    Route::resource('documents',DocumentController::class); 
+    //end documents
+
+    Route::get('/documenti', [DocumentController::class, 'documenti'])->name('documents.documenti');
     Route::get('/blocchi', [DocumentController::class, 'blocchi'])->name('documents.blocchi');
 });

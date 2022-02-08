@@ -32,7 +32,13 @@ class PermissionTableSeeder extends Seeder
            ['name'=>'wallet-list','description' =>'Lista tutti wallet'],
            ['name'=>'wallet-create','description' =>'Creare un wallet'],
            ['name'=>'wallet-edit','description' =>'Editare un wallet'],
-           ['name'=>'wallet-delete','description' =>'Eliminare un wallet']
+           ['name'=>'wallet-delete','description' =>'Eliminare un wallet'],
+           ['name'=>'document-mylist','description' =>'Lista degli documenti del proprio wallet'],
+           ['name'=>'document-list','description' =>'Lista di tutti i documenti'],
+           ['name'=>'document-developer','description' =>'Modificare campi tecnici'],
+           ['name'=>'document-create','description' =>'Creare un documento'],
+           ['name'=>'document-edit','description' =>'Editare un documento'],
+           ['name'=>'document-delete','description' =>'Eliminare un documento'],
         ];
    
         foreach ($permissions as $permission) 

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
-<div class="header bg-primary pb-6">
+<div class="header bg-primary pb-6 customheader">
+   <span class="mask bg-gradient-default opacity-8"></span>
    <div class="container-fluid">
       <div class="header-body">
          <div class="row align-items-center py-4">
