@@ -41,12 +41,34 @@
             @include('layouts.footers.guest')
         @endguest
 
+
+        @section('modal-full')
+        <div class="modal modal-fullscreen fade" id="modalcamere" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="container">
+                <div class="row">
+                  <div class="modal-header xs-mt-20">
+                    <button class="close closemodal pt-0" data-dismiss="modal" aria-label="Close">&times;</button>
+                    <h5 class="modal-title h2 card-title mb-0">Infocamere</h5>
+                  </div>
+                </div>
+                <hr class="w-100 m-0">
+                <div class="row">
+                  <div class="modal-body"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @show
+      
        
         @stack('js')
         <script   src="{{ config('app.asset_url')}}/vendor/jquery/dist/jquery.min.js"></script>
         <script   src="{{ config('app.asset_url')}}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script   src="{{ config('app.asset_url')}}/js/jquery.dataTables.min.js"></script>
-         
+        <script   src="{{ config('app.asset_url')}}/js/emadema.min.js"></script>
         <script src="{{ config('app.asset_url')}}/js/default.min.js?v=1.0.0"></script>
         
         @yield('scriptjs')

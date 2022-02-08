@@ -47,4 +47,10 @@ Route::group(['middleware' => ['auth']], function() {
 
     Route::get('/documenti', [DocumentController::class, 'documenti'])->name('documents.documenti');
     Route::get('/blocchi', [DocumentController::class, 'blocchi'])->name('documents.blocchi');
+
+    /****************modal*********************/
+    Route::group(['prefix'=>'modals','as'=>'modals.'], function(){
+        Route::post('/document',function(){ return view("modals.document"); })->name('document');
+    });
+    /****************end modal*********************/
 });

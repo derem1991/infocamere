@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Wallet;
+use App\Models\DocumentHasWallet;
 use DB;
 use Auth;
 class WalletController extends Controller
@@ -53,8 +54,8 @@ class WalletController extends Controller
          abort(404);  
 
         $wallet = Wallet::find($id);
-     
-        return view('wallets.createOrUpdate',compact('wallet'));
+        $documents = DocumentHasWallet::where('wallet_id',$id)->get();
+        return view('wallets.createOrUpdate',compact('wallet','documents'));
     }
    
     public function update(Request $request, $id)
