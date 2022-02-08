@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Wallet;
 use DB;
-    
+use Auth;
 class WalletController extends Controller
 {
  
     function __construct()
     {
-        $this->middleware('permission:wallet-list', ['only' => ['index']]);
+        $this->middleware('permission:wallet-mylist', ['only' => ['index']]);
         $this->middleware('permission:wallet-create', ['only' => ['create','store']]);
         $this->middleware('permission:wallet-edit', ['only' => ['edit','update']]);
         $this->middleware('permission:wallet-delete', ['only' => ['destroy']]);
@@ -21,7 +21,11 @@ class WalletController extends Controller
  
     public function index(Request $request)
     {
-        $wallets = Wallet::orderBy('id','DESC')->get();
+       if(Auth::user()->can('wallet-list')) // tutti i wallet
+         $wallets =  Wallet::orderBy('id','DESC')->get();
+       else // wallet a cui si fa riferimento
+        return  redirect()->route('wallets.edit',Auth::user()->wallet_id);
+
         return view('wallets.index',compact('wallets'));
     }
  
@@ -45,7 +49,11 @@ class WalletController extends Controller
  
     public function edit($id)
     {
+        if(!Auth::user()->can('wallet-list') && Auth::user()->wallet_id != $id) // se non puo vedere tutti i wallet
+         abort(404);  
+
         $wallet = Wallet::find($id);
+     
         return view('wallets.createOrUpdate',compact('wallet'));
     }
    

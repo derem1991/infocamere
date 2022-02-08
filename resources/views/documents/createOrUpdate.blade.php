@@ -62,7 +62,6 @@
                   <hr class="w-100 my-2">
                   <h2 class="d-block">Opzioni</h2>
                   <div class="row mb-4">
-                     
                      <div class="col-12 col-md-4">
                         @can('document-devesloper')
                         <div class="custom-control custom-control-alternative custom-checkbox">
@@ -82,7 +81,6 @@
                         @endcan
                         <small>Ogni documento aggiunto va abilitato dal reparto tecnico.</small>
                      </div>
-                     
                      <div class="col-12 col-md-4">
                         <div class="custom-control custom-control-alternative custom-checkbox">
                            <input @if(isset($document) && $document->is_piva) checked @endif class="custom-control-input" value="1" name="is_piva" id="is_piva" type="checkbox">
@@ -96,7 +94,7 @@
                         <div class="custom-control custom-control-alternative custom-checkbox">
                            <input @if(isset($document) && $document->is_cfiscale) checked @endif class="custom-control-input" value="1" name="is_cfiscale" id="is_cfiscale" type="checkbox">
                            <label class="custom-control-label" for="is_cfiscale">
-                              <span >Input Codice fiscale</span>
+                              <span>Input Codice fiscale</span>
                            </label>
                         </div>
                         <small>Permette di poter ricercare questo documento per codice fiscale</small>

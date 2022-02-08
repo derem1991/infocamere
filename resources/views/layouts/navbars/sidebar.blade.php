@@ -70,7 +70,7 @@
                         <i class="ni ni-single-02"></i> Mio profilo
                     </a>
                 </li>
-                @can('wallet-list')
+                @can('wallet-mylist')
                 <li class="nav-item @if(Route::currentRouteName() == 'wallets.index') active @endif">
                     <a class="nav-link" href="{{ route('wallets.index') }}">
                         <i class="fas fa-wallet"></i> Wallet
@@ -80,7 +80,8 @@
                 @can('document-mylist')
                 <li class="nav-item @if(Route::currentRouteName() == 'documents.index') active @endif">
                     <a class="nav-link" href="{{ route('documents.index') }}">
-                        <i class="fas fa-wallet"></i> Documenti
+                        <i class="fa fa-file" aria-hidden="true"></i>
+                        Documenti
                     </a>
                 </li>
                 @endcan

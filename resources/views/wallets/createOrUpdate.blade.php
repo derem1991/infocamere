@@ -5,7 +5,7 @@
    <div class="container-fluid">
        <div class="header-body">
           <div class="row align-items-center py-4">
-            @include('layouts.headers.navigation',['title'=>'Creazione wallet'])
+            @include('layouts.headers.navigation',['title'=>isset($wallet) ? 'Modifica wallet' : 'Creazione wallet'])
             @can('wallet-create')
             <div class="col-lg-6 col-5 text-right">
                <a href="{{route('wallets.create')}}" class="btn btn-sm btn-neutral">Nuovo</a>
