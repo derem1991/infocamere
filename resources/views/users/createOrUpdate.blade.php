@@ -37,7 +37,7 @@
            
                <div class="card-body">
                   <div class="row">
-                     <div class="col-12 col-md-4">
+                     <div class="col-12 col-md-3">
                         <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }} mb-3">
                            <label class="form-control-label" for="name">Nome </label>
                            <input class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" id="name" placeholder="Nome" type="text" name="name" value="{{$user->name ?? ''}}" required autofocus>
@@ -48,7 +48,7 @@
                            @endif
                         </div>
                      </div>
-                     <div class="col-12 col-md-4">
+                     <div class="col-12 col-md-3">
                         <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }} mb-3">
                            <label class="form-control-label" for="email">Email </label>
                            <input class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" @if(isset($user)) readonly @endif id="email" placeholder="Email" type="email" name="email" value="{{$user->email ?? ''}}" required >
@@ -59,7 +59,7 @@
                            @endif
                         </div>
                      </div>
-                     <div class="col-12 col-md-4">
+                     <div class="col-12 col-md-3">
                         <div class="form-group{{ $errors->has('wallet_id') ? ' has-danger' : '' }} mb-3">
                            <label class="form-control-label" for="wallet_id">Wallet </label>
                            <select id="wallet_id" class="form-control" name="wallet_id" value="{{ old('wallet_id') }}" required > 
@@ -72,6 +72,19 @@
                            <strong>{{ $errors->first('roles') }}</strong>
                            </span>
                            @endif
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-3">
+                        <div class="form-group{{ $errors->has('') ? ' has-danger' : '' }} mb-3">
+                           <label class="form-control-label" for="budget">Budget  
+                           </label>
+                           <input class="form-control{{ $errors->has('budget') ? ' is-invalid' : '' }}" min="0" step="0.01" id="budget" placeholder="Budget" type="number" name="budget" value="{{$user->budget ?? 0}}"  >
+                           @if ($errors->has('budget'))
+                           <span class="invalid-feedback" style="display: block;" role="alert">
+                           <strong>{{ $errors->first('budget') }}</strong>
+                           </span>
+                           @endif
+                           <small>Disponibilità per poter fare degli ordini </small>
                         </div>
                      </div>
                      <hr class="w-100">

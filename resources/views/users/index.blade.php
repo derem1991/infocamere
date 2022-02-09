@@ -38,6 +38,7 @@
                                 <th scope="col" class="sort" data-sort="Nome">Nome</th>
                                 <th scope="col" class="sort" data-sort="Email">Email</th>
                                 <th scope="col" class="sort" data-sort="Wallet">Wallet</th>
+                                <th scope="col" class="sort" data-sort="Budget">Budget</th>
                                 @can('user-list') <!--facciamo vedere il ruolo solo a chi vede tutti gli utenti -->
                                 <th scope="col" class="sort" data-sort="Ruolo">Ruolo</th>
                                 @endcan
@@ -53,6 +54,7 @@
                                     <td>{{ $user->name ?? ''}}</td>
                                     <td>{{ $user->email ?? ''}}</td>
                                     <td>{{ $user->wallet->name ?? ''}}</td>
+                                    <td>€ {{ $user->budget ?? 0}}</td>
                                     @can('user-list')
                                     <td>
                                        @if(isset($user->roles) && !empty($user->roles))
