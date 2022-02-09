@@ -10,6 +10,7 @@ use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\DocumentHasWalletController;
 use App\Http\Controllers\WalletController;
 use App\Http\Controllers\AjaxController;
+use App\Http\Controllers\OrderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,13 +46,18 @@ Route::group(['middleware' => ['auth']], function() {
     //documents//
     Route::resource('documents',DocumentController::class); 
     //end documents
+
+    //orders//
+    Route::resource('orders',OrderController::class); 
+    //end orders
+
     //DocumentHasWallet//
     Route::resource('documentsHasWallet',DocumentHasWalletController::class); 
     //end DocumentHasWallet
      
     Route::get('/documenti', [DocumentController::class, 'documenti'])->name('documents.documenti');
     Route::get('/blocchi', [DocumentController::class, 'blocchi'])->name('documents.blocchi');
- 
+
 });
 
 /****************modal*********************/

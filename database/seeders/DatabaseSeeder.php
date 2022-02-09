@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             CreateWalletSeeder::class,
             PermissionTableSeeder::class,
             CreateAdminUserSeeder::class,
+            CreateStatusSeeder::class,
         ]);
     }
 }

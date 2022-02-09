@@ -20,7 +20,8 @@
          <link href="{{ config('app.asset_url')}}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
         <link href="{{ config('app.asset_url')}}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
         <link type="text/css" href="{{ config('app.asset_url')}}/css/app.min.css" rel="stylesheet">
- 
+        <link type="text/css" href="{{ config('app.asset_url')}}/css/emadema.min.css" rel="stylesheet">
+
          
     </head>
     <body class="{{ $class ?? '' }}">

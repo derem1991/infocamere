@@ -23,7 +23,6 @@
                         <i class="ni ni-single-02"></i>
                         <span>Mio profilo</span>
                     </a>
-                   
                     <div class="dropdown-divider"></div>
                     <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
@@ -62,7 +61,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link @if(Route::currentRouteName() == 'home') active @endif" href="{{route('home')}}">
-                        <i class="ni ni-tv-2"></i> Dashboard
+                        <i class="ni ni-tv-2"></i> Dashboard 
                     </a>
                 </li>
                 <li class="nav-item">
@@ -70,6 +69,14 @@
                         <i class="ni ni-single-02"></i> Mio profilo
                     </a>
                 </li>
+                @can('order-mylist')
+                <li class="nav-item @if(Route::currentRouteName() == 'orders.index') active @endif">
+                    <a class="nav-link" href="{{ route('orders.index') }}">
+                        <i class="fa fa-file" aria-hidden="true"></i>
+                        Ordini
+                    </a>
+                </li>
+                @endcan
                 @can('wallet-mylist')
                 <li class="nav-item @if(Route::currentRouteName() == 'wallets.index') active @endif">
                     <a class="nav-link" href="{{ route('wallets.index') }}">
