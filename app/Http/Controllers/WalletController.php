@@ -47,7 +47,7 @@ class WalletController extends Controller
         $data['budget_remaining'] = isset($data['budget']) ? $data['budget'] : 0;
 
         Wallet::create($data);
-
+        
         return redirect()->route('wallets.index')->with('success','Created successfully');
     }
  

@@ -18,30 +18,36 @@ class DocumentHasWalletController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name'   => 'required',
+            'document_id'   => 'required',
+            'wallet_id'     => 'required',
+            'cost'          => 'required|numeric|min:0|not_in:0',
+            'price'         => 'required|numeric|min:0|not_in:0',
         ]);
 
         $data = $request->all();
-        Document::create($data);
+        //solo 1 associazione documento wallet(almeno per ora)
+        DocumentHasWallet::where('document_id',$data['document_id'])->where('wallet_id',$data['wallet_id'])->delete(); 
 
-        return redirect()->route('documents.index')->with('success','Item Created successfully');
+        DocumentHasWallet::create($data);
+        return back()->with('success','Item Created successfully');
     }
    
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'name'   => 'required',
+          'document_id'   => 'required',
+          'wallet_id'     => 'required',
+          'cost'          => 'required|numeric|min:0|not_in:0',
+          'price'         => 'required|numeric|min:0|not_in:0',
         ]);
 
         $input = $request->all();
-        $input['is_piva']      = isset($input['is_piva']) ? 1 : 0;
-        $input['is_cfiscale'] = isset($input['is_cfiscale']) ? 1 : 0;
-        $input['active']      = isset($input['active']) ? 1 : 0;
     
-        $update = Document::find($id);
+        $update = DocumentHasWallet::find($id);
+        $input['active'] = isset($input['active']) ? 1 : 0;
         $update->update($input);
     
-        return redirect()->route('documents.index')->with('success','Item updated successfully');
+        return back()->with('success','Item updated successfully');
     }
  
     public function destroy($id)

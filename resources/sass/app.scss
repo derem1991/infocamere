@@ -21918,15 +21918,19 @@ div.dataTables_wrapper div.dataTables_filter input {
   }
 }
 //icon
-.fa-check
+.fa-check.green
 {
   color:$green;
 }
-.fa-exclamation-triangle
+.fa-exclamation-triangle.red
 {
   color:$red;
 }
-
+.fa-check.white,.fa-exclamation-triangle.white
+{
+  color:#fff;
+}
+ 
 #modalcamere .modal-header .close, .modalcamere .modal-header .close 
 {
     position: absolute;

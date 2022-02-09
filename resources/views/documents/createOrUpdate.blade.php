@@ -73,7 +73,7 @@
                         @else
                            <div class="form-group mb-0">
                               <label class="form-control-label mb-0" for="active">
-                                 <i class="{{ isset($document) && $document->active ? 'fa fa-check' : 'fas fa-exclamation-triangle'}}"></i>
+                                 <i class="{{ isset($document) && $document->active ? 'fa fa-check green' : 'fas fa-exclamation-triangle red'}}"></i>
                                  Attivo
                                </label>
                               <input class="form-control" id="active" type="hidden" name="active" value="{{$document->active ?? 0}}">
@@ -101,7 +101,7 @@
                      </div>
                   </div>
                   <button type="submit" class="btn btn-slack btn-icon">
-                     <span class="btn-inner--icon"><i class="fa fa-check"></i></span>
+                     <span class="btn-inner--icon"><i class="fa fa-check green"></i></span>
                      <span class="btn-inner--text">Salva</span>
                   </button>
                </div>

@@ -28,6 +28,7 @@
                  <b>Attivo</b>:Ogni documento aggiunto va abilitato dal superadmin per l'implementazione tecnica.<br>
                  <b>Partita iva</b>:Permette di poter ricercare questo documento per partita iva <br>
                  <b>Codice fiscale</b>:Permette di poter ricercare questo documento per codice fiscale<br>
+                 <b>Associazione wallet</b>:Il wallet con relativo costo e prezzo di vendita, può essere associato al documento dalla sua pagina di "edit"<br>
                </p>
             </div>
             <div class="table-responsive py-4">
@@ -54,14 +55,14 @@
                                     <td class="sorting_1">{{ $document->id}}</td>
                                     <td>{{ $document->name}}</td>
                                     <td>
-                                       <i class="{{ $document->active ? 'fa fa-check' : 'fas fa-exclamation-triangle'}}"></i>
+                                       <i class="{{ $document->active ? 'fa fa-check green' : 'fas fa-exclamation-triangle red'}}"></i>
                                     </td>
                                     <td>{{ $document->description}}</td>
                                     <td>
-                                       <i class="{{ $document->is_piva ? 'fa fa-check' : 'fas fa-exclamation-triangle'}}"></i>
+                                       <i class="{{ $document->is_piva ? 'fa fa-check green' : 'fas fa-exclamation-triangle red'}}"></i>
                                     </td>
                                     <td>
-                                       <i class="{{ $document->is_cfiscale ? 'fa fa-check' : 'fas fa-exclamation-triangle'}}"></i>
+                                       <i class="{{ $document->is_cfiscale ? 'fa fa-check green' : 'fas fa-exclamation-triangle red'}}"></i>
                                     </td>
                                     <td class="text-right">
                                        <div class="dropdown">
@@ -79,7 +80,6 @@
                                              @method("DELETE")
                                            </form>
                                            @endcan
-                                             
                                          </div>
                                        </div>
                                      </td>

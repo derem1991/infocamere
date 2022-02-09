@@ -9,7 +9,7 @@ use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\DocumentHasWalletController;
 use App\Http\Controllers\WalletController;
-
+use App\Http\Controllers\AjaxController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -59,3 +59,9 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/document',function(){ return view("modals.document"); })->name('document');
  });
  /****************end modal*********************/
+
+/****************ajax*********************/
+ Route::group(['prefix'=>'ajax','as'=>'ajax.'], function(){
+  Route::get('/modal/{model}', [AjaxController::class, 'modal'])->name("modal");
+});
+/****************end modal*********************/

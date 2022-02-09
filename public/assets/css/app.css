@@ -14199,11 +14199,14 @@ div.dataTables_wrapper div.dataTables_filter input {
 #navbar-main a {
   color: #212529 !important; }
 
-.fa-check {
+.fa-check.green {
   color: #2dce89; }
 
-.fa-exclamation-triangle {
+.fa-exclamation-triangle.red {
   color: #f5365c; }
+
+.fa-check.white, .fa-exclamation-triangle.white {
+  color: #fff; }
 
 #modalcamere .modal-header .close, .modalcamere .modal-header .close {
   position: absolute;

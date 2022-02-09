@@ -62,7 +62,7 @@
                      </div>
                   </div>
                   <button type="submit" class="btn btn-slack btn-icon">
-                     <span class="btn-inner--icon"><i class="fa fa-check"></i></span>
+                     <span class="btn-inner--icon"><i class="fa fa-check green"></i></span>
                      <span class="btn-inner--text">Salva</span>
                   </button>
                </div>

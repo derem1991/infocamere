@@ -5,6 +5,9 @@ $.ajaxSetup({
 });
 $( document ).ready(function() 
 {
+	$('#modalcamere').on('hidden.bs.modal', function () {
+		$('#modalcamere .modal-body').html('');
+    });
 	$('#modalcamere').on('show.bs.modal', function(e) 
 	{   
 	  var modal = $(this);
@@ -15,9 +18,24 @@ $( document ).ready(function()
 	  switch(action) 
 	  {
 		case 'document':
-			$.post('/modals/document', {} ).done(function( data ) {
-				modal.find('.modal-body').html(data);
-			});		 
+			var wallet = button.data('wallet');
+			$.ajax({
+				url :'/ajax/modal/document',
+				type : 'GET',
+				dataType:'json',
+				data:{id:button.data('id')},
+				success : function(param) {  
+					$.post('/modals/document', {param:param,wallet:wallet} ).done(function( data ) {
+						modal.find('.modal-body').html(data);
+					});
+				},
+				error : function(request,error) {
+					$.post('/modals/document', {wallet:wallet} ).done(function( data ) {
+						modal.find('.modal-body').html(data);
+					});
+				}
+			});	
+		 		 
 	    break;
 	  }	 
    }); 

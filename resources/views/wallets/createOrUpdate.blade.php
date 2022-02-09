@@ -47,7 +47,7 @@
                      </div>
                   </div>
                   <div class="col-12 col-md-6">
-                     @php $remaining = $wallet->budget - $wallet->budget_remaining @endphp
+                     @php $remaining = isset($wallet) ? $wallet->budget - $wallet->budget_remaining : 0 @endphp
                      <div class="form-group{{ $errors->has('') ? ' has-danger' : '' }} mb-3">
                         <label class="form-control-label" for="budget">Budget @if(isset($wallet)) (Budget utilizzato:€ {{$remaining}}) @endif
                         </label>
@@ -76,7 +76,7 @@
                </div>
                <hr class="w-100 my-2">
                <button type="submit" class="btn btn-slack btn-icon">
-               <span class="btn-inner--icon"><i class="fa fa-check"></i></span>
+               <span class="btn-inner--icon"><i class="fa fa-check green"></i></span>
                <span class="btn-inner--text">Salva</span>
                </button>
             </div>
@@ -84,6 +84,7 @@
          {{ Form::close() }}
       </div>
    </div>
+   @if(isset($wallet))
    <div class="row mb-4">
       <div class="col">
          <div class="card">
@@ -97,6 +98,7 @@
                      data-toggle="modal"
                      data-target="#modalcamere"
                      data-title="Associa documento"
+                     data-wallet ="{{$wallet->id}}"
                      data-action="document">Associa nuovo documento</button>
                   </div>
                </div>                          
@@ -121,13 +123,13 @@
                               @if(isset($documents) && !empty($documents))
                               @foreach($documents as $item)
                               <tr role="row" class="odd">
-                                 <td class="sorting_1">{{ $wallet->id ?? ''}}</td>
+                                 <td class="sorting_1">{{ $item->id ?? ''}}</td>
                                  <td>{{ $item->document->name ?? ''}}</td>
                                  <td>
-                                    <i class="{{ $item->active ? 'fa fa-check' : 'fas fa-exclamation-triangle'}}"></i>
+                                    <i class="{{ $item->active ? 'fa fa-check green' : 'fas fa-exclamation-triangle red'}}"></i>
                                  </td>
-                                 <td>{{ $item->cost ?? ''}}</td>
-                                 <td>{{ $item->price ?? ''}}</td>
+                                 <td>€ {{ $item->cost ?? 0}}</td>
+                                 <td>€ {{ $item->price ?? 0}}</td>
                                  <td class="text-right">
                                     <div class="dropdown">
                                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -139,7 +141,8 @@
                                           data-toggle="modal"
                                           data-target="#modalcamere"
                                           data-title="Modifica {{ $item->document->name ?? ''}}"
-                                          data-document ="{{$item->document_id}}"
+                                          data-id ="{{$item->id}}"
+                                          data-wallet ="{{$wallet->id}}"
                                           data-action="document">
                                           Modifica</button>
                                           @endcan
@@ -165,6 +168,7 @@
          </div>
       </div>
    </div>
+   @endif
    @include('layouts.footers.auth')
 </div>
 @endsection
