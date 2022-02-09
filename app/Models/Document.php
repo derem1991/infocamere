@@ -10,7 +10,8 @@ class Document extends Model
 {
     use HasFactory, Notifiable;
 
-  
+    protected $table = 'documents';
+    
     protected $fillable = 
     [
         'id',

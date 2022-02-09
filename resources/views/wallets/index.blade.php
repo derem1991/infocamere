@@ -36,6 +36,7 @@
                                 <th scope="col" class="sort" data-sort="Nome">Nome</th>
                                 <th scope="col" class="sort" data-sort="Descrizione">Descrizione</th>
                                 <th scope="col" class="sort" data-sort="budget">Budget</th>
+                                <th scope="col" class="sort" data-sort="budget">Budget Rimasto</th>
                                 <th scope="col" >Azioni</th>
                               </tr>
                             </thead>
@@ -46,7 +47,8 @@
                                     <td class="sorting_1">{{ $wallet->id ?? ''}}</td>
                                     <td>{{ $wallet->name ?? ''}}</td>
                                     <td>{{ $wallet->description ?? ''}}</td>
-                                    <td>{{ $wallet->budget ?? ''}}</td>
+                                    <td>€ {{ $wallet->budget ?? ''}}</td>
+                                    <td>€ {{ $wallet->budget_remaining ?? ''}}</td>
                                      <td class="text-right">
                                        <div class="dropdown">
                                          <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

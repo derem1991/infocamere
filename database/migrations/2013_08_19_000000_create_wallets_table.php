@@ -13,6 +13,7 @@ class CreateWalletsTable extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->float('budget')->default(0.00); // budget disponibile per ogni wallet
+            $table->float('budget_remaining')->default(0.00); // budget disponibile per ogni wallet
             $table->timestamps();
         });
     }

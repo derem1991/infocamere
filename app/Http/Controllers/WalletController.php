@@ -43,6 +43,9 @@ class WalletController extends Controller
         ]);
 
         $data = $request->all();
+
+        $data['budget_remaining'] = isset($data['budget']) ? $data['budget'] : 0;
+
         Wallet::create($data);
 
         return redirect()->route('wallets.index')->with('success','Created successfully');
@@ -65,7 +68,16 @@ class WalletController extends Controller
             'budget' => 'required|numeric|min:0|not_in:0',
         ]);
         $input = $request->all();
+
+        
         $update = Wallet::find($id);
+
+        if(isset($input['budget']))
+        {
+         $diff = (float)$input['budget'] - $update->budget;
+         $input['budget_remaining'] =  $update->budget_remaining + $diff;
+        }
+
         $update->update($input);
     
         return redirect()->route('wallets.index')->with('success','Item updated successfully');

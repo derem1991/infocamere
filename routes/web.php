@@ -7,6 +7,7 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\DocumentHasWalletController;
 use App\Http\Controllers\WalletController;
 
 /*
@@ -44,13 +45,17 @@ Route::group(['middleware' => ['auth']], function() {
     //documents//
     Route::resource('documents',DocumentController::class); 
     //end documents
-
+    //DocumentHasWallet//
+    Route::resource('documentsHasWallet',DocumentHasWalletController::class); 
+    //end DocumentHasWallet
+     
     Route::get('/documenti', [DocumentController::class, 'documenti'])->name('documents.documenti');
     Route::get('/blocchi', [DocumentController::class, 'blocchi'])->name('documents.blocchi');
-
-    /****************modal*********************/
-    Route::group(['prefix'=>'modals','as'=>'modals.'], function(){
-        Route::post('/document',function(){ return view("modals.document"); })->name('document');
-    });
-    /****************end modal*********************/
+ 
 });
+
+/****************modal*********************/
+  Route::group(['prefix'=>'modals','as'=>'modals.'], function(){
+    Route::post('/document',function(){ return view("modals.document"); })->name('document');
+ });
+ /****************end modal*********************/

@@ -21926,3 +21926,20 @@ div.dataTables_wrapper div.dataTables_filter input {
 {
   color:$red;
 }
+
+#modalcamere .modal-header .close, .modalcamere .modal-header .close 
+{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background: #212529;
+    opacity: 1;
+    color: #ffff;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 23px;
+    line-height: 20px;
+    width: 24px;
+    height: 24px;
+}

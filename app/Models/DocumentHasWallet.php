@@ -10,6 +10,8 @@ class DocumentHasWallet extends Model
 {
     use HasFactory, Notifiable;
   
+    protected $table = 'document_has_wallets';
+
     protected $fillable = 
     [
         'id',

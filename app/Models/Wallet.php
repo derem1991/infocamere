@@ -10,12 +10,14 @@ class Wallet extends Model
 {
     use HasFactory, Notifiable;
 
-  
+    protected $table = 'wallets';
+
     protected $fillable = [
         'id',
         'name',
         'description',
         'budget',
+        'budget_remaining'
     ];
  
   

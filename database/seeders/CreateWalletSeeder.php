@@ -11,9 +11,10 @@ class CreateWalletSeeder extends Seeder
     public function run()
     {
         $wallet = Wallet::create([
-        	'name' => 'wallet',
-        	'description' => 'wallet description',
-            'budget' => 1000,
+        	'name'             => 'wallet',
+        	'description'      => 'wallet description',
+            'budget'           => 1000,
+            'budget_remaining' => 1000,
         ]);
          
     }
