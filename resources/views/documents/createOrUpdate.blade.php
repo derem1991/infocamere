@@ -63,7 +63,7 @@
                   <h2 class="d-block">Opzioni</h2>
                   <div class="row mb-4">
                      <div class="col-12 col-md-4">
-                        @can('document-devesloper')
+                        @can('document-developer')
                         <div class="custom-control custom-control-alternative custom-checkbox">
                            <input @if(isset($document) && $document->active) checked @endif class="custom-control-input" value="1" name="active" id="active" type="checkbox">
                            <label class="custom-control-label" for="active">

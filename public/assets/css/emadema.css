@@ -21,3 +21,16 @@
     opacity: 1.0; }
   100% {
     opacity: 0.1; } }
+
+.cardorder {
+  box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.2); }
+  .cardorder .boximg {
+    background-size: cover;
+    min-height: 300px;
+    border-radius: 10px; }
+  .cardorder.step_1 .boximg {
+    background-image: url("/assets/img/orderStep1.jpg"); }
+  .cardorder.step_2 .boximg {
+    background-image: url("/assets/img/orderStep2.jpg"); }
+  .cardorder.step_3 .boximg {
+    background-image: url("/assets/img/orderStep3.jpg"); }

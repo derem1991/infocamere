@@ -15,13 +15,15 @@ class Order extends Model
     protected $fillable = 
     [
         'id',
-        'name',
-        'description',
-        'active',
-        'is_piva',
-        'is_cfiscale',        
+        'input',
+        'user_id',
+        'document_id',
+        'wallet_id',
+        'status_id',    
+        'cost',
+        'price',        
     ];
- 
+
     public function wallet()
     {
         return $this->belongsTo(Wallet::class);

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Document;
 use App\Models\DocumentHasWallet;
+use Response;
 class AjaxController extends Controller
 {
      
@@ -28,5 +29,15 @@ class AjaxController extends Controller
       break;
     }
     return $param;
+  }
+
+  public function loadStepOrder(Request $request)
+  {
+    $input = $request->all();
+    $step = isset($input['step']) ? $input['step'] : 1;
+    $documents = Document::getDispoByUser();
+    $render = view('partials.cardOrder',compact('step','documents'))->render();
+
+    return Response::json($render);
   }
 }

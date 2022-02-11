@@ -6,7 +6,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Order;
-
+use App\Models\Document;
+use App\Models\Status;
+use Response;
 class OrderController extends Controller
 {
      
@@ -26,19 +28,28 @@ class OrderController extends Controller
 
     public function create()
     {
-      return view('orders.create');
+      $documents = Document::getDispoByUser();
+      $defaultStatus = Status::where('slug','pending')->value('id');
+      if(empty($defaultStatus)) //se non ce lo stato pending mandiamo in 404 per sicurezza - ci deve sempre essere
+       abort(404);
+
+      return view('orders.create',compact('documents','defaultStatus'));
     }
 
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'name'   => 'required',
-        ]);
+      $this->validate($request, [
+          'document_id' => 'required',
+          'input'       => 'required',
+          'user_id'     => 'required',
+          'price'       => 'required',
+          'status_id'   => 'required',
+      ]);
 
-        $data = $request->all();
-        Document::create($data);
+      $data = $request->all();
+      Order::create($data);
 
-        return redirect()->route('documents.index')->with('success','Item Created successfully');
+      return Response::json($data);
     }
  
     public function edit($id)

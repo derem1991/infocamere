@@ -69,5 +69,6 @@ Route::group(['middleware' => ['auth']], function() {
 /****************ajax*********************/
  Route::group(['prefix'=>'ajax','as'=>'ajax.'], function(){
   Route::get('/modal/{model}', [AjaxController::class, 'modal'])->name("modal");
+  Route::get('/loadStepOrder', [AjaxController::class, 'loadStepOrder'])->name("loadStepOrder");
 });
 /****************end modal*********************/
