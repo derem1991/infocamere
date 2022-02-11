@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Order;
 use App\Models\Document;
 use App\Models\Status;
+use App\Models\User;
+use App\Models\Wallet;
 use Response;
 class OrderController extends Controller
 {
@@ -43,12 +45,24 @@ class OrderController extends Controller
           'input'       => 'required',
           'user_id'     => 'required',
           'price'       => 'required',
+          'cost'        => 'required',
           'status_id'   => 'required',
+          'wallet_id'   => 'required',
       ]);
 
       $data = $request->all();
-      Order::create($data);
-
+      $order = Order::create($data);
+      if(!empty($order))
+      {
+        $wallet = Wallet::find($data['wallet_id']);
+        $wallet->budget_remaining = $wallet->budget_remaining - (float)$data['cost'];
+        $wallet->save();
+ 
+        $user = User::find($data['user_id']);
+        $user->budget = $user->budget - (float)$data['price'];
+        $user->save();
+ 
+      }
       return Response::json($data);
     }
  
