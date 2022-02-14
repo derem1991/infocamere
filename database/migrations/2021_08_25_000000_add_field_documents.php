@@ -10,7 +10,8 @@ class AddFieldDocuments extends Migration
     {
 	    Schema::table('documents', function (Blueprint $table) 
 	    {
-            $table->foreignId('wallet_id')->constrained('statuses')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('wallet_id')->after('is_cfiscale')->constrained('statuses')->onUpdate('cascade')->onDelete('cascade');
+            $table->string('method')->nullable()->after('wallet_id');
         });
     }
 }
