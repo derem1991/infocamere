@@ -20,7 +20,8 @@ class Document extends Model
         'active',
         'wallet_id',
         'is_piva',
-        'is_cfiscale',        
+        'is_cfiscale', 
+        'method',       
     ];
     public function wallet()
     {

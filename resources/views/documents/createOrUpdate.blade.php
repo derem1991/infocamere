@@ -76,44 +76,65 @@
                     </div>
                   </div>
                   <hr class="w-100 my-2">
-                  <h2 class="d-block">Opzioni</h2>
+                  <h2 class="d-block">Opzioni Developer</h2>
                   <div class="row mb-4">
-                     <div class="col-12 col-md-4">
-                        @can('document-developer')
-                        <div class="custom-control custom-control-alternative custom-checkbox">
-                           <input @if(isset($document) && $document->active) checked @endif class="custom-control-input" value="1" name="active" id="active" type="checkbox">
-                           <label class="custom-control-label" for="active">
-                              <span>Attivo</span>
-                           </label>
-                        </div>
-                        @else
-                           <div class="form-group mb-0">
-                              <label class="form-control-label mb-0" for="active">
-                                 <i class="{{ isset($document) && $document->active ? 'fa fa-check green' : 'fas fa-exclamation-triangle red'}}"></i>
-                                 Attivo
-                               </label>
-                              <input class="form-control" id="active" type="hidden" name="active" value="{{$document->active ?? 0}}">
+                     @can('document-developer')
+                     <div class="col-12 p-0 m-0 row">
+                        <div class="col-12 col-md-4">
+                           <div class="custom-control custom-control-alternative custom-checkbox">
+                              <input @if(isset($document) && $document->active) checked @endif class="custom-control-input" value="1" name="active" id="active" type="checkbox">
+                              <label class="custom-control-label" for="active">
+                                 <span>Attivo</span>
+                              </label>
                            </div>
-                        @endcan
+                           <small>Ogni documento aggiunto va abilitato dal reparto tecnico.</small>
+                        </div>
+                        <div class="col-12 col-md-8">
+                           <div class="form-group{{ $errors->has('method') ? ' has-danger' : '' }} mb-0">
+                              <label class="form-control-label" for="method">Metodo</label>
+                              <input class="form-control{{ $errors->has('method') ? ' is-invalid' : '' }}" id="method" placeholder="Metodo" type="text" name="method" value="{{$document->method ?? ''}}">
+                              @if ($errors->has('method'))
+                              <span class="invalid-feedback" style="display: block;" role="alert">
+                              <strong>{{ $errors->first('method') }}</strong>
+                              </span>
+                              @endif
+                           </div>
+                           <small>Metodo che viene chiamato dalle api</small>
+                        </div>
+                     </div>
+                     @else
+                     <div class="col-12 col-md-4">
+                        <div class="form-group mb-0">
+                           <label class="form-control-label mb-0" for="active">
+                              <i class="{{isset($document) && $document->active ? 'fa fa-check green' : 'fas fa-exclamation-triangle red'}}"></i>
+                              Attivo
+                           </label>
+                           <input class="form-control" id="active" type="hidden" name="active" value="{{$document->active ?? 0}}">
+                        </div>
                         <small>Ogni documento aggiunto va abilitato dal reparto tecnico.</small>
                      </div>
-                     <div class="col-12 col-md-4">
-                        <div class="custom-control custom-control-alternative custom-checkbox">
-                           <input @if(isset($document) && $document->is_piva) checked @endif class="custom-control-input" value="1" name="is_piva" id="is_piva" type="checkbox">
-                           <label class="custom-control-label" for="is_piva">
-                              <span>Input partita iva</span>
-                           </label>
+                     @endcan
+                     <hr class="w-100">
+                     <h2 class="d-block col-12">Opzioni</h2>
+                     <div class="col-12 p-0 m-0 row">
+                        <div class="col-12 col-md-6">
+                           <div class="custom-control custom-control-alternative custom-checkbox">
+                              <input @if(isset($document) && $document->is_piva) checked @endif class="custom-control-input" value="1" name="is_piva" id="is_piva" type="checkbox">
+                              <label class="custom-control-label" for="is_piva">
+                                 <span>Input partita iva</span>
+                              </label>
+                           </div>
+                           <small>Permette di poter ricercare questo documento per partita iva</small>
                         </div>
-                        <small>Permette di poter ricercare questo documento per partita iva</small>
-                     </div>
-                     <div class="col-12 col-md-4">
-                        <div class="custom-control custom-control-alternative custom-checkbox">
-                           <input @if(isset($document) && $document->is_cfiscale) checked @endif class="custom-control-input" value="1" name="is_cfiscale" id="is_cfiscale" type="checkbox">
-                           <label class="custom-control-label" for="is_cfiscale">
-                              <span>Input Codice fiscale</span>
-                           </label>
+                        <div class="col-12 col-md-6">
+                           <div class="custom-control custom-control-alternative custom-checkbox">
+                              <input @if(isset($document) && $document->is_cfiscale) checked @endif class="custom-control-input" value="1" name="is_cfiscale" id="is_cfiscale" type="checkbox">
+                              <label class="custom-control-label" for="is_cfiscale">
+                                 <span>Input Codice fiscale</span>
+                              </label>
+                           </div>
+                           <small>Permette di poter ricercare questo documento per codice fiscale</small>
                         </div>
-                        <small>Permette di poter ricercare questo documento per codice fiscale</small>
                      </div>
                   </div>
                   <button type="submit" class="btn btn-slack btn-icon">
