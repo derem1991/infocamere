@@ -47,7 +47,7 @@
                            @endif
                         </div>
                      </div>
-                     <div class="col-12 col-md-8">
+                     <div class="col-12 col-md-5">
                         <div class="form-group{{ $errors->has('description') ? ' has-danger' : '' }} mb-3">
                            <label class="form-control-label" for="description">Descrizione</label>
                            <input class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" id="description" placeholder="Descrizione" type="text" name="description" value="{{$document->description ?? ''}}">
@@ -58,6 +58,22 @@
                            @endif
                         </div>
                      </div>
+                     <div class="col-12 col-md-3">
+                        <div class="form-group{{ $errors->has('wallet_id') ? ' has-danger' : '' }} mb-3">
+                           <label class="form-control-label" for="wallet_id">Wallet </label>
+                           <select id="wallet_id" class="form-control" name="wallet_id"  required > 
+                              @foreach($wallets as $wallet)
+                                <option @if(isset($document) && $document->wallet_id == $wallet->id) selected @endif
+                                value="{{$wallet->id}}"> {{$wallet->name}} </option>
+                              @endforeach
+                           </select>
+                           @if ($errors->has('document_id'))
+                           <span class="invalid-feedback" style="display: block;" role="alert">
+                           <strong>{{ $errors->first('document_id') }}</strong>
+                           </span>
+                           @endif
+                        </div>
+                    </div>
                   </div>
                   <hr class="w-100 my-2">
                   <h2 class="d-block">Opzioni</h2>

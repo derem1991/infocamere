@@ -6,7 +6,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Document;
-
+use App\Models\Wallet;
+use Auth;
 class DocumentController extends Controller
 {
      
@@ -20,13 +21,22 @@ class DocumentController extends Controller
 
     public function index(Request $request)
     {
+      if(Auth::user()->can('document-list')) // possibilita vedere tutti gli utenti
       $documents = Document::orderBy('id','DESC')->get();
+     else // utenti stesso wallet
+      $documents = Document::where('wallet_id',Auth::user()->wallet_id)->orderBy('id','DESC')->get();
+ 
       return view('documents.index',compact('documents'));
     }
 
     public function create()
     {
-      return view('documents.createOrUpdate');
+      if(Auth::user()->can('document-list')) // possibilita wallet proprio
+        $wallets = Wallet::all();
+      else // solo proprio wallet
+        $wallets = Wallet::where('id',Auth::user()->wallet_id)->get();
+
+      return view('documents.createOrUpdate',compact('wallets'));
     }
     public function store(Request $request)
     {
@@ -43,7 +53,18 @@ class DocumentController extends Controller
     public function edit($id)
     {
         $document = Document::find($id);
-        return view('documents.createOrUpdate',compact('document'));
+
+        if(Auth::user()->can('document-list')) // tutti wallet
+          $wallets = Wallet::all();
+        else // document stesso wallet
+        {
+          if($document->wallet_id != Auth::user()->wallet_id)
+            abort(404); // non puoi vedere documenti altri wallet
+          else
+            $wallets = Wallet::where('id',Auth::user()->wallet_id)->get();
+        }
+
+        return view('documents.createOrUpdate',compact('document','wallets'));
     }
    
     public function update(Request $request, $id)

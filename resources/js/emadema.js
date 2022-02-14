@@ -23,7 +23,7 @@ $( document ).ready(function()
 				url :'/ajax/modal/document',
 				type : 'GET',
 				dataType:'json',
-				data:{id:button.data('id')},
+				data:{id:button.data('id'),wallet:wallet},
 				success : function(param) {  
 					$.post('/modals/document', {param:param,wallet:wallet} ).done(function( data ) {
 						modal.find('.modal-body').html(data);

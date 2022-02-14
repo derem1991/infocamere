@@ -11,6 +11,7 @@ use App\Models\Status;
 use App\Models\User;
 use App\Models\Wallet;
 use Response;
+use Auth;
 class OrderController extends Controller
 {
      
@@ -24,7 +25,11 @@ class OrderController extends Controller
 
     public function index(Request $request)
     {
-      $orders = Order::orderBy('id','DESC')->get();
+      if(Auth::user()->can('order-list')) // possibilita vedere tutti gli utenti
+        $orders = Order::orderBy('id','DESC')->get();
+      else // utenti stesso wallet
+        $orders = Order::where('wallet_id',Auth::user()->wallet_id)->orderBy('id','DESC')->get();
+
       return view('orders.index',compact('orders'));
     }
 

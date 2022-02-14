@@ -18,10 +18,15 @@ class Document extends Model
         'name',
         'description',
         'active',
+        'wallet_id',
         'is_piva',
         'is_cfiscale',        
     ];
- 
+    public function wallet()
+    {
+        return $this->belongsTo(Wallet::class);
+    }
+
     public static function getDispoByUser($id = null) //prendere i documenti disponibili in base alla disponibilità del cliente
     {
       $user = !empty($id) ? User::find($id) : Auth::user();

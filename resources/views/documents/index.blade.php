@@ -45,6 +45,9 @@
                                 <th scope="col" class="sort" data-sort="Descrizione">Descrizione</th>
                                 <th scope="col" class="sort" data-sort="Partita iva">Partita iva</th>
                                 <th scope="col" class="sort" data-sort="Codice fiscale">Codice fiscale</th>
+                                @can('document-list')
+                                <th scope="col" class="sort" data-sort="Codice fiscale">Wallet</th>
+                                @endcan
                                 <th scope="col" >Azioni</th>
                               </tr>
                             </thead>
@@ -64,6 +67,9 @@
                                     <td>
                                        <i class="{{ $document->is_cfiscale ? 'fa fa-check green' : 'fas fa-exclamation-triangle red'}}"></i>
                                     </td>
+                                    @can('document-list')
+                                    <td>{{ $document->wallet->name ?? ''}}</td>
+                                    @endcan
                                     <td class="text-right">
                                        <div class="dropdown">
                                          <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

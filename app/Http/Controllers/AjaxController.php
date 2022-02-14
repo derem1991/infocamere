@@ -25,7 +25,7 @@ class AjaxController extends Controller
     {
       case 'document':
        $param['item'] = isset($input['id']) ? DocumentHasWallet::find($input['id']) : null;
-       $param['documents'] = isset($param['item']['document_id']) ? Document::where('id',$param['item']['document_id'])->get() : Document::all();  
+       $param['documents'] = isset($param['item']['document_id']) ? Document::where('id',$param['item']['document_id'])->get() : Document::where('wallet_id',$input['wallet'])->get();  
       break;
     }
     return $param;
