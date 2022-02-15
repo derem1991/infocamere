@@ -54,6 +54,12 @@
                                     <td class="d-flex boxstatus stat_{{$order->status->slug}}">
                                        <div class="circle" style="background:{{$order->status->background}};"></div> 
                                        <span class="pl-2 font-weight-bold" style="color:{{$order->status->color}};">{{$order->status->name}}</span>
+                                       
+                                       @if(!empty($order->file_output)  && Storage::has($order->file_output.".zip"))
+                                          <a title="Scarica archivio" class="pl-3" href="{{route('orders.download',$order->file_output)}}"> 
+                                             <i class="fas fa-file-archive"></i>
+                                          </a>
+                                       @endif
                                     </td>
                                     <td class="text-right">
                                        <div class="dropdown d-none">

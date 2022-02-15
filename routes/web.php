@@ -49,6 +49,8 @@ Route::group(['middleware' => ['auth']], function() {
 
     //orders//
     Route::resource('orders',OrderController::class); 
+    Route::get('orders/download/{output}', [OrderController::class, 'download'])->name('orders.download');
+
     //end orders
 
     //DocumentHasWallet//

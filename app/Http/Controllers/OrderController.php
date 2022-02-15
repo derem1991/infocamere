@@ -12,6 +12,7 @@ use App\Models\User;
 use App\Models\Wallet;
 use Response;
 use Auth;
+use Storage;
 class OrderController extends Controller
 {
      
@@ -41,6 +42,15 @@ class OrderController extends Controller
        abort(404);
 
       return view('orders.create',compact('documents','defaultStatus'));
+    }
+
+    public function download($output)
+    {
+      $path = storage_path().'/'.'app'.'/'.$output.".zip";
+      if (file_exists($path)) 
+          return Response::download($path);
+
+      return;
     }
 
     public function store(Request $request)

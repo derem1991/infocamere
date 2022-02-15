@@ -56,20 +56,26 @@ trait InfoCamereTrait {
     $client = $this->client('xml');
     $baseUrl = Config("emadema.api.baseUrl");
     $json = $client->get($baseUrl.'rest/registroimprese/output/impresa/documento/codicefiscale/pdf?codiceFiscale='.$order->input.'&documento=VATTU');
-    $xml = simplexml_load_string($json->getBody()->getContents(), "SimpleXMLElement", LIBXML_NOCDATA);
-    $json = json_encode($xml);
-    $array = json_decode($json,TRUE);
-    if(isset($array['Testata']['Riepilogo']['FileOutput']))
-      Order::find($order->id)->update(['file_output'=>$array['Testata']['Riepilogo']['FileOutput']]);
+    try {
+      $xml = simplexml_load_string($json->getBody()->getContents(), "SimpleXMLElement", LIBXML_NOCDATA);
+      $json = json_encode($xml);
+      $array = json_decode($json,TRUE);
+      if(isset($array['Testata']['Riepilogo']['FileOutput']))
+        Order::find($order->id)->update(['file_output'=>$array['Testata']['Riepilogo']['FileOutput']]);
+
+    }catch(\Exception $e)
+    {
+     
+    }
+   
     
     return $order;
   }
 
   public function download($lotto,$order)
-  { 
+  {  
     $order = Order::find($order->id);
-    $media = Storage::get($lotto.".zip");
-    if(!empty($media))
+    if(!Storage::has($lotto.".zip"))
     {
       $client = $this->client('zip');
       $baseUrl = Config("emadema.api.baseUrl");
@@ -78,14 +84,12 @@ trait InfoCamereTrait {
       if(!empty($body))
       {
         Storage::put($lotto.".zip",$body);
-        $media = Storage::get($lotto.".zip");
-        if(!empty($media))
+        if(Storage::has($lotto.".zip"))
         {
           $order->status_id = 2;
           $order->save();
         }
       }
-      
     }
     else
     {
