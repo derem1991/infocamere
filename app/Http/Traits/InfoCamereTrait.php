@@ -68,19 +68,29 @@ trait InfoCamereTrait {
   public function download($lotto,$order)
   { 
     $order = Order::find($order->id);
-    $media =  $order->getMedia('output');
-    if($media->isEmpty())
+    $media = Storage::get($lotto.".zip");
+    if(!empty($media))
     {
       $client = $this->client('zip');
       $baseUrl = Config("emadema.api.baseUrl");
       $json = $client->get($baseUrl.'rest/storage/download?nomeLotto='.$lotto);
-      if(!empty($json->getBody()->getContents()))
-        $order->addMediaFromStream($json->getBody()->getContents())->usingFileName($lotto.".zip")->toMediaCollection('output');
+      $body = $json->getBody()->getContents();
+      if(!empty($body))
+      {
+        Storage::put($lotto.".zip",$body);
+        $media = Storage::get($lotto.".zip");
+        if(!empty($media))
+        {
+          $order->status_id = 2;
+          $order->save();
+        }
+      }
+      
     }
     else
     {
-      $order->status_id = 2;
-      $order->save();
+       $order->status_id = 2;
+       $order->save();
     }
     return $lotto;
   
