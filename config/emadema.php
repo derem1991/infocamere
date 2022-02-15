@@ -3,6 +3,6 @@ return [
     'api' => 
     [
      'auth' => [ 'KJJJ003', 'Febbraio.22'],
-     'baseUrl' => env('AWS_UssRL','https://aiws.infocamere.it/docs/')
+     'baseUrl' => env('AWS_URL','https://aiws.infocamere.it/docs/')
     ],
 ];
