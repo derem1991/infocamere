@@ -5,10 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Notifications\Notifiable;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class Order extends Model
+class Order extends Model implements HasMedia
 {
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable,InteractsWithMedia;
 
     protected $table = 'orders';
     
@@ -21,7 +23,8 @@ class Order extends Model
         'wallet_id',
         'status_id',    
         'cost',
-        'price',        
+        'price',   
+        'file_output'     
     ];
 
     public function wallet()
