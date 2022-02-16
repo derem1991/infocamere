@@ -34,15 +34,45 @@ trait InfoCamereTrait {
                     ->join('documents as d','orders.document_id','d.id')
                     ->whereNotNull('d.method') // per sicurezza il metodo deve essere impostato
                     ->where('s.slug','pending')->get(); //ordini in stato pending
-    if(!empty($orders))
+    if($orders->isNotEmpty())
     {
       foreach($orders as $order)
       {
-        $this->{$order->method}($order);
+        $method = $order->method;
+        if(str_contains($method,"(")) //se contiene un parametro all'interno prendiamo solo il metodo
+          $method = substr($method, 0, strpos($method, "("));
+      
+        $this->{$method}($order);
         sleep(2); // diamo uno sleep per sicurezza tra una chiamata e l'altra
       }
     }
     return $orders;
+  }
+
+  public function getBlock($order)
+  {
+    if(!empty($order['file_output']))
+    {
+      $this->download($order['file_output'],$order); // passiamo direttamente al download del file
+      return;
+    }
+    $param = preg_replace("/(.*)'(.*)'(.*)/s", '\2',$order->method); // prendiamo il parametro da passare nella chiamata
+    $client = $this->client('xml');
+    $baseUrl = Config("emadema.api.baseUrl");
+    $json = $client->get($baseUrl.'rest/registroimprese/output/impresa/blocchi/codicefiscale/pdf?codiceFiscale='.$order->input.'&blocco='.$param);
+    try 
+    
+    {
+      $xml = simplexml_load_string($json->getBody()->getContents(), "SimpleXMLElement", LIBXML_NOCDATA);
+      $json = json_encode($xml);
+      $array = json_decode($json,TRUE);
+      if(isset($array['Testata']['Riepilogo']['FileOutput']))
+        Order::find($order->id)->update(['file_output'=>$array['Testata']['Riepilogo']['FileOutput']]);
+
+    }catch(\Exception $e) { }
+   
+    
+    return $order;
   }
 
   public function getVisOrd($order)
@@ -63,10 +93,7 @@ trait InfoCamereTrait {
       if(isset($array['Testata']['Riepilogo']['FileOutput']))
         Order::find($order->id)->update(['file_output'=>$array['Testata']['Riepilogo']['FileOutput']]);
 
-    }catch(\Exception $e)
-    {
-     
-    }
+    }catch(\Exception $e) { }
    
     
     return $order;
