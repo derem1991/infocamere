@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Notifications\Notifiable;
-
+use Auth;
 class Order extends Model
 {
     use HasFactory, Notifiable;
@@ -24,6 +24,18 @@ class Order extends Model
         'price',   
         'file_output'     
     ];
+
+    public static function getOrderByPermission()
+    {
+        if(Auth::user()->can('order-list')) // possibilita vedere tutti gli ordini
+            $orders = Order::all();
+        else if(Auth::user()->can('order-mywallet'))// ordini stesso wallet
+            $orders = Order::where('wallet_id',Auth::user()->wallet_id)->get();
+        else
+            $orders = Order::where('user_id',Auth::user()->id)->get();             
+        
+        return $orders;
+    }
 
     public function wallet()
     {

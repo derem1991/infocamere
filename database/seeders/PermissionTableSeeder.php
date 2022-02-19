@@ -40,6 +40,7 @@ class PermissionTableSeeder extends Seeder
            ['name'=>'document-create','description' =>'Creare un documento'],
            ['name'=>'document-edit','description' =>'Editare un documento'],
            ['name'=>'document-delete','description' =>'Eliminare un documento'],
+           ['name'=>'order-mywallet','description' =>'Può vedere tutti gli ordini del proprio wallet'],
            ['name'=>'order-mylist','description' =>'Lista dei propri ordini'],
            ['name'=>'order-list','description' =>'Lista di tutti gli ordini'],
            ['name'=>'order-create','description' =>'Creare un ordine'],

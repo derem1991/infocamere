@@ -46,13 +46,13 @@
                <div class="card-body">
                   <b>Disponibilita: € {{Auth::user()->budget}} </b>
                   <p id="recap"></p>
-                  @if(!empty($documents))
+                  @if($documents->isNotEmpty())
                   <div id="stepbox" class="col-12 p-0 m-0">
                      @include('partials.cardOrder',['step'=>1])
                   </div>                 
                   @else
                      <p>Non è possibile effettuare nessun ordine.</p>
-                     <p>Controllare se si ha budget sufficiente o verificare l'associazione dei documenti al wallet</p>
+                     <p>Controllare se si ha budget sufficiente o contattare il proprio amministratore di sistema</p>
                   @endif
                </div>
             </div>
