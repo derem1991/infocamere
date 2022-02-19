@@ -38,6 +38,10 @@
                <input type="hidden" id="step" value="1">
                <input type="hidden" id="document_id" name="document_id" value="">
                <input type="hidden" id="input" name="input" value="">
+
+               <input type="hidden" id="piva"     name="piva"     value="0">
+               <input type="hidden" id="cfiscale" name="cfiscale" value="0">
+
                <input type="hidden" id="wallet_id" name="wallet_id" value="{{Auth::user()->wallet_id}}">
                <input type="hidden" id="user_id" name="user_id" value="{{Auth::user()->id}}">
                <input type="hidden" id="price" name="price" value="0">
@@ -101,13 +105,35 @@ function nextStep()
    }
    else if(step == 2)
    {
-      if($("#text").val() == '')
+      let valtext = $("#text").val();
+      if(valtext == '')
       {
          alert("Inserire partiva iva o codice fiscale per poter proseguire!");
          return false;
       }
+      let piva = $("#piva").val();
+      let cfiscale = $("#cfiscale").val();
+      let textl = valtext.length;
+ 
+      if(piva == 1 && cfiscale == 1 && textl != 11 && textl != 16) //si possono inserire sia 11 che 16 caratteri
+      {
+         alert("Inserire una stringa di 11 o 16 caratteri!");
+         return false;
+      }
+      else if(piva == 1 && textl != 11)
+      {
+         alert("Si puo inserire solo la partita iva per questo documento - 11 caratteri!");
+         return false;
+      }
+      else if(cfiscale == 1 && textl != 16)
+      {
+         alert("Si puo inserire solo il codice fiscale per questo documento - 16 caratteri!");
+         return false;
+      }
+       
       $("#input").val($("#text").val());
    }
+    
    $("#step").val(newStep);
    $.ajax({
 		url :'/ajax/loadStepOrder',
@@ -153,10 +179,17 @@ function changeDoc()
       let description = $('#document option:selected').attr('data-description');
       let price       = $('#document option:selected').attr('data-price');
       let cost        = $('#document option:selected').attr('data-cost');
+      let piva        = $('#document option:selected').attr('data-piva');
+      let cfiscale    = $('#document option:selected').attr('data-cfiscale');
+
       $("#descriptionDoc").text(description);
       $("#document_id").val(doc);
+      $("#piva").val(piva);
+      $("#cfiscale").val(cfiscale);
       $("#price").val(price);
       $("#cost").val(cost);
+
+
       $("#recap").text($('#document option:selected').text());
    }  
    else
