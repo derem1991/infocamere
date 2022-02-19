@@ -29,7 +29,11 @@ class Order extends Model
     {
         return $this->belongsTo(Wallet::class);
     }
-
+    
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
     public function document()
     {
         return $this->belongsTo(Document::class);

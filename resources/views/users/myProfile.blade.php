@@ -28,7 +28,9 @@
             </div>
             <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                <div class="d-flex justify-content-between">
-                  <a href="#" class="btn btn-sm btn-info mr-4">Nuova richiesta</a>
+                  @can('order-create')
+                  <a href="{{route('orders.create')}}" class="btn btn-sm btn-info mr-4">Nuova richiesta</a>
+                  @endcan
                   <a href="#" class="btn btn-sm btn-default float-right">Attivo</a>
                </div>
             </div>
@@ -45,21 +47,21 @@
                            <span class="description">Richiesta in attesa</span>
                         </div>
                         <div>
-                           <span class="heading">1000</span>
-                           <span class="description">Crediti</span>
+                           <span class="heading">€ {{$user->budget ?? ''}}</span>
+                           <span class="description">Disponibilità</span>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="text-center">
                   <h3>
-                    {{$user->name ?? ''}}<span class="font-weight-light">, 27</span>
+                    {{$user->name ?? ''}}
                   </h3>
                   <div class="h5 font-weight-300">
-                     <i class="ni location_pin mr-2"></i>Sogliano cavour, Italia
+                    {{$user->email ?? ''}}
                   </div>
                   <div class="h5 mt-4">
-                     <i class="ni business_briefcase-24 mr-2"></i>Software developer
+                     {{$user->wallet->name ?? ''}}
                   </div>
                 
                   <hr class="my-4">

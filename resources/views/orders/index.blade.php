@@ -37,7 +37,12 @@
                                 <th scope="col" class="sort" data-sort="Id">Id</th>
                                 <th scope="col" class="sort" data-sort="Input">Input</th>
                                 <th scope="col" class="sort" data-sort="Documento">Documento</th>
+                                <th scope="col" class="sort" data-sort="Utente">Utente</th>
+                                <th scope="col" class="sort" data-sort="Costo">Costo</th>
+                                <th scope="col" class="sort" data-sort="Costo">Prezzo</th>
+                                @can('order-list')
                                 <th scope="col" class="sort" data-sort="Wallet">Wallet</th>
+                                @endcan
                                 <th scope="col" class="sort" data-sort="Stato">Stato</th>
                                 <th scope="col" class=>Azioni</th>
                               </tr>
@@ -50,7 +55,12 @@
                                     <td class="sorting_1">{{ $order->id}}</td>
                                     <td>{{ $order->input}}</td>
                                     <td>{{ $order->document->name}}</td>
+                                    <td>{{$order->user->name}}</td>
+                                    <td>€ {{$order->cost}}</td>
+                                    <td>€ {{$order->price}}</td>
+                                    @can('order-list')
                                     <td>{{$order->wallet->name}}</td>
+                                    @endcan
                                     <td class="d-flex boxstatus stat_{{$order->status->slug}}">
                                        <div class="circle" style="background:{{$order->status->background}};"></div> 
                                        <span class="pl-2 font-weight-bold" style="color:{{$order->status->color}};">{{$order->status->name}}</span>
