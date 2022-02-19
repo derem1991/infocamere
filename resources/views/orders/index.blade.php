@@ -38,13 +38,19 @@
                                 <th scope="col" class="sort" data-sort="Input">Input</th>
                                 <th scope="col" class="sort" data-sort="Documento">Documento</th>
                                 <th scope="col" class="sort" data-sort="Utente">Utente</th>
+                                @can('order-row')
                                 <th scope="col" class="sort" data-sort="Costo">Costo</th>
+                                @endcan
                                 <th scope="col" class="sort" data-sort="Costo">Prezzo</th>
                                 @can('order-list')
                                 <th scope="col" class="sort" data-sort="Wallet">Wallet</th>
                                 @endcan
+                                <th scope="col" class="sort" data-sort="Creazione">Creazione</th>
+
                                 <th scope="col" class="sort" data-sort="Stato">Stato</th>
+                                @if(0)
                                 <th scope="col" class=>Azioni</th>
+                                @endif
                               </tr>
                             </thead>
                            <tbody>
@@ -56,11 +62,14 @@
                                     <td>{{ $order->input}}</td>
                                     <td>{{ $order->document->name}}</td>
                                     <td>{{$order->user->name}}</td>
+                                    @can('order-row')
                                     <td>€ {{$order->cost}}</td>
+                                    @endcan
                                     <td>€ {{$order->price}}</td>
                                     @can('order-list')
                                     <td>{{$order->wallet->name}}</td>
                                     @endcan
+                                    <td>{{$order->created_at}}</td>
                                     <td class="d-flex boxstatus stat_{{$order->status->slug}}">
                                        <div class="circle" style="background:{{$order->status->background}};"></div> 
                                        <span class="pl-2 font-weight-bold" style="color:{{$order->status->color}};">{{$order->status->name}}</span>
@@ -71,6 +80,7 @@
                                           </a>
                                        @endif
                                     </td>
+                                    @if(0)
                                     <td class="text-right">
                                        <div class="dropdown d-none">
                                          <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -83,6 +93,7 @@
                                          </div>
                                        </div>
                                      </td>
+                                     @endif
                                  </tr> 
                                  @endforeach
                               @endif
@@ -109,7 +120,8 @@
                "previous": "<",
                "next": ">"
             }
-         }  
+         } ,
+         "order": [[ 0, "desc" ]]
     });
    } );
 </script>

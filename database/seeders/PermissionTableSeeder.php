@@ -44,6 +44,7 @@ class PermissionTableSeeder extends Seeder
            ['name'=>'order-list','description' =>'Lista di tutti gli ordini'],
            ['name'=>'order-create','description' =>'Creare un ordine'],
            ['name'=>'order-edit','description' =>'Editare un ordine'],
+           ['name'=>'order-row','description' =>'Può vedere tutte le righe di un ordine'],
            ['name'=>'order-delete','description' =>'Eliminare un ordine'],
         ];
    

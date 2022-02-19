@@ -27,9 +27,9 @@ class OrderController extends Controller
     public function index(Request $request)
     {
       if(Auth::user()->can('order-list')) // possibilita vedere tutti gli utenti
-        $orders = Order::orderBy('id','DESC')->get();
+        $orders = Order::all();
       else // utenti stesso wallet
-        $orders = Order::where('wallet_id',Auth::user()->wallet_id)->orderBy('id','DESC')->get();
+        $orders = Order::where('wallet_id',Auth::user()->wallet_id)->get();
 
       return view('orders.index',compact('orders'));
     }
