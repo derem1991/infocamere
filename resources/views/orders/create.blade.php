@@ -114,18 +114,18 @@ function nextStep()
       let piva = $("#piva").val();
       let cfiscale = $("#cfiscale").val();
       let textl = valtext.length;
- 
+     
       if(piva == 1 && cfiscale == 1 && textl != 11 && textl != 16) //si possono inserire sia 11 che 16 caratteri
       {
          alert("Inserire una stringa di 11 o 16 caratteri!");
          return false;
       }
-      else if(piva == 1 && textl != 11)
+      else if(piva == 1 && cfiscale == 0 && textl != 11)
       {
          alert("Si puo inserire solo la partita iva per questo documento - 11 caratteri!");
          return false;
       }
-      else if(cfiscale == 1 && textl != 16)
+      else if(cfiscale == 1 && piva == 0 && textl != 16)
       {
          alert("Si puo inserire solo il codice fiscale per questo documento - 16 caratteri!");
          return false;
