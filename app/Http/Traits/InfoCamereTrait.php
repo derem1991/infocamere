@@ -165,6 +165,25 @@ trait InfoCamereTrait {
     
     return $order;
   }
+  public function getProcedure($order)
+  {
+    $client = $this->client('xml');
+    $baseUrl = Config("emadema.api.baseUrl");  
+    $json = $client->get($baseUrl.'rest/registroimprese/procedureincorso/blocco/codicefiscale/xml?codiceFiscale='.$order->input);
+    try {
+      $xml = $json->getBody()->getContents();
+      if(isset($xml) && !empty($xml))
+      { 
+        //risultato finale xml
+        Order::find($order->id)->update(['xml'=>$xml]);
+        $order->status_id = 2;
+        $order->save();
+      }
+    }
+    catch(\Exception $e) { }
+   
+    return $order;
+  }
 
   public function getSedi($order)
   {

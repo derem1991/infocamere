@@ -1261,7 +1261,7 @@
                   <div class="card-header  oddcard" id="headingSeven">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-                           Fallimenti e procedure concorsuali
+                           Fallimenti e procedure concorsuali <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>

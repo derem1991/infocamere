@@ -215,7 +215,16 @@ class CreateDocumentSeeder extends Seeder
                       'is_cfiscale' => 1,
                       'wallet_id'   => $wallet->id,
                       'method'      => "getCariche('AC')"
-                    ]
+                    ],
+                    [
+                        'name'        =>'Fallimenti e procedure concorsuali (XML)',
+                        'description' => 'Restituisce il blocco PCO - Scioglimento, Procedure Concorsuali e Cancellazione - per le imprese presenti nel R.I. indipendentemente dalla classe di natura giuridica. L\'informazione non è disponibile per le posizioni di fonte Registro Ditte- l\'input puo essere solo CF o PIVA di 11 0 16 caratteri',
+                        'active'      => 1,
+                        'is_piva'     => 1,
+                        'is_cfiscale' => 1,
+                        'wallet_id'   => $wallet->id,
+                        'method'      => 'GetProcedure'
+                    ],
           ];
           
           foreach($documents as $document)
