@@ -48,7 +48,13 @@ class OrderController extends Controller
 
       return;
     }
+    public function xml($id)
+    {
+      $order = Order::findOrFail($id);
+       
+      return response($order->xml, 200, ['Content-Type' => 'application/xml']);
 
+    }
     public function store(Request $request)
     {
       $this->validate($request, [

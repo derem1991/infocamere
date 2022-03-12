@@ -22,7 +22,8 @@ class Order extends Model
         'status_id',    
         'cost',
         'price',   
-        'file_output'     
+        'file_output',
+        'xml'     
     ];
 
     public static function getOrderByPermission()

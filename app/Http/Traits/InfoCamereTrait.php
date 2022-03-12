@@ -125,23 +125,20 @@ trait InfoCamereTrait {
 
   public function getSedi($order)
   {
-    if(!empty($order['file_output']))
-    {
-      $this->download($order['file_output'],$order); // passiamo direttamente al download del file
-      return;
-    }     
-     
     $client = $this->client('xml');
     $baseUrl = Config("emadema.api.baseUrl");
     $json = $client->get($baseUrl.'/rest/registroimprese/imprese/ricerca/codicefiscale?codiceFiscale='.$order->input.'&fSoloSedi=S');
     try {
-      $xml = simplexml_load_string($json->getBody()->getContents(), "SimpleXMLElement", LIBXML_NOCDATA);
-      $json = json_encode($xml);
-      $array = json_decode($json,TRUE);
-      if(isset($array['Testata']['Riepilogo']['FileOutput']))
-        Order::find($order->id)->update(['file_output'=>$array['Testata']['Riepilogo']['FileOutput']]);
-
-    }catch(\Exception $e) { }
+      $xml = $json->getBody()->getContents();
+      if(isset($xml) && !empty($xml))
+      { 
+        //risultato finale xml
+        Order::find($order->id)->update(['xml'=>$xml]);
+        $order->status_id = 2;
+        $order->save();
+      }
+    }
+    catch(\Exception $e) { }
    
     return $order;
   }

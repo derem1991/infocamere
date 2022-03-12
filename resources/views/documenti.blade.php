@@ -1207,7 +1207,7 @@
                   <div class="card-header  " id="headingSix">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                        Anagrafica sedi
+                        Anagrafica sedi <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
