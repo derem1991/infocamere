@@ -307,7 +307,7 @@
                   <div class="card-header  " id="headingEight">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
-                        Partecipazioni
+                        Partecipazioni <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -402,7 +402,7 @@
                   </div>
                </div>
 
-               
+
                <div class="card">
                   <div class="card-header oddcard" id="headingThree">
                      <h5 class="mb-0">
