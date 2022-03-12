@@ -1479,7 +1479,7 @@
                   <div class="card-header " id="headingTen">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
-                        Visure Artigiani
+                        Visure Artigiani <b style="color:green;">Si prendono dalle visure ordinarie o storiche</b>
                         </button>
                      </h5>
                   </div>
@@ -1494,7 +1494,7 @@
                   <div class="card-header oddcard" id="headingEleven">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
-                        Contratto di rete
+                        Contratto di rete  <b style="color:red;">NON DISPONIBILE</b>
                         </button>
                      </h5>
                   </div>
