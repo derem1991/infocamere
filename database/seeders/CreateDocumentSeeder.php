@@ -161,6 +161,60 @@ class CreateDocumentSeeder extends Seeder
                         'is_cfiscale' => 1,
                         'wallet_id'   => $wallet->id,
                         'method'      => "getBlock('STO')"
+                    ],
+                    [
+                        'name'        =>'Partecipazione attuale (PAR) ',
+                        'description' => 'Si ottiene la partecipazione attuale - l\'input puo essere solo CF o PIVA di 11 0 16 caratteri',
+                        'active'      => 1,
+                        'is_piva'     => 1,
+                        'is_cfiscale' => 1,
+                        'wallet_id'   => $wallet->id,
+                        'method'      => 'getPasAtt'
+                    ],
+                    [
+                        'name'        =>'Partecipazione storica (PAS) ',
+                        'description' => 'Si ottiene la Partecipazione storica - l\'input puo essere solo CF o PIVA di 11 0 16 caratteri',
+                        'active'      => 1,
+                        'is_piva'     => 1,
+                        'is_cfiscale' => 1,
+                        'wallet_id'   => $wallet->id,
+                        'method'      => 'getPasSto'
+                    ],
+                    [
+                        'name'        =>'Anagrafica sedi',
+                        'description' => 'Si puo richiedere l\'anagrafica delle sedi dell\'azienda - l\'input puo essere solo CF o PIVA di 11 0 16 caratteri',
+                        'active'      => 1,
+                        'is_piva'     => 1,
+                        'is_cfiscale' => 1,
+                        'wallet_id'   => $wallet->id,
+                        'method'      => 'getSedi'
+                    ],
+                    [
+                        'name'        =>'Cariche attuali',
+                        'description' => 'Si posson avere le cariche attuali - l\'input puo essere solo CF o PIVA di 11 0 16 caratteri',
+                        'active'      => 1,
+                        'is_piva'     => 1,
+                        'is_cfiscale' => 1,
+                        'wallet_id'   => $wallet->id,
+                        'method'      => "getCariche('A')"
+                    ],
+                    [
+                      'name'        =>'Cariche cessate',
+                      'description' => 'Si posson avere le cariche cessate - l\'input puo essere solo CF o PIVA di 11 0 16 caratteri',
+                      'active'      => 1,
+                      'is_piva'     => 1,
+                      'is_cfiscale' => 1,
+                      'wallet_id'   => $wallet->id,
+                      'method'      => "getCariche('C')"
+                    ],
+                    [
+                      'name'        =>'Cariche attuali e cessate',
+                      'description' => 'Si posson avere le cariche cessate - l\'input puo essere solo CF o PIVA di 11 0 16 caratteri',
+                      'active'      => 1,
+                      'is_piva'     => 1,
+                      'is_cfiscale' => 1,
+                      'wallet_id'   => $wallet->id,
+                      'method'      => "getCariche('AC')"
                     ]
           ];
           

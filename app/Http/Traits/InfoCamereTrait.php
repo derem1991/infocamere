@@ -74,6 +74,49 @@ trait InfoCamereTrait {
     return $order;
   }
 
+  public function getCariche($order)
+  {
+    $param = preg_replace("/(.*)'(.*)'(.*)/s", '\2',$order->method); // prendiamo il parametro da passare nella chiamata
+    $client = $this->client('xml');
+    $baseUrl = Config("emadema.api.baseUrl");
+    if($param == 'AC') // profilo completo scarichiamo pdf
+    {
+      if(!empty($order['file_output']))
+      {
+        $this->download($order['file_output'],$order); // passiamo direttamente al download del file
+        return;
+      }
+      $json = $client->get($baseUrl.'rest/registroimprese/persone/scheda/codicefiscale/pdf?codiceFiscale='.$order->input);
+      try 
+      {
+        $xml = simplexml_load_string($json->getBody()->getContents(), "SimpleXMLElement", LIBXML_NOCDATA);
+        $json = json_encode($xml);
+        $array = json_decode($json,TRUE);
+        if(isset($array['Testata']['Riepilogo']['FileOutput']))
+          Order::find($order->id)->update(['file_output'=>$array['Testata']['Riepilogo']['FileOutput']]);
+  
+      }catch(\Exception $e) { }  
+    }
+    else
+    {
+    
+      $json = $client->get($baseUrl.'rest/registroimprese/persone/scheda/codicefiscale/xml?codiceFiscale='.$order->input.'&statoCarica='.$param);
+      try {
+        $xml = $json->getBody()->getContents();
+        if(isset($xml) && !empty($xml))
+        { 
+          //risultato finale xml
+          Order::find($order->id)->update(['xml'=>$xml]);
+          $order->status_id = 2;
+          $order->save();
+        }
+      }
+      catch(\Exception $e) { }
+    }
+    
+    return $order;
+  }
+
 
   public function getPasAtt($order)
   {
@@ -85,7 +128,7 @@ trait InfoCamereTrait {
 
     $client = $this->client('xml');
     $baseUrl = Config("emadema.api.baseUrl");
-    $json = $client->get($baseUrl.'/rest/registroimprese/assettiproprietari/partecipazioni/codicefiscale/pdf?codiceFiscale='.$order->input);
+    $json = $client->get($baseUrl.'rest/registroimprese/assettiproprietari/partecipazioni/codicefiscale/pdf?codiceFiscale='.$order->input);
     try {
       $xml = simplexml_load_string($json->getBody()->getContents(), "SimpleXMLElement", LIBXML_NOCDATA);
       $json = json_encode($xml);
@@ -109,7 +152,7 @@ trait InfoCamereTrait {
 
     $client = $this->client('xml');
     $baseUrl = Config("emadema.api.baseUrl");
-    $json = $client->get($baseUrl.'/rest/registroimprese/assettiproprietari/partecipazioni/storica/codicefiscale/pdf?codiceFiscale='.$order->input);
+    $json = $client->get($baseUrl.'rest/registroimprese/assettiproprietari/partecipazioni/storica/codicefiscale/pdf?codiceFiscale='.$order->input);
     try {
       $xml = simplexml_load_string($json->getBody()->getContents(), "SimpleXMLElement", LIBXML_NOCDATA);
       $json = json_encode($xml);
@@ -127,7 +170,7 @@ trait InfoCamereTrait {
   {
     $client = $this->client('xml');
     $baseUrl = Config("emadema.api.baseUrl");
-    $json = $client->get($baseUrl.'/rest/registroimprese/imprese/ricerca/codicefiscale?codiceFiscale='.$order->input.'&fSoloSedi=S');
+    $json = $client->get($baseUrl.'rest/registroimprese/imprese/ricerca/codicefiscale?codiceFiscale='.$order->input.'&fSoloSedi=S');
     try {
       $xml = $json->getBody()->getContents();
       if(isset($xml) && !empty($xml))

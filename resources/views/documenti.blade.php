@@ -1309,7 +1309,7 @@
                   <div class="card-header oddcard " id="headingNine">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
-                        Cariche attuali o cessate e profilo completo
+                        Cariche attuali o cessate e profilo completo  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
