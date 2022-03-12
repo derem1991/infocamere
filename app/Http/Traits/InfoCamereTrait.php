@@ -74,6 +74,55 @@ trait InfoCamereTrait {
     return $order;
   }
 
+
+  public function getPasAtt($order)
+  {
+    if(!empty($order['file_output']))
+    {
+      $this->download($order['file_output'],$order); // passiamo direttamente al download del file
+      return;
+    }     
+
+    $client = $this->client('xml');
+    $baseUrl = Config("emadema.api.baseUrl");
+    $json = $client->get($baseUrl.'/rest/registroimprese/assettiproprietari/partecipazioni/codicefiscale/pdf?codiceFiscale='.$order->input.'&documento=VATTU');
+    try {
+      $xml = simplexml_load_string($json->getBody()->getContents(), "SimpleXMLElement", LIBXML_NOCDATA);
+      $json = json_encode($xml);
+      $array = json_decode($json,TRUE);
+      if(isset($array['Testata']['Riepilogo']['FileOutput']))
+        Order::find($order->id)->update(['file_output'=>$array['Testata']['Riepilogo']['FileOutput']]);
+
+    }catch(\Exception $e) { }
+   
+    
+    return $order;
+  }
+
+  public function getPasSto($order)
+  {
+    if(!empty($order['file_output']))
+    {
+      $this->download($order['file_output'],$order); // passiamo direttamente al download del file
+      return;
+    }     
+
+    $client = $this->client('xml');
+    $baseUrl = Config("emadema.api.baseUrl");
+    $json = $client->get($baseUrl.'/rest/registroimprese/assettiproprietari/partecipazioni/storica/codicefiscale/pdf?codiceFiscale='.$order->input.'&documento=VATTU');
+    try {
+      $xml = simplexml_load_string($json->getBody()->getContents(), "SimpleXMLElement", LIBXML_NOCDATA);
+      $json = json_encode($xml);
+      $array = json_decode($json,TRUE);
+      if(isset($array['Testata']['Riepilogo']['FileOutput']))
+        Order::find($order->id)->update(['file_output'=>$array['Testata']['Riepilogo']['FileOutput']]);
+
+    }catch(\Exception $e) { }
+   
+    
+    return $order;
+  }
+
   public function getVisOrd($order)
   {
     if(!empty($order['file_output']))

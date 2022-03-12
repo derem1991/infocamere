@@ -26,7 +26,7 @@
                   <div class="card-header  oddcard" id="headingFive">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                       Capitale e strumenti finanziari  (blocco CAP)
+                       Capitale e strumenti finanziari  (blocco CAP)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -73,7 +73,7 @@
                   <div class="card-header   " id="headingSix">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                           Informazioni patrimoniali (blocco IPA)
+                           Informazioni patrimoniali (blocco IPA)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -120,8 +120,8 @@
                   <div class="card-header  oddcard" id="headingSeven">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-                       Amministratori (blocco AMM)
-                        </button>
+                       Amministratori (blocco AMM)  <b style="color:green;">Implementato nell'ordine</b>
+                        </button> 
                      </h5>
                   </div>
                   <div id="collapseSeven" class="collapse oddcard  " aria-labelledby="headingSeven" data-parent="#accordion">
@@ -167,7 +167,7 @@
                   <div class="card-header " id="headingEight">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
-                           Sindaci, membri organi di controllo (blocco SIN)
+                           Sindaci, membri organi di controllo (blocco SIN)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -214,7 +214,7 @@
                   <div class="card-header oddcard" id="headingNine">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
-                           Titolari di altre cariche o qualifiche (blocco APE)
+                           Titolari di altre cariche o qualifiche (blocco APE)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -261,7 +261,7 @@
                   <div class="card-header   " id="headingTen">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
-                           Soci e titolari di diritti su quote o azioni (blocco SOC)
+                           Soci e titolari di diritti su quote o azioni (blocco SOC)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -308,7 +308,7 @@
                   <div class="card-header oddcard" id="headingEleven">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
-                           Trasferimenti d'azienda, fusioni, scissioni, subentri (blocco TFS)
+                           Trasferimenti d'azienda, fusioni, scissioni, subentri (blocco TFS)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -355,7 +355,7 @@
                   <div class="card-header  " id="headingTwelve">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
-                           Attività, albi, ruoli e licenze (blocco ALB)
+                           Attività, albi, ruoli e licenze (blocco ALB)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -402,7 +402,7 @@
                   <div class="card-header oddcard" id="headingTredici">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTredici" aria-expanded="true" aria-controls="collapseTredici">
-                           Società o enti controllanti (blocco CON)
+                           Società o enti controllanti (blocco CON)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -449,7 +449,7 @@
                   <div class="card-header  " id="headingQuattordici">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseQuattordici" aria-expanded="true" aria-controls="collapseQuattordici">
-                           Pratiche in istruttoria (blocco PRA)
+                           Pratiche in istruttoria (blocco PRA)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -496,7 +496,7 @@
                   <div class="card-header oddcard" id="headingquind">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapsequind" aria-expanded="true" aria-controls="collapsequind">
-                           Storia dei trasferimenti di quote - solo per SRL  (blocco QUO)
+                           Storia dei trasferimenti di quote - solo per SRL  (blocco QUO)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -543,7 +543,7 @@
                   <div class="card-header  " id="headingSED">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSED" aria-expanded="true" aria-controls="collapseSED">
-                           informazioni da patti sociali (blocco PAT)
+                           informazioni da patti sociali (blocco PAT)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -590,7 +590,7 @@
                   <div class="card-header oddcard " id="headingDicia">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDicia" aria-expanded="true" aria-controls="collapseDicia">
-                           Informazioni da statuto (blocco STA)
+                           Informazioni da statuto (blocco STA)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
@@ -639,7 +639,7 @@
                   <div class="card-header   " id="headingDicias">
                      <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDicias" aria-expanded="true" aria-controls="collapseDicias">
-                           storia delle modifiche (blocco STO)
+                           storia delle modifiche (blocco STO)  <b style="color:green;">Implementato nell'ordine</b>
                         </button>
                      </h5>
                   </div>
