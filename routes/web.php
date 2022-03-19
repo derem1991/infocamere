@@ -11,6 +11,7 @@ use App\Http\Controllers\DocumentHasWalletController;
 use App\Http\Controllers\WalletController;
 use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ResearchController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,6 +43,10 @@ Route::group(['middleware' => ['auth']], function() {
     //wallets//
     Route::resource('wallets', WalletController::class);
     //end wallets
+
+    //researchs//
+    Route::resource('researchs', ResearchController::class);
+    //end researchs
 
     //documents//
     Route::resource('documents',DocumentController::class); 

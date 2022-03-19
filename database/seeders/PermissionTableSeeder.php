@@ -47,6 +47,13 @@ class PermissionTableSeeder extends Seeder
            ['name'=>'order-edit','description' =>'Editare un ordine'],
            ['name'=>'order-row','description' =>'Può vedere tutte le righe di un ordine'],
            ['name'=>'order-delete','description' =>'Eliminare un ordine'],
+           ['name'=>'research-mywallet','description' =>'Lista delle ricerche del proprio wallet'],
+           ['name'=>'research-mylist','description' =>'Lista delle proprie ricerche'],
+           ['name'=>'research-row','description' =>'Può vedere tutte le righe di una ricerca'],
+           ['name'=>'research-list','description' =>'Lista di tutte le ricerche'],
+           ['name'=>'research-create','description' =>'Creare una ricerca'],
+           ['name'=>'research-edit','description' =>'Editare una ricerca'],
+           ['name'=>'research-delete','description' =>'Eliminare una ricerca'],
         ];
    
         foreach ($permissions as $permission) 

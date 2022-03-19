@@ -92,6 +92,14 @@
                     </a>
                 </li>
                 @endcan
+                @can('research-mylist')
+                <li class="nav-item @if(Route::currentRouteName() == 'researchs.index') active @endif">
+                    <a class="nav-link" href="{{ route('researchs.index') }}">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        Ricerche
+                    </a>
+                </li>
+                @endcan
             </ul>
             <hr class="my-3">
             <h6 class="navbar-heading text-muted">ADMIN</h6>

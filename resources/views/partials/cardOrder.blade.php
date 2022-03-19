@@ -23,14 +23,26 @@
             <p id="descriptionDoc"></p>
             @elseif($step == 2)
             <div class="form-group{{ $errors->has('text') ? ' has-danger' : '' }} mb-3">
-               <label class="form-control-label" for="text">Input</label>
-               <input onkeyup="this.value = this.value.replace(/ /g, '');" class="form-control{{ $errors->has('text') ? ' is-invalid' : '' }}" id="text" placeholder="Inserire testo" type="text" name="text" value="" required  >
+               <label class="form-control-label" for="text">Codice fiscale o Partita Iva</label>
+               <input onkeyup="this.value = this.value.toUpperCase().replace(/ /g, '');" class="form-control{{ $errors->has('text') ? ' is-invalid' : '' }}" id="text" placeholder="Inserire testo" type="text" name="text" value="" required  >
                @if ($errors->has('text'))
                <span class="invalid-feedback" style="display: block;" role="alert">
                   <strong>{{ $errors->first('text') }}</strong>
                </span>
                @endif
                <small id="smallhelp">Inserire una stringa di 11 o 16 caratteri</small>
+               <small class="d-block font-weight-bold">Inserendo il dato "autonomamente", senza nessun controllo nell'anagrafica di infocamera, il documento sarà generato con il dato inserito.</small>
+               <hr class="w-100 my-1 ">
+               <div class="col-12 p-0 m-0">
+                 <p>Non sei sicuro del codice fiscale o partita iva inserito? Effettua una "ricerca Per denominazione" 
+                    al costo di € <b>{{Auth::user()->wallet->price_research}}</b>
+                 </p>
+                 <div class="col-12 p-0">
+                  <a class="w-100 btn btn-info col-4" type="button" href="{{route('researchs.create')}}">
+                    Effettua ricerca 
+                  </a>  
+                 </div>
+               </div>
             </div>
             @else
             <div class="col-12 p-0 m-0">

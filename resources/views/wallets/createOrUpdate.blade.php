@@ -73,6 +73,43 @@
                         @endif
                      </div>
                   </div>
+                  <hr class="w-100 my-1">
+
+                  <div class="card-header">
+                     <div class="col-12 p-0 m-0 row">
+                        <div class="col-12 p-0 ">
+                         <h3 class="mb-0">Ricerca per denominazione</h3>
+                        </div>
+                     </div>                          
+                     <p class="text-sm mb-0">Impostare il prezzo di vendita e il costo per una ricerca per denominazione</p>
+                  </div>
+                  <div class="col-12 p-0 m-0 row">
+                     <div class="col-12 col-md-6">
+                           <div class="form-group{{ $errors->has('cost_research') ? ' has-danger' : '' }} mb-3">
+                              <label class="form-control-label" for="cost_research">Costo ricerca  
+                              </label>
+                              <input class="form-control{{ $errors->has('cost_research') ? ' is-invalid' : '' }}" min="0" step="0.01" id="cost_research" placeholder="Costo ricerca" type="number" name="cost_research" value="{{$wallet->cost_research ?? 0}}" required>
+                              @if ($errors->has('cost_research'))
+                              <span class="invalid-feedback" style="display: block;" role="alert">
+                              <strong>{{ $errors->first('cost_research') }}</strong>
+                              </span>
+                              @endif
+                           </div>
+                     </div>
+                     <div class="col-12 col-md-6">
+                        <div class="form-group{{ $errors->has('price_research') ? ' has-danger' : '' }} mb-3">
+                           <label class="form-control-label" for="price_research">Prezzo ricerca  
+                           </label>
+                           <input class="form-control{{ $errors->has('price_research') ? ' is-invalid' : '' }}" min="0" step="0.01" id="cost_research" placeholder="Prezzo ricerca" type="number" name="price_research" value="{{$wallet->price_research ?? 0}}" required>
+                           @if ($errors->has('price_research'))
+                           <span class="invalid-feedback" style="display: block;" role="alert">
+                           <strong>{{ $errors->first('price_research') }}</strong>
+                           </span>
+                           @endif
+                        </div>
+                     </div>
+                  </div>
+
                </div>
                <hr class="w-100 my-2">
                <button type="submit" class="btn btn-slack btn-icon">
@@ -84,6 +121,10 @@
          {{ Form::close() }}
       </div>
    </div>
+
+   
+
+
    @if(isset($wallet))
    <div class="row mb-4">
       <div class="col">

@@ -17,7 +17,9 @@ class Wallet extends Model
         'name',
         'description',
         'budget',
-        'budget_remaining'
+        'budget_remaining',
+        'cost_research',
+        'price_research',
     ];
  
   
