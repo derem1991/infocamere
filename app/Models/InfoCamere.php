@@ -14,6 +14,6 @@ class InfoCamere extends Model
   {
     return $this->getOrders();
   }
-
+ 
 }
 

@@ -185,6 +185,20 @@ trait InfoCamereTrait {
     return $order;
   }
 
+  public function getResearch($input)
+  {
+    $xml = ''; 
+    $client = InfoCamereTrait::client('xml');
+    $baseUrl = Config("emadema.api.baseUrl");  
+    try {
+      $json = $client->get($baseUrl.'rest/registroimprese/imprese/ricerca/denominazione?denominazione='.$input);
+      $xml = $json->getBody()->getContents();
+    }
+    catch(\Exception $e) { }
+   
+    return $xml;
+  }
+
   public function getSedi($order)
   {
     $client = $this->client('xml');

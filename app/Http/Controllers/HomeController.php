@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Artisan;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        //Artisan::call('orders:import 1');
         return view('dashboard');
     }
 }

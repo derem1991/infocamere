@@ -21,7 +21,7 @@
          <div class="card">
             <!-- Card header -->
             <div class="card-header">
-               <h3 class="mb-0">Rierche</h3>
+               <h3 class="mb-0">Ricerche</h3>
                <p class="text-sm mb-0">
                  Vedi le ricerche effettuate, aggiungi una ricerca, ed effettua un ordine dopo aver trovato la denominazione giusta.
                </p>
@@ -45,9 +45,9 @@
                                 <th scope="col" class="sort" data-sort="Wallet">Wallet</th>
                                 @endcan
                                 <th scope="col" class="sort" data-sort="Creazione">Creazione</th>
-                                
+                                @can('research-edit')
                                 <th scope="col" class=>Azioni</th>
-                                 
+                                @endcan
                               </tr>
                             </thead>
                            <tbody>
@@ -66,18 +66,12 @@
                                     <td>{{$research->wallet->name}}</td>
                                     @endcan
                                     <td>{{$research->created_at}}</td>
-                                    <td class="text-right">
-                                       <div class="dropdown">
-                                         <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                           <i class="fas fa-ellipsis-v"></i>
-                                         </a>
-                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                           @can('research-edit')
-                                           <a class="dropdown-item" href="{{route('researchs.edit', ['research' =>$research->id])}}">Modifica</a>
-                                           @endcan
-                                         </div>
-                                       </div>
-                                     </td>                                      
+                                    @can('research-edit')
+                                    <td>
+                                       <a class="font-weight-bold" href="{{route('researchs.edit', ['research' =>$research->id])}}">Dettagli</a>
+                                    </td>
+                                    @endcan
+                                 
                                  </tr> 
                                  @endforeach
                               @endif
