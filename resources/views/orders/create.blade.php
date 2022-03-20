@@ -5,7 +5,7 @@
    <div class="container-fluid">
        <div class="header-body">
           <div class="row align-items-center py-4">
-            @include('layouts.headers.navigation',['title'=>'Creazione Ordine'])
+            @include('layouts.headers.navigation',['title'=>'Nuovo ordine'])
             @can('order-create')
             <div class="col-lg-6 col-5 text-right">
                <a href="{{route('orders.create')}}" class="btn btn-sm btn-neutral">Nuovo</a>
@@ -22,10 +22,15 @@
          <div class="card">
             <!-- Card header -->
             <div class="card-header">
-               <h3 class="mb-0">{{ isset($order) ? 'Modifica' : 'Creazione' }} ordine</h3>
+               <h3 class="mb-0">Creazione ordine {{$_GET['input'] ?? ''}}</h3>
+               @if(isset($_GET['input']) && !empty($_GET['input']))
                <p class="text-sm mb-0">
-                  {{ isset($order) ? 'Modifica' : 'Crea' }} un ordine 
+                  Si sta effettuando l'ordine per la seguente PIVA o Codice Fiscale:<b>{{$_GET['input']}}</b>.
+                  La scelta può essere comunque modificata durante il funnel di prenotazione.
                </p>
+               @else
+               <p class="text-sm mb-0"> Crea un ordine   </p>
+               @endif
             </div>
          </div>
          <div class="card mb-4">
@@ -37,8 +42,7 @@
             @endif
                <input type="hidden" id="step" value="1">
                <input type="hidden" id="document_id" name="document_id" value="">
-               <input type="hidden" id="input" name="input" value="">
-
+               <input type="hidden" id="input" name="input" value="{{$_GET['input'] ?? ''}}">
                <input type="hidden" id="piva"     name="piva"     value="0">
                <input type="hidden" id="cfiscale" name="cfiscale" value="0">
 
@@ -130,7 +134,6 @@ function nextStep()
          alert("Si puo inserire solo il codice fiscale per questo documento - 16 caratteri!");
          return false;
       }
-       
       $("#input").val($("#text").val());
    }
     
@@ -139,7 +142,7 @@ function nextStep()
 		url :'/ajax/loadStepOrder',
 		type : 'GET',
 		dataType:'json',
-		data:{step:$("#step").val()},
+		data:{step:$("#step").val(),input:$("#input").val()},
 		success : function(response) 
       { 
          $("#stepbox").html("");
@@ -165,9 +168,7 @@ function nextStep()
             });
          }
          else
-         {
            $(response).appendTo("#stepbox");
-         }
 		} 
 	});
 }

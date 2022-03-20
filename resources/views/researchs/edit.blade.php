@@ -37,7 +37,7 @@
                            <thead class="thead-light">
                               <tr>
                                 <th scope="col" class="sort" data-sort="Denominazione">Denominazione</th>
-                                <th scope="col" class="sort" data-sort="Cciaa">Cciaa</th>
+                                <th scope="col" class="sort" data-sort="Cciaa">NRea/Cciaa</th>
                                 <th scope="col" class="sort" data-sort="Nrea">NRea</th>
                                 <th scope="col" class="sort" data-sort="Sede">Sede</th>
                                 <th scope="col" class="sort" data-sort="CF/PIVA">CF/PIVA</th>
@@ -51,9 +51,27 @@
                               </tr>
                             </thead>
                            <tbody>
-                                 @foreach($results['ListaImpreseRI']['Impresa'] as $result)
+                                 @if(isset($results['ListaImpreseRI']['Impresa']['AnagraficaImpresa'])) 
+                                    @php $reqs['ListaImpreseRI']['Impresa'][0] = $results['ListaImpreseRI']['Impresa'] @endphp
+                                 @else
+                                    @php $reqs = $results @endphp
+                                 @endif
+
+                                 <!-- se ce solo un impresa non ce array quindi lo mettiamo dentro -->
+                                 @foreach($reqs['ListaImpreseRI']['Impresa'] as $result)
                                  <tr role="row" class="odd">
-                                    <td class="">{{$result['AnagraficaImpresa']['Denominazione'] ?? ''}}</td>
+                                    <td class="">{{$result['AnagraficaImpresa']['Denominazione'] ?? ''}}
+                                       @if(isset($result['AnagraficaImpresa']['CodFisc']) && !empty($result['AnagraficaImpresa']['CodFisc']))
+                                         @php $input = $result['AnagraficaImpresa']['CodFisc'] @endphp
+                                       @elseif(isset($result['AnagraficaImpresa']['PIva']) && !empty($result['AnagraficaImpresa']['PIva']))
+                                         @php $input = $result['AnagraficaImpresa']['PIva'] @endphp
+                                       @endif
+                                       @can('order-create')
+                                          @if(isset($input))
+                                             <a href="{{route('orders.create',['input'=>$input])}}" class="badge badge-success" >Crea ordine</a>
+                                          @endif
+                                       @endcan
+                                    </td>
                                     <td>{{ $result['AnagraficaImpresa']['DescCciaa']  ?? ''}} ({{ $result['AnagraficaImpresa']['Cciaa']  ?? ''}})</td> 
                                     <td class="">{{$result['AnagraficaImpresa']['NRea'] ?? ''}}</td>
                                     
@@ -105,7 +123,7 @@
                "next": ">"
             }
          } ,
-         "research": [[ 0, "desc" ]]
+       
     });
    } );
 </script>

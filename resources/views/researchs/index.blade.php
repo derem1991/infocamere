@@ -35,12 +35,12 @@
                            <thead class="thead-light">
                               <tr>
                                 <th scope="col" class="sort" data-sort="Id">Id</th>
-                                <th scope="col" class="sort" data-sort="Input">Input</th>
+                                <th scope="col" class="sort" data-sort="Denominazione">Denominazione</th>
                                 <th scope="col" class="sort" data-sort="Utente">Utente</th>
                                 @can('research-row')
                                 <th scope="col" class="sort" data-sort="Costo">Costo</th>
                                 @endcan
-                                <th scope="col" class="sort" data-sort="Costo">Prezzo</th>
+                                <th scope="col" class="sort" data-sort="Prezzo">Prezzo</th>
                                 @can('research-list')
                                 <th scope="col" class="sort" data-sort="Wallet">Wallet</th>
                                 @endcan

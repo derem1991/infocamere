@@ -33,10 +33,11 @@ class AjaxController extends Controller
 
   public function loadStepOrder(Request $request)
   {
-    $input = $request->all();
-    $step = isset($input['step']) ? $input['step'] : 1;
+    $data  = $request->all();
+    $step  = isset($data['step']) ? $data['step'] : 1;
+    $input = isset($data['input']) ? $data['input'] : '';
     $documents = Document::getDispoByUser();
-    $render = view('partials.cardOrder',compact('step','documents'))->render();
+    $render = view('partials.cardOrder',compact('step','documents','input'))->render();
 
     return Response::json($render);
   }
